@@ -1,0 +1,21 @@
+{
+  "input_video": "source\\capture video.mp4",
+  "title": "capture video",
+  "engine_name": "paddle",
+  "total_pages": 1,
+  "average_confidence": 0.9677907287688287,
+  "processing_time_sec": 110.05,
+  "extraction_parameters": {
+    "sample_fps": 6.0,
+    "transition_threshold": 18.0,
+    "stable_threshold": 4.0,
+    "min_focus_score": 15.0,
+    "ocr_lang": "kor+eng"
+  },
+  "generated_files": [
+    "output_final\\book.md",
+    "output_final\\book.html",
+    "output_final\\book.pdf"
+  ],
+  "warnings": []
+}

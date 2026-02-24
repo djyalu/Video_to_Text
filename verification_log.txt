@@ -1,0 +1,251 @@
+============================================================
+  OCR Verification Log
+============================================================
+
+Total raw pages: 204
+Pages after cleanup: 204
+OCR corrections applied: 45 patterns
+Navigation noise patterns: 22 patterns
+Translated blocks: 299
+
+------------------------------------------------------------
+Frame Verification Results:
+------------------------------------------------------------
+  Page   1 [ 00:00] similarity=0.375  status=MISMATCH
+    Original: SERVICENOW
+DEVELOPMENT
+HANDBOOK
+A
+Compendium
+Of
+Cuidelines
+and
+Best
+Practices
+for
+ServiceNow
+Develop
+    Verify  : SERVICENOW DEVELOPMENT HANDBOOK A Compendium Of Cuidelines and Best Practices for ServiceNow Develop
+
+  Page  23 [ 00:52] similarity=0.445  status=MISMATCH
+    Original: scope
+Of'
+the
+function
+which
+never
+returned
+2
+value
+me
+into
+the
+changeCoolnessO
+function
+we
+actually
+    Verify  : scope Of' the function which never returned 2 value me into the changeCoolnessO function we actually
+
+  Page  46 [ 01:38] similarity=0.440  status=MISMATCH
+    Original: As
+you
+can
+see
+in
+the
+above
+image
+the
+variables
+in
+2
+"derived
+field"
+This
+means
+that
+unfortunately
+m
+    Verify  : As you can see in the above image the variables in 2 "derived field" This means that unfortunately m
+
+  Page  68 [ 02:24] similarity=0.375  status=MISMATCH
+    Original: Values
+behave
+Quite
+differently
+and
+should
+be
+used
+for
+record
+form
+the
+default
+value
+is
+calculated
+O
+    Verify  : Values behave Quite differently and should be used for record form the default value is calculated O
+
+  Page  91 [ 03:10] similarity=0.575  status=OK
+    Original: side
+issues
+like
+felds
+taking
+2
+long
+time
+to
+update
+Var
+grIncident
+new
+GlideRecordCincident;
+0r
+the
+
+    Verify  : side issues like felds taking 2 long time to update Var grIncident new GlideRecordCincident; 0r the 
+
+  Page 113 [ 03:54] similarity=0.400  status=MISMATCH
+    Original: Canvas
+It
+displays
+categorized
+list
+Of
+all
+deeply
+nested
+flows
+it
+can
+start
+to
+get
+hard
+?
+to
+availab
+    Verify  : Canvas It displays categorized list Of all deeply nested flows it can start to get hard ? to availab
+
+  Page 136 [ 04:42] similarity=0.440  status=MISMATCH
+    Original: One
+way
+to
+make
+your
+application
+more
+modular
+Or
+maybe
+they're
+doing
+some
+external
+analysis
+On
+the
+a
+    Verify  : One way to make your application more modular Or maybe they're doing some external analysis On the a
+
+  Page 158 [ 05:26] similarity=0.505  status=OK
+    Original: and
+how
+to
+correctly
+handle
+preview
+errors
+We're
+also
+going
+to
+lightly
+touch
+On
+Applications
+both
+Sc
+    Verify  : and how to correctly handle preview errors We're also going to lightly touch On Applications both Sc
+
+  Page 181 [ 06:14] similarity=0.937  status=OK
+    Original: Library
+2 mins left in chapter
+Page 246 of 265
+86%
+11 mins left in book
+    Verify  : Library 2 mins left in chapter  Page 246 of 265 86% 11 mins left in book
+
+  Page 204 [ 07:02] similarity=0.455  status=MISMATCH
+    Original: Library
+SERVICENOV
+SERVICENO
+Ha
+[117]
+It's
+always
+good
+Omen
+when
+&
+technology
+Comes
+[124]
+For
+more
+i
+    Verify  : Library SERVICENOV SERVICENO Ha [117] It's always good Omen when & technology Comes [124] For more i
+
+------------------------------------------------------------
+
+Applied OCR corrections:
+  'SERVICENOT!' -> 'SERVICENOW'
+  'DEVELOPIMENI' -> 'DEVELOPMENT'
+  'HANUBOOK' -> 'HANDBOOK'
+  'Cuidelines' -> 'Guidelines'
+  'OoD rUFF' -> 'Woodruff'
+  'reasor' -> 'reason'
+  'asitis' -> 'as it is'
+  'INTRODUCTIO' -> 'INTRODUCTION'
+  'Iog' -> 'log'
+  'Iatest' -> 'latest'
+  'ofthis' -> 'of this'
+  'handbookcodesnc' -> 'handbookcode.snc'
+  'DOMI' -> 'DOM'
+  'Fule' -> 'rule'
+  'tWo' -> 'two'
+  '1s ' -> 'is '
+  'Cor ' -> 'or '
+  'Car ' -> 'can '
+  'Complexl' -> 'Complex'
+  'recursior' -> 'recursion'
+  'Whatis' -> 'What is'
+  ' 0r ' -> ' or '
+  ' 01 ' -> ' of '
+  ' O1 ' -> ' of '
+  ' Oh ' -> ' on '
+  ' ON ' -> ' on '
+  'Commor ' -> 'common '
+  'COmmOH ' -> 'common '
+  ' i it' -> ' it'
+  '2 ' -> 'a '
+  ' f ' -> ' of '
+  ' ar ' -> ' an '
+  ' SO ' -> ' so '
+  ' Won't ' -> ' won't '
+  ' Can't ' -> ' can't '
+  ' Can ' -> ' can '
+  ' Was ' -> ' was '
+  ' i ' -> ' '
+  ' i
+' -> '
+'
+  ' 1hrs' -> ''
+  ' 1 hrs' -> ''
+  ' 1hrs ' -> ''
+  ' 1 hr5' -> ''
+  '1 6r5' -> ''
+  ' 1 6r5' -> ''

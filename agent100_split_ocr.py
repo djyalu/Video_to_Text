@@ -79,11 +79,11 @@ def clean_ocr_text(text):
     cleaned = []
     prev_blank = False
     for line in lines:
-        cl = line.rstrip()
+        cl = line.rstrip()  # Only strip trailing, preserve leading (indentation)
         # Apply noise patterns
         skip = False
         for p in NOISE_PATTERNS:
-            if re.match(p, cl, re.IGNORECASE):
+            if re.match(p, cl.strip(), re.IGNORECASE):
                 skip = True
                 break
         if skip:
@@ -98,50 +98,91 @@ def clean_ocr_text(text):
                 cleaned.append('')
                 prev_blank = True
         else:
-            cleaned.append(stripped)
+            cleaned.append(cl)  # Keep original indentation
             prev_blank = False
     return '\n'.join(cleaned)
 
 
 def is_code_line(line):
     """Determine if a single line is source code (strict detection).
-    Requires syntactic patterns, not just keyword presence in prose.
+    Matches syntactic code patterns common in JavaScript/ServiceNow scripts.
     """
     stripped = line.strip()
     if not stripped:
         return False
     # Definite code patterns (syntactic)
     code_patterns = [
-        r'^var\s+\w+\s*=',            # var x = ...
-        r'^let\s+\w+\s*=',            # let x = ...
-        r'^const\s+\w+\s*=',          # const x = ...
-        r'^function\s+\w+\s*\(',      # function name(...
-        r'^if\s*\(.+\)\s*\{',         # if (...) {
-        r'^\}\s*else\s*(if)?\s*',      # } else ...
-        r'^while\s*\(.+\)\s*\{',      # while (...) {
-        r'^for\s*\(.+\)\s*\{',        # for (...) {
-        r'^return\s+',                # return ...
-        r'^throw\s+new\s+',           # throw new ...
-        r'\w+\.\w+\(.*\);?\s*$',     # obj.method(...);
-        r'^\s*[\{\}]\s*$',            # { or } alone
-        r'^\s*\);?\s*$',              # ) or ); alone
-        r'//.*$',                     # // comment at start
-        r'^/\*',                      # /* comment
-        r'^\*/',                      # */ comment end
-        r'\w+\s*=\s*new\s+\w+',      # x = new Class
-        r'\w+\.addQuery\(',           # .addQuery(
-        r'\w+\.addEncodedQuery\(',    # .addEncodedQuery(
-        r'\w+\.setValue\(',           # .setValue(
-        r'\w+\.getValue\(',           # .getValue(
-        r'\w+\.query\(\)',            # .query()
-        r'\w+\.next\(\)',             # .next()
-        r'\w+\.hasNext\(\)',          # .hasNext()
-        r'gs\.\w+\(',                 # gs.log(, gs.info(
-        r'current\.\w+',              # current.field
+        # Variable declarations
+        r'^var\s+\w+\s*=',
+        r'^let\s+\w+\s*=',
+        r'^const\s+\w+\s*=',
+        # Function definitions
+        r'^function\s+\w+\s*\(',
+        r'^\w+\s*:\s*function',
+        r'=\s*function\s*\(',
+        # Control flow
+        r'^if\s*\(.+\)\s*\{?',
+        r'^\}\s*else\s*(if)?\s*',
+        r'^while\s*\(.+\)\s*\{?',
+        r'^for\s*\(.+\)\s*\{?',
+        r'^switch\s*\(',
+        r'^case\s+',
+        r'^try\s*\{',
+        r'^catch\s*\(',
+        # Statements
+        r'^return\s+',
+        r'^return;',
+        r'^throw\s+new\s+',
+        r'^break;',
+        r'^continue;',
+        # Object/method calls
+        r'\w+\.\w+\(.*\);?\s*$',
+        r'^\w+\(.*\);\s*$',        # standalone fn call: alert(...);
+        r'^\w+\([^)]*$',           # fn call start: alert(
+        # Braces/semicolons
+        r'^\s*[\{\}]\s*$',
+        r'^\s*\);?\s*$',
+        r';\s*$',                   # line ending with semicolon
+        # Comments
+        r'^\s*//',
+        r'^\s*/\*',
+        r'^\s*\*',                  # JSDoc continuation
+        r'^\s*\*/',
+        # ServiceNow specific
+        r'new\s+GlideRecord',
+        r'\w+\.addQuery\(',
+        r'\w+\.addEncodedQuery\(',
+        r'\w+\.setValue\(',
+        r'\w+\.getValue\(',
+        r'\w+\.query\(',
+        r'\w+\.next\(',
+        r'\w+\.hasNext\(',
+        r'\w+\.insert\(',
+        r'\w+\.update\(',
+        r'\w+\.deleteRecord\(',
+        r'gs\.\w+\(',
+        r'current\.\w+',
+        r'previous\.\w+',
+        # Operators and assignments common in code
+        r'\w+\s*\+=',              # x +=
+        r'\w+\s*-=',
+        r'\w+\s*===',
+        r'\w+\s*!==',
+        # String concatenation with +
+        r"['\"].+['\"]\s*\+",     # 'str' +
+        r"\+\s*['\"].+['\"]",     # + 'str'
+        # prototype / constructor
+        r'prototype',
+        r'Object\.extend',
+        r'console\.',
+        r'JSON\.',
     ]
     for p in code_patterns:
         if re.search(p, stripped):
             return True
+    # Also: if line has significant leading whitespace (4+ spaces or tab) = likely code
+    if line.startswith('    ') or line.startswith('\t'):
+        return True
     return False
 
 
@@ -172,19 +213,27 @@ def split_prose_and_code(text):
     
     for i, line in enumerate(lines):
         if labels[i] != current_type and current_lines:
-            blocks.append({
-                "type": current_type,
-                "text": '\n'.join(current_lines)
-            })
+            if current_type == 'code':
+                # Code: preserve original indentation
+                blocks.append({
+                    "type": "code",
+                    "text": '\n'.join(current_lines)
+                })
+            else:
+                # Prose: strip leading whitespace
+                blocks.append({
+                    "type": "prose",
+                    "text": '\n'.join(l.strip() for l in current_lines)
+                })
             current_lines = []
             current_type = labels[i]
         current_lines.append(line)
     
     if current_lines:
-        blocks.append({
-            "type": current_type,
-            "text": '\n'.join(current_lines)
-        })
+        if current_type == 'code':
+            blocks.append({"type": "code", "text": '\n'.join(current_lines)})
+        else:
+            blocks.append({"type": "prose", "text": '\n'.join(l.strip() for l in current_lines)})
     
     return blocks
 

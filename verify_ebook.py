@@ -1,38 +1,30 @@
-import re, sys, os
+import re, sys
 sys.stdout.reconfigure(encoding='utf-8')
 
 html = open('ServiceNow_Handbook_Premium_Ebook.html', 'r', encoding='utf-8').read()
 
-print(f"File: {os.path.getsize('ServiceNow_Handbook_Premium_Ebook.html')/1024/1024:.1f} MB")
-print(f"Pages: {len(re.findall(r'<article class=.page-container.', html))}")
-
-# Font check
-print(f"\nPretendard CDN: {'pretendard' in html}")
-print(f"Pretendard font-family: {'Pretendard' in html}")
-
-# Page 11 paragraph verification
-print("\n=== P11 Paragraph Structure ===")
-m = re.search(r'id="page-11".*?<div class="content-body">(.*?)</article>', html, re.DOTALL)
+# P13 code verification
+m = re.search(r'id="page-13".*?</article>', html, re.DOTALL)
 if m:
-    content = m.group(1)
-    en_paras = re.findall(r'<p class="en">(.*?)</p>', content, re.DOTALL)
-    ko_paras = re.findall(r'<p class="ko">(.*?)</p>', content, re.DOTALL)
-    print(f"  EN <p> tags: {len(en_paras)}")
-    for i, p in enumerate(en_paras[:4]):
-        print(f"    EN[{i}]: {p.strip()[:100]}...")
-    print(f"  KO <p> tags: {len(ko_paras)}")
-    for i, p in enumerate(ko_paras[:4]):
-        print(f"    KO[{i}]: {p.strip()[:100]}...")
+    content = m.group(0)
+    code_count = content.count('class="code-box"')
+    print(f'P13 code-boxes: {code_count}')
+    codes = re.findall(r'<code>(.*?)</code>', content, re.DOTALL)
+    for i, cc in enumerate(codes):
+        print(f'  Code[{i}]:')
+        for line in cc.split('\n')[:5]:
+            print(f'    | {line}')
 
-# Page 3
-print("\n=== P3 ===")
-m = re.search(r'id="page-3".*?<div class="content-body">(.*?)</article>', html, re.DOTALL)
+# Overall stats
+total_code_boxes = html.count('class="code-box"')
+print(f'\nTotal code boxes in ebook: {total_code_boxes}')
+
+# Check P14
+m = re.search(r'id="page-14".*?</article>', html, re.DOTALL)
 if m:
-    content = m.group(1)
-    en_paras = re.findall(r'<p class="en">(.*?)</p>', content, re.DOTALL)
-    ko_paras = re.findall(r'<p class="ko">(.*?)</p>', content, re.DOTALL)
-    print(f"  EN <p>: {len(en_paras)}, KO <p>: {len(ko_paras)}")
-    if en_paras:
-        print(f"    EN[0]: {en_paras[0].strip()[:120]}...")
-    if len(en_paras)>1:
-        print(f"    EN[1]: {en_paras[1].strip()[:120]}...")
+    content = m.group(0)
+    code_box_count = content.count('code-box')
+    print(f'\nP14 code-boxes: {code_box_count}')
+    codes = re.findall(r'<code>(.*?)</code>', content, re.DOTALL)
+    for i, cc in enumerate(codes):
+        print(f'  Code[{i}] ({len(cc)}c): {cc[:100]}...')

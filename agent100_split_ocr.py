@@ -73,6 +73,45 @@ NOISE_PATTERNS = [
 ]
 
 
+def fix_ocr_before_translate(text):
+    """번역 전 OCR 오타 교정. 영문 텍스트의 오타를 미리 수정하여 번역 품질 향상."""
+    result = text
+    # Common OCR typos
+    typo_map = {
+        "ServiceN ow": "ServiceNow",
+        "Glide Record": "GlideRecord",
+        "GlideR ecord": "GlideRecord",
+        "Java Script": "JavaScript",
+        "getValueC": "getValue(",
+        "funetion": "function",
+        "seript": "script",
+        "rorever": "forever",
+        "shayta": "Shayla",
+        " tl1e ": " the ",
+        " tl1at ": " that ",
+        " witl1 ": " with ",
+        " wl1ich ": " which ",
+        " eacl1 ": " each ",
+        "lt's": "It's",
+        "lt is": "It is",
+        "iocument": "document",
+        "Jocument": "document",
+        "jocument": "document",
+        "recoras": "records",
+        "datahase": "database",
+    }
+    for wrong, right in typo_map.items():
+        result = result.replace(wrong, right)
+    # Regex-based fixes
+    result = re.sub(r'\bservicenow\b', 'ServiceNow', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bgliderecord\b', 'GlideRecord', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bjavascript\b', 'JavaScript', result, flags=re.IGNORECASE)
+    # Remove OCR symbol artifacts
+    result = result.replace('¢', 'c').replace('®', '').replace('™', '')
+    result = result.replace('©', 'c').replace('§', 's')
+    return result
+
+
 def clean_ocr_text(text):
     """Clean OCR noise from text while preserving paragraph structure."""
     lines = text.split('\n')
@@ -351,17 +390,19 @@ def worker_agent(page_idx):
         en_paragraphs = [p.strip() for p in en_full.split('\n\n') if p.strip()]
         ko_paragraphs = []
         
-        # Translate paragraph by paragraph
+        # Translate paragraph by paragraph (with OCR fix before translation)
         for para in en_paragraphs:
             joined = smart_join_lines(para)
-            ko_para = translate_text(joined)
+            # Fix OCR typos BEFORE translation for better quality
+            fixed = fix_ocr_before_translate(joined)
+            ko_para = translate_text(fixed)
             if ko_para:
                 ko_paragraphs.append(ko_para)
         ko_full = '\n\n'.join(ko_paragraphs)
         
-        # Format EN lines within paragraphs
+        # Format EN lines within paragraphs (with OCR fix)
         en_formatted = '\n\n'.join(
-            smart_join_lines(p)
+            fix_ocr_before_translate(smart_join_lines(p))
             for p in en_paragraphs
         )
         

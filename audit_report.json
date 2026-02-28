@@ -1,0 +1,16 @@
+{
+  "24": {
+    "issues": [
+      "Source code appears mixed in paragraph text."
+    ],
+    "en_sample": "GETTING AND SETTING FIELD VALUES: Use getter (.getValue()) and setter (.setValue()) when working with GlideRecord objects. Avoid direct notation like ...",
+    "ko_sample": "필드 값 읽기 및 설정: GlideRecord 사용 시 반드시 `.getValue()`와 `.setValue()`를 사용하십시오. `grInc.field_name`처럼 직접 접근하면 GlideElement 객체를 참조하게 되어 예상치 못한 부작용(PBR)이 발생할 수 ..."
+  },
+  "181": {
+    "issues": [
+      "Missing Korean translation."
+    ],
+    "en_sample": "Ubrary P2",
+    "ko_sample": ""
+  }
+}

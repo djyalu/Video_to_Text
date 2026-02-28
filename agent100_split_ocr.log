@@ -1,0 +1,1425 @@
+2026-02-28 16:48:06,329 [ERROR] [Agent 001] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,331 [ERROR] [Agent 002] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,333 [ERROR] [Agent 003] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,334 [ERROR] [Agent 004] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,334 [ERROR] [Agent 005] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,336 [ERROR] [Agent 006] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,336 [ERROR] [Agent 007] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,337 [ERROR] [Agent 008] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,338 [ERROR] [Agent 009] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,340 [ERROR] [Agent 010] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,340 [ERROR] [Agent 011] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,341 [ERROR] [Agent 012] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,341 [ERROR] [Agent 013] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,342 [ERROR] [Agent 014] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,342 [ERROR] [Agent 015] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,343 [ERROR] [Agent 016] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,343 [ERROR] [Agent 017] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,344 [ERROR] [Agent 019] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,344 [ERROR] [Agent 020] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,344 [ERROR] [Agent 018] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,344 [ERROR] [Agent 021] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,345 [ERROR] [Agent 022] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,345 [ERROR] [Agent 023] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,345 [ERROR] [Agent 025] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,345 [ERROR] [Agent 024] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,345 [ERROR] [Agent 026] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,347 [ERROR] [Agent 027] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,347 [ERROR] [Agent 028] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,347 [ERROR] [Agent 029] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,347 [ERROR] [Agent 030] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,347 [ERROR] [Agent 031] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,347 [ERROR] [Agent 032] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,348 [ERROR] [Agent 033] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,348 [ERROR] [Agent 034] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,348 [ERROR] [Agent 035] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,349 [ERROR] [Agent 038] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,349 [ERROR] [Agent 036] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,349 [ERROR] [Agent 037] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,350 [ERROR] [Agent 039] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,350 [ERROR] [Agent 040] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,350 [ERROR] [Agent 041] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,351 [ERROR] [Agent 042] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,351 [ERROR] [Agent 044] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,352 [ERROR] [Agent 045] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,352 [ERROR] [Agent 043] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,352 [ERROR] [Agent 046] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,352 [ERROR] [Agent 047] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,352 [ERROR] [Agent 049] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,353 [ERROR] [Agent 048] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,354 [ERROR] [Agent 050] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,354 [ERROR] [Agent 051] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,354 [ERROR] [Agent 052] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,354 [ERROR] [Agent 053] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,355 [ERROR] [Agent 054] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,355 [ERROR] [Agent 055] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,355 [ERROR] [Agent 056] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,356 [ERROR] [Agent 059] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,356 [ERROR] [Agent 058] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,356 [ERROR] [Agent 057] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,357 [ERROR] [Agent 060] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,357 [ERROR] [Agent 061] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,357 [ERROR] [Agent 062] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,357 [ERROR] [Agent 063] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,358 [ERROR] [Agent 064] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,358 [ERROR] [Agent 066] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,358 [ERROR] [Agent 067] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,358 [ERROR] [Agent 065] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,358 [ERROR] [Agent 068] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,359 [ERROR] [Agent 069] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,359 [ERROR] [Agent 070] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,359 [ERROR] [Agent 071] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,359 [ERROR] [Agent 072] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,359 [ERROR] [Agent 073] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,359 [ERROR] [Agent 074] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,359 [ERROR] [Agent 076] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,360 [ERROR] [Agent 075] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,360 [ERROR] [Agent 077] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,360 [ERROR] [Agent 078] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,360 [ERROR] [Agent 079] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,360 [ERROR] [Agent 080] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,360 [ERROR] [Agent 081] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,361 [ERROR] [Agent 082] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,361 [ERROR] [Agent 084] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,361 [ERROR] [Agent 083] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,361 [ERROR] [Agent 085] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,361 [ERROR] [Agent 086] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,362 [ERROR] [Agent 087] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,362 [ERROR] [Agent 088] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,363 [ERROR] [Agent 089] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,363 [ERROR] [Agent 090] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,363 [ERROR] [Agent 091] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,363 [ERROR] [Agent 092] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,363 [ERROR] [Agent 093] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,363 [ERROR] [Agent 094] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,363 [ERROR] [Agent 095] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,363 [ERROR] [Agent 096] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,364 [ERROR] [Agent 098] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,364 [ERROR] [Agent 099] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,364 [ERROR] [Agent 100] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,364 [ERROR] [Agent 097] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,364 [ERROR] [Agent 101] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,364 [ERROR] [Agent 102] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,364 [ERROR] [Agent 103] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,366 [ERROR] [Agent 105] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,366 [ERROR] [Agent 104] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,366 [ERROR] [Agent 107] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,366 [ERROR] [Agent 108] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,366 [ERROR] [Agent 106] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,366 [ERROR] [Agent 109] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,367 [ERROR] [Agent 110] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,367 [ERROR] [Agent 112] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,367 [ERROR] [Agent 113] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,367 [ERROR] [Agent 114] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,367 [ERROR] [Agent 111] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,368 [ERROR] [Agent 116] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,368 [ERROR] [Agent 115] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,368 [ERROR] [Agent 117] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,369 [ERROR] [Agent 118] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,369 [ERROR] [Agent 119] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,369 [ERROR] [Agent 120] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,370 [ERROR] [Agent 121] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,370 [ERROR] [Agent 122] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,370 [ERROR] [Agent 124] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,370 [ERROR] [Agent 123] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,370 [ERROR] [Agent 125] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,371 [ERROR] [Agent 127] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,371 [ERROR] [Agent 126] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,371 [ERROR] [Agent 129] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,371 [ERROR] [Agent 128] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,371 [ERROR] [Agent 131] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,372 [ERROR] [Agent 130] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,372 [ERROR] [Agent 132] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,373 [ERROR] [Agent 133] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,373 [ERROR] [Agent 134] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,373 [ERROR] [Agent 135] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,373 [ERROR] [Agent 136] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,373 [ERROR] [Agent 137] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,373 [ERROR] [Agent 138] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,373 [ERROR] [Agent 139] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,374 [ERROR] [Agent 140] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,374 [ERROR] [Agent 141] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,374 [ERROR] [Agent 142] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,374 [ERROR] [Agent 144] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,375 [ERROR] [Agent 145] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,375 [ERROR] [Agent 143] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,375 [ERROR] [Agent 146] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,375 [ERROR] [Agent 147] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,376 [ERROR] [Agent 148] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,376 [ERROR] [Agent 149] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,376 [ERROR] [Agent 150] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,376 [ERROR] [Agent 151] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,377 [ERROR] [Agent 152] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,377 [ERROR] [Agent 153] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,377 [ERROR] [Agent 154] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,377 [ERROR] [Agent 155] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,377 [ERROR] [Agent 156] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,378 [ERROR] [Agent 157] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,378 [ERROR] [Agent 158] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,378 [ERROR] [Agent 159] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,378 [ERROR] [Agent 161] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,379 [ERROR] [Agent 162] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,379 [ERROR] [Agent 164] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,379 [ERROR] [Agent 163] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,379 [ERROR] [Agent 165] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,379 [ERROR] [Agent 166] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,380 [ERROR] [Agent 167] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,380 [ERROR] [Agent 168] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,380 [ERROR] [Agent 169] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,380 [ERROR] [Agent 170] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,380 [ERROR] [Agent 171] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,380 [ERROR] [Agent 172] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,381 [ERROR] [Agent 173] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,381 [ERROR] [Agent 174] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,381 [ERROR] [Agent 175] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,381 [ERROR] [Agent 176] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,381 [ERROR] [Agent 177] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,382 [ERROR] [Agent 178] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,382 [ERROR] [Agent 179] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,382 [ERROR] [Agent 180] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,382 [ERROR] [Agent 181] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,382 [ERROR] [Agent 182] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,383 [ERROR] [Agent 184] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,383 [ERROR] [Agent 183] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,383 [ERROR] [Agent 185] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,383 [ERROR] [Agent 186] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,383 [ERROR] [Agent 187] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,383 [ERROR] [Agent 188] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,384 [ERROR] [Agent 189] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,385 [ERROR] [Agent 191] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,385 [ERROR] [Agent 190] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,385 [ERROR] [Agent 192] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,385 [ERROR] [Agent 194] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,385 [ERROR] [Agent 195] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,385 [ERROR] [Agent 193] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,386 [ERROR] [Agent 196] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,386 [ERROR] [Agent 197] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,386 [ERROR] [Agent 199] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,386 [ERROR] [Agent 198] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,387 [ERROR] [Agent 200] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,387 [ERROR] [Agent 202] Error: No module named 'paddleocr'
+2026-02-28 16:48:06,387 [ERROR] [Agent 204] Error: No module named 'paddleocr'
+2026-02-28 17:04:35,131 [INFO] [Agent 001] Single-column OCR (1226x822)
+2026-02-28 17:04:35,149 [INFO] [Agent 005] Single-column OCR (1226x822)
+2026-02-28 17:04:35,158 [INFO] [Agent 008] 2-column split OCR (1226x822)
+2026-02-28 17:04:35,173 [INFO] [Agent 004] Single-column OCR (1226x822)
+2026-02-28 17:04:35,181 [INFO] [Agent 002] Single-column OCR (1226x822)
+2026-02-28 17:04:35,198 [INFO] [Agent 003] Single-column OCR (1226x822)
+2026-02-28 17:04:35,216 [INFO] [Agent 006] 2-column split OCR (1226x822)
+2026-02-28 17:04:35,243 [INFO] [Agent 007] 2-column split OCR (1226x822)
+2026-02-28 17:04:36,475 [INFO] [Agent 001] Done EN=43c KO=26c Codes=0
+2026-02-28 17:04:36,495 [INFO] [Agent 009] Single-column OCR (1226x822)
+2026-02-28 17:04:37,172 [INFO] [Agent 004] Done EN=85c KO=55c Codes=0
+2026-02-28 17:04:37,177 [INFO] [Agent 010] 2-column split OCR (1226x822)
+2026-02-28 17:04:37,183 [INFO] [Agent 002] Done EN=199c KO=92c Codes=0
+2026-02-28 17:04:37,221 [INFO] [Agent 011] 2-column split OCR (1226x822)
+2026-02-28 17:04:37,253 [INFO] [Agent 007] Done EN=775c KO=382c Codes=0
+2026-02-28 17:04:37,261 [INFO] [Agent 012] Single-column OCR (1226x822)
+2026-02-28 17:04:37,290 [INFO] [Agent 005] Done EN=669c KO=367c Codes=2
+2026-02-28 17:04:37,297 [INFO] [Agent 013] 2-column split OCR (1226x822)
+2026-02-28 17:04:37,408 [INFO] [Agent 003] Done EN=468c KO=267c Codes=1
+2026-02-28 17:04:37,415 [INFO] [Agent 014] 2-column split OCR (1226x822)
+2026-02-28 17:04:37,682 [INFO] [Agent 006] Done EN=668c KO=376c Codes=1
+2026-02-28 17:04:37,737 [INFO] [Agent 008] Done EN=739c KO=375c Codes=2
+2026-02-28 17:04:37,766 [INFO] [Agent 015] 2-column split OCR (1226x822)
+2026-02-28 17:04:37,773 [INFO] [Agent 009] Done EN=78c KO=48c Codes=0
+2026-02-28 17:04:37,809 [INFO] [Agent 016] 2-column split OCR (1226x822)
+2026-02-28 17:04:37,813 [INFO] [Agent 017] 2-column split OCR (1226x822)
+2026-02-28 17:04:38,038 [INFO] [Agent 012] Done EN=20c KO=14c Codes=0
+2026-02-28 17:04:38,113 [INFO] [Agent 018] 2-column split OCR (1226x822)
+2026-02-28 17:04:39,445 [INFO] [Agent 013] Done EN=814c KO=428c Codes=12
+2026-02-28 17:04:39,472 [INFO] [Agent 010] Done EN=1552c KO=839c Codes=1
+2026-02-28 17:04:39,475 [INFO] [Agent 019] 2-column split OCR (1226x822)
+2026-02-28 17:04:39,484 [INFO] [Agent 020] 2-column split OCR (1226x822)
+2026-02-28 17:04:39,752 [INFO] [Agent 014] Done EN=1125c KO=592c Codes=5
+2026-02-28 17:04:39,759 [INFO] [Agent 011] Done EN=1724c KO=1056c Codes=3
+2026-02-28 17:04:39,762 [INFO] [Agent 021] 2-column split OCR (1226x822)
+2026-02-28 17:04:39,767 [INFO] [Agent 022] 2-column split OCR (1226x822)
+2026-02-28 17:04:39,803 [INFO] [Agent 016] Done EN=904c KO=633c Codes=4
+2026-02-28 17:04:39,827 [INFO] [Agent 023] 2-column split OCR (1226x822)
+2026-02-28 17:04:40,357 [INFO] [Agent 015] Done EN=989c KO=593c Codes=6
+2026-02-28 17:04:40,379 [INFO] [Agent 024] 2-column split OCR (1226x822)
+2026-02-28 17:04:40,484 [INFO] [Agent 018] Done EN=814c KO=519c Codes=4
+2026-02-28 17:04:40,494 [INFO] [Agent 017] Done EN=1237c KO=715c Codes=3
+2026-02-28 17:04:40,499 [INFO] [Agent 025] 2-column split OCR (1226x822)
+2026-02-28 17:04:40,507 [INFO] [Agent 026] 2-column split OCR (1226x822)
+2026-02-28 17:04:41,705 [INFO] [Agent 022] Done EN=803c KO=445c Codes=2
+2026-02-28 17:04:41,714 [INFO] [Agent 023] Done EN=1070c KO=633c Codes=4
+2026-02-28 17:04:41,716 [INFO] [Agent 027] 2-column split OCR (1226x822)
+2026-02-28 17:04:41,737 [INFO] [Agent 028] 2-column split OCR (1226x822)
+2026-02-28 17:04:41,969 [INFO] [Agent 019] Done EN=1064c KO=736c Codes=3
+2026-02-28 17:04:41,976 [INFO] [Agent 029] 2-column split OCR (1226x822)
+2026-02-28 17:04:42,026 [INFO] [Agent 021] Done EN=1265c KO=679c Codes=6
+2026-02-28 17:04:42,050 [INFO] [Agent 030] 2-column split OCR (1226x822)
+2026-02-28 17:04:42,355 [INFO] [Agent 024] Done EN=1147c KO=672c Codes=6
+2026-02-28 17:04:42,375 [INFO] [Agent 031] 2-column split OCR (1226x822)
+2026-02-28 17:04:42,393 [INFO] [Agent 020] Done EN=1171c KO=783c Codes=5
+2026-02-28 17:04:42,413 [INFO] [Agent 032] 2-column split OCR (1226x822)
+2026-02-28 17:04:43,064 [INFO] [Agent 025] Done EN=1295c KO=811c Codes=6
+2026-02-28 17:04:43,089 [INFO] [Agent 033] 2-column split OCR (1226x822)
+2026-02-28 17:04:43,554 [INFO] [Agent 026] Done EN=1738c KO=960c Codes=1
+2026-02-28 17:04:43,571 [INFO] [Agent 034] 2-column split OCR (1226x822)
+2026-02-28 17:04:43,706 [INFO] [Agent 027] Done EN=1781c KO=996c Codes=0
+2026-02-28 17:04:43,722 [INFO] [Agent 035] 2-column split OCR (1226x822)
+2026-02-28 17:04:43,903 [INFO] [Agent 028] Done EN=1592c KO=901c Codes=0
+2026-02-28 17:04:43,913 [INFO] [Agent 036] 2-column split OCR (1226x822)
+2026-02-28 17:04:43,927 [INFO] [Agent 029] Done EN=1610c KO=917c Codes=0
+2026-02-28 17:04:43,938 [INFO] [Agent 037] 2-column split OCR (1226x822)
+2026-02-28 17:04:44,495 [INFO] [Agent 031] Done EN=1739c KO=974c Codes=1
+2026-02-28 17:04:44,502 [INFO] [Agent 038] 2-column split OCR (1226x822)
+2026-02-28 17:04:44,622 [INFO] [Agent 030] Done EN=1053c KO=598c Codes=2
+2026-02-28 17:04:44,644 [INFO] [Agent 039] Single-column OCR (1226x822)
+2026-02-28 17:04:45,023 [INFO] [Agent 032] Done EN=1913c KO=971c Codes=0
+2026-02-28 17:04:45,031 [INFO] [Agent 040] 2-column split OCR (1226x822)
+2026-02-28 17:04:45,852 [INFO] [Agent 033] Done EN=1712c KO=919c Codes=3
+2026-02-28 17:04:45,877 [INFO] [Agent 041] 2-column split OCR (1226x822)
+2026-02-28 17:04:45,890 [INFO] [Agent 039] Done EN=288c KO=170c Codes=0
+2026-02-28 17:04:45,907 [INFO] [Agent 042] 2-column split OCR (1226x822)
+2026-02-28 17:04:45,935 [INFO] [Agent 034] Done EN=1583c KO=881c Codes=4
+2026-02-28 17:04:45,940 [INFO] [Agent 036] Done EN=1437c KO=758c Codes=0
+2026-02-28 17:04:45,947 [INFO] [Agent 043] 2-column split OCR (1226x822)
+2026-02-28 17:04:45,957 [INFO] [Agent 044] 2-column split OCR (1226x822)
+2026-02-28 17:04:46,247 [INFO] [Agent 037] Done EN=1768c KO=1029c Codes=1
+2026-02-28 17:04:46,254 [INFO] [Agent 045] 2-column split OCR (1226x822)
+2026-02-28 17:04:46,537 [INFO] [Agent 035] Done EN=1463c KO=831c Codes=3
+2026-02-28 17:04:46,541 [INFO] [Agent 038] Done EN=1285c KO=787c Codes=1
+2026-02-28 17:04:46,564 [INFO] [Agent 046] 2-column split OCR (1226x822)
+2026-02-28 17:04:46,577 [INFO] [Agent 047] 2-column split OCR (1226x822)
+2026-02-28 17:04:47,128 [INFO] [Agent 040] Done EN=1029c KO=552c Codes=0
+2026-02-28 17:04:47,134 [INFO] [Agent 048] Single-column OCR (1226x822)
+2026-02-28 17:04:47,772 [INFO] [Agent 044] Done EN=1083c KO=626c Codes=1
+2026-02-28 17:04:47,780 [INFO] [Agent 042] Done EN=1118c KO=608c Codes=2
+2026-02-28 17:04:47,782 [INFO] [Agent 043] Done EN=1343c KO=773c Codes=1
+2026-02-28 17:04:47,804 [INFO] [Agent 049] 2-column split OCR (1226x822)
+2026-02-28 17:04:47,809 [INFO] [Agent 051] Single-column OCR (1226x822)
+2026-02-28 17:04:47,816 [INFO] [Agent 050] 2-column split OCR (1226x822)
+2026-02-28 17:04:47,939 [INFO] [Agent 041] Done EN=1438c KO=720c Codes=6
+2026-02-28 17:04:47,944 [INFO] [Agent 052] Single-column OCR (1226x822)
+2026-02-28 17:04:48,758 [INFO] [Agent 046] Done EN=1572c KO=876c Codes=6
+2026-02-28 17:04:48,808 [INFO] [Agent 053] 2-column split OCR (1226x822)
+2026-02-28 17:04:49,608 [INFO] [Agent 052] Done EN=77c KO=42c Codes=0
+2026-02-28 17:04:49,629 [INFO] [Agent 054] 2-column split OCR (1226x822)
+2026-02-28 17:04:49,804 [INFO] [Agent 045] Done EN=830c KO=566c Codes=6
+2026-02-28 17:04:49,812 [INFO] [Agent 055] 2-column split OCR (1226x822)
+2026-02-28 17:04:52,130 [INFO] [Agent 054] Done EN=2175c KO=1167c Codes=0
+2026-02-28 17:04:52,153 [INFO] [Agent 056] 2-column split OCR (1226x822)
+2026-02-28 17:04:52,531 [INFO] [Agent 050] Done EN=977c KO=646c Codes=3
+2026-02-28 17:04:52,537 [INFO] [Agent 051] Done EN=70c KO=38c Codes=0
+2026-02-28 17:04:52,540 [INFO] [Agent 057] 2-column split OCR (1226x822)
+2026-02-28 17:04:52,546 [INFO] [Agent 048] Done EN=335c KO=194c Codes=0
+2026-02-28 17:04:52,550 [INFO] [Agent 047] Done EN=1567c KO=815c Codes=5
+2026-02-28 17:04:52,562 [INFO] [Agent 058] 2-column split OCR (1226x822)
+2026-02-28 17:04:52,573 [INFO] [Agent 060] 2-column split OCR (1226x822)
+2026-02-28 17:04:52,587 [INFO] [Agent 059] 2-column split OCR (1226x822)
+2026-02-28 17:04:52,593 [INFO] [Agent 049] Done EN=1335c KO=813c Codes=2
+2026-02-28 17:04:52,611 [INFO] [Agent 061] Single-column OCR (1226x822)
+2026-02-28 17:04:52,676 [INFO] [Agent 053] Done EN=1875c KO=1130c Codes=1
+2026-02-28 17:04:52,687 [INFO] [Agent 062] 2-column split OCR (1226x822)
+2026-02-28 17:04:52,745 [INFO] [Agent 055] Done EN=1314c KO=709c Codes=4
+2026-02-28 17:04:52,759 [INFO] [Agent 063] 2-column split OCR (1226x822)
+2026-02-28 17:04:54,297 [INFO] [Agent 056] Done EN=1054c KO=566c Codes=8
+2026-02-28 17:04:54,316 [INFO] [Agent 064] 2-column split OCR (1226x822)
+2026-02-28 17:04:54,530 [INFO] [Agent 061] Done EN=356c KO=229c Codes=0
+2026-02-28 17:04:54,538 [INFO] [Agent 065] 2-column split OCR (1226x822)
+2026-02-28 17:04:54,561 [INFO] [Agent 059] Done EN=859c KO=574c Codes=7
+2026-02-28 17:04:54,573 [INFO] [Agent 066] 2-column split OCR (1226x822)
+2026-02-28 17:04:54,619 [INFO] [Agent 062] Done EN=1746c KO=950c Codes=0
+2026-02-28 17:04:54,628 [INFO] [Agent 067] 2-column split OCR (1226x822)
+2026-02-28 17:04:55,124 [INFO] [Agent 057] Done EN=430c KO=284c Codes=4
+2026-02-28 17:04:55,142 [INFO] [Agent 068] 2-column split OCR (1226x822)
+2026-02-28 17:04:55,247 [INFO] [Agent 060] Done EN=1515c KO=848c Codes=3
+2026-02-28 17:04:55,257 [INFO] [Agent 069] 2-column split OCR (1226x822)
+2026-02-28 17:04:55,481 [INFO] [Agent 063] Done EN=1524c KO=835c Codes=3
+2026-02-28 17:04:55,487 [INFO] [Agent 070] Single-column OCR (1226x822)
+2026-02-28 17:04:55,526 [INFO] [Agent 058] Done EN=1622c KO=929c Codes=2
+2026-02-28 17:04:55,539 [INFO] [Agent 071] 2-column split OCR (1226x822)
+2026-02-28 17:04:56,417 [INFO] [Agent 066] Done EN=1209c KO=789c Codes=2
+2026-02-28 17:04:56,424 [INFO] [Agent 072] 2-column split OCR (1226x822)
+2026-02-28 17:04:56,591 [INFO] [Agent 064] Done EN=1404c KO=719c Codes=0
+2026-02-28 17:04:56,598 [INFO] [Agent 073] 2-column split OCR (1226x822)
+2026-02-28 17:04:56,664 [INFO] [Agent 070] Done EN=147c KO=125c Codes=3
+2026-02-28 17:04:56,672 [INFO] [Agent 074] 2-column split OCR (1226x822)
+2026-02-28 17:04:56,810 [INFO] [Agent 067] Done EN=1521c KO=824c Codes=1
+2026-02-28 17:04:56,826 [INFO] [Agent 075] 2-column split OCR (1226x822)
+2026-02-28 17:04:57,413 [INFO] [Agent 065] Done EN=1905c KO=1003c Codes=0
+2026-02-28 17:04:57,419 [INFO] [Agent 076] Single-column OCR (1226x822)
+2026-02-28 17:04:57,587 [INFO] [Agent 068] Done EN=1643c KO=843c Codes=1
+2026-02-28 17:04:57,596 [INFO] [Agent 077] 2-column split OCR (1226x822)
+2026-02-28 17:04:57,854 [INFO] [Agent 071] Done EN=1569c KO=825c Codes=1
+2026-02-28 17:04:57,861 [INFO] [Agent 078] 2-column split OCR (1226x822)
+2026-02-28 17:04:57,959 [INFO] [Agent 069] Done EN=1670c KO=852c Codes=1
+2026-02-28 17:04:57,967 [INFO] [Agent 079] 2-column split OCR (1226x822)
+2026-02-28 17:04:58,422 [INFO] [Agent 073] Done EN=1311c KO=776c Codes=0
+2026-02-28 17:04:58,431 [INFO] [Agent 080] 2-column split OCR (1226x822)
+2026-02-28 17:04:58,485 [INFO] [Agent 072] Done EN=1805c KO=942c Codes=0
+2026-02-28 17:04:58,496 [INFO] [Agent 081] 2-column split OCR (1226x822)
+2026-02-28 17:04:58,929 [INFO] [Agent 076] Done EN=562c KO=305c Codes=0
+2026-02-28 17:04:58,936 [INFO] [Agent 082] 2-column split OCR (1226x822)
+2026-02-28 17:04:59,012 [INFO] [Agent 075] Done EN=1276c KO=808c Codes=3
+2026-02-28 17:04:59,021 [INFO] [Agent 083] 2-column split OCR (1226x822)
+2026-02-28 17:04:59,160 [INFO] [Agent 074] Done EN=924c KO=555c Codes=4
+2026-02-28 17:04:59,168 [INFO] [Agent 084] 2-column split OCR (1226x822)
+2026-02-28 17:04:59,654 [INFO] [Agent 077] Done EN=1373c KO=731c Codes=3
+2026-02-28 17:04:59,662 [INFO] [Agent 085] 2-column split OCR (1226x822)
+2026-02-28 17:05:00,129 [INFO] [Agent 079] Done EN=1402c KO=868c Codes=5
+2026-02-28 17:05:00,138 [INFO] [Agent 086] 2-column split OCR (1226x822)
+2026-02-28 17:05:00,260 [INFO] [Agent 078] Done EN=1809c KO=962c Codes=2
+2026-02-28 17:05:00,277 [INFO] [Agent 087] 2-column split OCR (1226x822)
+2026-02-28 17:05:00,556 [INFO] [Agent 081] Done EN=1178c KO=639c Codes=8
+2026-02-28 17:05:00,563 [INFO] [Agent 088] 2-column split OCR (1226x822)
+2026-02-28 17:05:00,924 [INFO] [Agent 080] Done EN=1793c KO=1140c Codes=3
+2026-02-28 17:05:00,931 [INFO] [Agent 089] 2-column split OCR (1226x822)
+2026-02-28 17:05:01,313 [INFO] [Agent 082] Done EN=1067c KO=589c Codes=0
+2026-02-28 17:05:01,322 [INFO] [Agent 090] 2-column split OCR (1226x822)
+2026-02-28 17:05:01,502 [INFO] [Agent 084] Done EN=1211c KO=735c Codes=5
+2026-02-28 17:05:01,510 [INFO] [Agent 091] 2-column split OCR (1226x822)
+2026-02-28 17:05:01,511 [INFO] [Agent 083] Done EN=710c KO=459c Codes=5
+2026-02-28 17:05:01,520 [INFO] [Agent 092] 2-column split OCR (1226x822)
+2026-02-28 17:05:02,028 [INFO] [Agent 088] Done EN=750c KO=515c Codes=3
+2026-02-28 17:05:02,035 [INFO] [Agent 093] 2-column split OCR (1226x822)
+2026-02-28 17:05:02,409 [INFO] [Agent 085] Done EN=935c KO=527c Codes=7
+2026-02-28 17:05:02,418 [INFO] [Agent 094] 2-column split OCR (1226x822)
+2026-02-28 17:05:02,421 [INFO] [Agent 087] Done EN=1338c KO=894c Codes=3
+2026-02-28 17:05:02,428 [INFO] [Agent 095] 2-column split OCR (1226x822)
+2026-02-28 17:05:02,547 [INFO] [Agent 086] Done EN=1316c KO=743c Codes=2
+2026-02-28 17:05:02,554 [INFO] [Agent 096] 2-column split OCR (1226x822)
+2026-02-28 17:05:03,128 [INFO] [Agent 090] Done EN=1101c KO=703c Codes=2
+2026-02-28 17:05:03,135 [INFO] [Agent 097] 2-column split OCR (1226x822)
+2026-02-28 17:05:03,479 [INFO] [Agent 089] Done EN=918c KO=537c Codes=0
+2026-02-28 17:05:03,488 [INFO] [Agent 098] 2-column split OCR (1226x822)
+2026-02-28 17:05:03,910 [INFO] [Agent 092] Done EN=725c KO=432c Codes=7
+2026-02-28 17:05:03,918 [INFO] [Agent 099] 2-column split OCR (1226x822)
+2026-02-28 17:05:04,336 [INFO] [Agent 095] Done EN=1033c KO=619c Codes=5
+2026-02-28 17:05:04,344 [INFO] [Agent 100] 2-column split OCR (1226x822)
+2026-02-28 17:05:04,379 [INFO] [Agent 094] Done EN=865c KO=529c Codes=6
+2026-02-28 17:05:04,387 [INFO] [Agent 101] 2-column split OCR (1226x822)
+2026-02-28 17:05:04,502 [INFO] [Agent 093] Done EN=1274c KO=738c Codes=4
+2026-02-28 17:05:04,511 [INFO] [Agent 102] 2-column split OCR (1226x822)
+2026-02-28 17:05:04,550 [INFO] [Agent 091] Done EN=1119c KO=613c Codes=4
+2026-02-28 17:05:04,559 [INFO] [Agent 103] 2-column split OCR (1226x822)
+2026-02-28 17:05:04,636 [INFO] [Agent 096] Done EN=933c KO=525c Codes=6
+2026-02-28 17:05:04,647 [INFO] [Agent 104] 2-column split OCR (1226x822)
+2026-02-28 17:05:05,162 [INFO] [Agent 097] Done EN=1470c KO=789c Codes=1
+2026-02-28 17:05:05,170 [INFO] [Agent 105] 2-column split OCR (1226x822)
+2026-02-28 17:05:05,330 [INFO] [Agent 098] Done EN=580c KO=398c Codes=8
+2026-02-28 17:05:05,340 [INFO] [Agent 106] 2-column split OCR (1226x822)
+2026-02-28 17:05:06,395 [INFO] [Agent 099] Done EN=1855c KO=1108c Codes=0
+2026-02-28 17:05:06,401 [INFO] [Agent 107] 2-column split OCR (1226x822)
+2026-02-28 17:05:06,780 [INFO] [Agent 102] Done EN=1710c KO=1007c Codes=0
+2026-02-28 17:05:06,831 [INFO] [Agent 108] 2-column split OCR (1226x822)
+2026-02-28 17:05:07,082 [INFO] [Agent 101] Done EN=1081c KO=623c Codes=7
+2026-02-28 17:05:07,105 [INFO] [Agent 109] 2-column split OCR (1226x822)
+2026-02-28 17:05:07,137 [INFO] [Agent 100] Done EN=1517c KO=874c Codes=2
+2026-02-28 17:05:07,156 [INFO] [Agent 110] 2-column split OCR (1226x822)
+2026-02-28 17:05:07,171 [INFO] [Agent 103] Done EN=2164c KO=1153c Codes=0
+2026-02-28 17:05:07,194 [INFO] [Agent 111] 2-column split OCR (1226x822)
+2026-02-28 17:05:07,552 [INFO] [Agent 106] Done EN=1503c KO=847c Codes=4
+2026-02-28 17:05:07,578 [INFO] [Agent 112] 2-column split OCR (1226x822)
+2026-02-28 17:05:08,103 [INFO] [Agent 104] Done EN=1798c KO=1088c Codes=0
+2026-02-28 17:05:08,134 [INFO] [Agent 105] Done EN=1805c KO=987c Codes=0
+2026-02-28 17:05:08,135 [INFO] [Agent 113] 2-column split OCR (1226x822)
+2026-02-28 17:05:08,158 [INFO] [Agent 114] 2-column split OCR (1226x822)
+2026-02-28 17:05:08,935 [INFO] [Agent 108] Done EN=1064c KO=600c Codes=3
+2026-02-28 17:05:08,963 [INFO] [Agent 115] 2-column split OCR (1226x822)
+2026-02-28 17:05:09,220 [INFO] [Agent 109] Done EN=1251c KO=760c Codes=4
+2026-02-28 17:05:09,247 [INFO] [Agent 116] 2-column split OCR (1226x822)
+2026-02-28 17:05:09,259 [INFO] [Agent 110] Done EN=1430c KO=804c Codes=1
+2026-02-28 17:05:09,271 [INFO] [Agent 117] 2-column split OCR (1226x822)
+2026-02-28 17:05:09,449 [INFO] [Agent 107] Done EN=1281c KO=709c Codes=0
+2026-02-28 17:05:09,475 [INFO] [Agent 118] Single-column OCR (1226x822)
+2026-02-28 17:05:09,637 [INFO] [Agent 111] Done EN=1744c KO=991c Codes=0
+2026-02-28 17:05:09,647 [INFO] [Agent 119] 2-column split OCR (1226x822)
+2026-02-28 17:05:09,792 [INFO] [Agent 113] Done EN=1249c KO=748c Codes=0
+2026-02-28 17:05:09,801 [INFO] [Agent 120] 2-column split OCR (1226x822)
+2026-02-28 17:05:10,097 [INFO] [Agent 112] Done EN=1789c KO=1042c Codes=1
+2026-02-28 17:05:10,123 [INFO] [Agent 121] 2-column split OCR (1226x822)
+2026-02-28 17:05:10,786 [INFO] [Agent 118] Done EN=494c KO=289c Codes=2
+2026-02-28 17:05:10,794 [INFO] [Agent 116] Done EN=1016c KO=600c Codes=1
+2026-02-28 17:05:10,799 [INFO] [Agent 122] 2-column split OCR (1226x822)
+2026-02-28 17:05:10,809 [INFO] [Agent 115] Done EN=1887c KO=1128c Codes=0
+2026-02-28 17:05:10,814 [INFO] [Agent 123] 2-column split OCR (1226x822)
+2026-02-28 17:05:10,818 [INFO] [Agent 124] 2-column split OCR (1226x822)
+2026-02-28 17:05:10,843 [INFO] [Agent 114] Done EN=1688c KO=1032c Codes=0
+2026-02-28 17:05:10,853 [INFO] [Agent 125] Single-column OCR (1226x822)
+2026-02-28 17:05:11,052 [WARNING] [Agent 125] No text extracted
+2026-02-28 17:05:11,059 [INFO] [Agent 126] 2-column split OCR (1226x822)
+2026-02-28 17:05:11,661 [INFO] [Agent 120] Done EN=935c KO=569c Codes=2
+2026-02-28 17:05:11,668 [INFO] [Agent 127] 2-column split OCR (1226x822)
+2026-02-28 17:05:11,772 [INFO] [Agent 119] Done EN=1737c KO=1043c Codes=2
+2026-02-28 17:05:11,779 [INFO] [Agent 128] 2-column split OCR (1226x822)
+2026-02-28 17:05:11,957 [INFO] [Agent 117] Done EN=1377c KO=788c Codes=1
+2026-02-28 17:05:11,968 [INFO] [Agent 129] 2-column split OCR (1226x822)
+2026-02-28 17:05:12,322 [INFO] [Agent 124] Done EN=605c KO=363c Codes=1
+2026-02-28 17:05:12,329 [INFO] [Agent 130] 2-column split OCR (1226x822)
+2026-02-28 17:05:12,342 [INFO] [Agent 121] Done EN=1874c KO=1057c Codes=0
+2026-02-28 17:05:12,369 [INFO] [Agent 131] 2-column split OCR (1226x822)
+2026-02-28 17:05:12,802 [INFO] [Agent 123] Done EN=1393c KO=786c Codes=0
+2026-02-28 17:05:12,808 [INFO] [Agent 132] 2-column split OCR (1226x822)
+2026-02-28 17:05:13,375 [INFO] [Agent 122] Done EN=1785c KO=1012c Codes=1
+2026-02-28 17:05:13,382 [INFO] [Agent 133] 2-column split OCR (1226x822)
+2026-02-28 17:05:13,689 [INFO] [Agent 126] Done EN=1114c KO=598c Codes=4
+2026-02-28 17:05:13,691 [INFO] [Agent 127] Done EN=1285c KO=666c Codes=6
+2026-02-28 17:05:13,700 [INFO] [Agent 135] 2-column split OCR (1226x822)
+2026-02-28 17:05:13,703 [INFO] [Agent 134] 2-column split OCR (1226x822)
+2026-02-28 17:05:14,165 [INFO] [Agent 129] Done EN=1610c KO=1014c Codes=2
+2026-02-28 17:05:14,174 [INFO] [Agent 136] 2-column split OCR (1226x822)
+2026-02-28 17:05:14,339 [INFO] [Agent 130] Done EN=1195c KO=651c Codes=3
+2026-02-28 17:05:14,348 [INFO] [Agent 137] 2-column split OCR (1226x822)
+2026-02-28 17:05:14,651 [INFO] [Agent 131] Done EN=1837c KO=1039c Codes=1
+2026-02-28 17:05:14,658 [INFO] [Agent 138] 2-column split OCR (1226x822)
+2026-02-28 17:05:14,824 [INFO] [Agent 128] Done EN=1772c KO=996c Codes=3
+2026-02-28 17:05:14,832 [INFO] [Agent 139] 2-column split OCR (1226x822)
+2026-02-28 17:05:14,837 [INFO] [Agent 132] Done EN=1931c KO=1080c Codes=0
+2026-02-28 17:05:14,845 [INFO] [Agent 140] 2-column split OCR (1226x822)
+2026-02-28 17:05:15,376 [INFO] [Agent 133] Done EN=883c KO=601c Codes=4
+2026-02-28 17:05:15,387 [INFO] [Agent 141] 2-column split OCR (1226x822)
+2026-02-28 17:05:15,899 [INFO] [Agent 135] Done EN=1086c KO=692c Codes=2
+2026-02-28 17:05:15,911 [INFO] [Agent 142] 2-column split OCR (1226x822)
+2026-02-28 17:05:16,604 [INFO] [Agent 136] Done EN=1959c KO=1141c Codes=1
+2026-02-28 17:05:16,611 [INFO] [Agent 143] 2-column split OCR (1226x822)
+2026-02-28 17:05:16,643 [INFO] [Agent 134] Done EN=1610c KO=915c Codes=4
+2026-02-28 17:05:16,650 [INFO] [Agent 144] 2-column split OCR (1226x822)
+2026-02-28 17:05:16,715 [INFO] [Agent 137] Done EN=1520c KO=840c Codes=1
+2026-02-28 17:05:16,724 [INFO] [Agent 145] 2-column split OCR (1226x822)
+2026-02-28 17:05:16,743 [INFO] [Agent 138] Done EN=1014c KO=521c Codes=9
+2026-02-28 17:05:16,750 [INFO] [Agent 146] 2-column split OCR (1226x822)
+2026-02-28 17:05:16,890 [INFO] [Agent 139] Done EN=1325c KO=740c Codes=4
+2026-02-28 17:05:16,900 [INFO] [Agent 147] 2-column split OCR (1226x822)
+2026-02-28 17:05:17,437 [INFO] [Agent 140] Done EN=1222c KO=676c Codes=3
+2026-02-28 17:05:17,446 [INFO] [Agent 148] 2-column split OCR (1226x822)
+2026-02-28 17:05:17,657 [INFO] [Agent 141] Done EN=515c KO=402c Codes=8
+2026-02-28 17:05:17,666 [INFO] [Agent 149] 2-column split OCR (1226x822)
+2026-02-28 17:05:18,490 [INFO] [Agent 142] Done EN=1883c KO=1024c Codes=1
+2026-02-28 17:05:18,498 [INFO] [Agent 150] 2-column split OCR (1226x822)
+2026-02-28 17:05:18,588 [INFO] [Agent 143] Done EN=738c KO=410c Codes=1
+2026-02-28 17:05:18,597 [INFO] [Agent 151] 2-column split OCR (1226x822)
+2026-02-28 17:05:18,882 [INFO] [Agent 144] Done EN=1815c KO=1060c Codes=0
+2026-02-28 17:05:18,889 [INFO] [Agent 152] 2-column split OCR (1226x822)
+2026-02-28 17:05:18,903 [INFO] [Agent 146] Done EN=1536c KO=920c Codes=0
+2026-02-28 17:05:18,912 [INFO] [Agent 153] 2-column split OCR (1226x822)
+2026-02-28 17:05:19,057 [INFO] [Agent 147] Done EN=1562c KO=946c Codes=2
+2026-02-28 17:05:19,064 [INFO] [Agent 154] 2-column split OCR (1226x822)
+2026-02-28 17:05:19,070 [INFO] [Agent 145] Done EN=2186c KO=1205c Codes=0
+2026-02-28 17:05:19,078 [INFO] [Agent 155] 2-column split OCR (1226x822)
+2026-02-28 17:05:20,082 [INFO] [Agent 148] Done EN=1827c KO=977c Codes=3
+2026-02-28 17:05:20,088 [INFO] [Agent 156] 2-column split OCR (1226x822)
+2026-02-28 17:05:20,315 [INFO] [Agent 149] Done EN=1609c KO=919c Codes=1
+2026-02-28 17:05:20,323 [INFO] [Agent 157] 2-column split OCR (1226x822)
+2026-02-28 17:05:20,355 [INFO] [Agent 151] Done EN=798c KO=540c Codes=7
+2026-02-28 17:05:20,361 [INFO] [Agent 158] Single-column OCR (1226x822)
+2026-02-28 17:05:20,785 [INFO] [Agent 152] Done EN=932c KO=478c Codes=4
+2026-02-28 17:05:20,793 [INFO] [Agent 159] 2-column split OCR (1226x822)
+2026-02-28 17:05:21,265 [INFO] [Agent 154] Done EN=1450c KO=847c Codes=4
+2026-02-28 17:05:21,273 [INFO] [Agent 160] 2-column split OCR (1226x822)
+2026-02-28 17:05:21,283 [INFO] [Agent 150] Done EN=1580c KO=832c Codes=0
+2026-02-28 17:05:21,290 [INFO] [Agent 161] 2-column split OCR (1226x822)
+2026-02-28 17:05:21,413 [INFO] [Agent 155] Done EN=1555c KO=834c Codes=3
+2026-02-28 17:05:21,437 [INFO] [Agent 162] 2-column split OCR (1226x822)
+2026-02-28 17:05:21,620 [INFO] [Agent 153] Done EN=1533c KO=872c Codes=1
+2026-02-28 17:05:21,628 [INFO] [Agent 163] 2-column split OCR (1226x822)
+2026-02-28 17:05:22,040 [INFO] [Agent 158] Done EN=271c KO=119c Codes=0
+2026-02-28 17:05:22,048 [INFO] [Agent 164] 2-column split OCR (1226x822)
+2026-02-28 17:05:22,373 [INFO] [Agent 156] Done EN=941c KO=480c Codes=0
+2026-02-28 17:05:22,381 [INFO] [Agent 165] 2-column split OCR (1226x822)
+2026-02-28 17:05:22,764 [INFO] [Agent 157] Done EN=1011c KO=558c Codes=1
+2026-02-28 17:05:22,773 [INFO] [Agent 166] 2-column split OCR (1226x822)
+2026-02-28 17:05:23,047 [INFO] [Agent 159] Done EN=2081c KO=1251c Codes=0
+2026-02-28 17:05:23,056 [INFO] [Agent 167] 2-column split OCR (1226x822)
+2026-02-28 17:05:23,387 [INFO] [Agent 160] Done EN=1677c KO=1050c Codes=1
+2026-02-28 17:05:23,395 [INFO] [Agent 168] 2-column split OCR (1226x822)
+2026-02-28 17:05:23,423 [INFO] [Agent 161] Done EN=1585c KO=897c Codes=1
+2026-02-28 17:05:23,432 [INFO] [Agent 169] 2-column split OCR (1226x822)
+2026-02-28 17:05:24,393 [INFO] [Agent 163] Done EN=1966c KO=1049c Codes=0
+2026-02-28 17:05:24,399 [INFO] [Agent 170] 2-column split OCR (1226x822)
+2026-02-28 17:05:24,458 [INFO] [Agent 162] Done EN=2025c KO=1120c Codes=2
+2026-02-28 17:05:24,465 [INFO] [Agent 171] 2-column split OCR (1226x822)
+2026-02-28 17:05:24,673 [INFO] [Agent 165] Done EN=1434c KO=775c Codes=2
+2026-02-28 17:05:24,681 [INFO] [Agent 172] 2-column split OCR (1226x822)
+2026-02-28 17:05:24,814 [INFO] [Agent 164] Done EN=1434c KO=779c Codes=2
+2026-02-28 17:05:24,822 [INFO] [Agent 173] 2-column split OCR (1226x822)
+2026-02-28 17:05:24,830 [INFO] [Agent 166] Done EN=1707c KO=926c Codes=0
+2026-02-28 17:05:24,838 [INFO] [Agent 174] 2-column split OCR (1226x822)
+2026-02-28 17:05:25,431 [INFO] [Agent 167] Done EN=1643c KO=920c Codes=0
+2026-02-28 17:05:25,442 [INFO] [Agent 175] 2-column split OCR (1226x822)
+2026-02-28 17:05:26,142 [INFO] [Agent 168] Done EN=1627c KO=931c Codes=0
+2026-02-28 17:05:26,149 [INFO] [Agent 176] 2-column split OCR (1226x822)
+2026-02-28 17:05:26,219 [INFO] [Agent 169] Done EN=1598c KO=901c Codes=1
+2026-02-28 17:05:26,227 [INFO] [Agent 177] 2-column split OCR (1226x822)
+2026-02-28 17:05:26,813 [INFO] [Agent 171] Done EN=946c KO=506c Codes=0
+2026-02-28 17:05:26,821 [INFO] [Agent 178] 2-column split OCR (1226x822)
+2026-02-28 17:05:26,955 [INFO] [Agent 170] Done EN=1295c KO=791c Codes=0
+2026-02-28 17:05:26,962 [INFO] [Agent 179] 2-column split OCR (1226x822)
+2026-02-28 17:05:27,146 [INFO] [Agent 174] Done EN=1827c KO=1062c Codes=1
+2026-02-28 17:05:27,152 [INFO] [Agent 180] 2-column split OCR (1226x822)
+2026-02-28 17:05:27,208 [INFO] [Agent 172] Done EN=1775c KO=949c Codes=0
+2026-02-28 17:05:27,213 [INFO] [Agent 181] Single-column OCR (1226x822)
+2026-02-28 17:05:27,840 [INFO] [Agent 173] Done EN=1998c KO=1072c Codes=0
+2026-02-28 17:05:27,860 [INFO] [Agent 182] 2-column split OCR (1226x822)
+2026-02-28 17:05:28,040 [INFO] [Agent 181] Done EN=85c KO=86c Codes=0
+2026-02-28 17:05:28,047 [INFO] [Agent 183] 2-column split OCR (1226x822)
+2026-02-28 17:05:28,212 [INFO] [Agent 175] Done EN=1605c KO=925c Codes=1
+2026-02-28 17:05:28,219 [INFO] [Agent 184] 2-column split OCR (1226x822)
+2026-02-28 17:05:28,335 [INFO] [Agent 177] Done EN=1981c KO=1145c Codes=0
+2026-02-28 17:05:28,342 [INFO] [Agent 176] Done EN=1541c KO=865c Codes=1
+2026-02-28 17:05:28,348 [INFO] [Agent 185] 2-column split OCR (1226x822)
+2026-02-28 17:05:28,351 [INFO] [Agent 186] 2-column split OCR (1226x822)
+2026-02-28 17:05:29,035 [INFO] [Agent 178] Done EN=1341c KO=660c Codes=1
+2026-02-28 17:05:29,043 [INFO] [Agent 187] 2-column split OCR (1226x822)
+2026-02-28 17:05:29,470 [INFO] [Agent 180] Done EN=1219c KO=635c Codes=0
+2026-02-28 17:05:29,474 [INFO] [Agent 179] Done EN=1909c KO=972c Codes=1
+2026-02-28 17:05:29,483 [INFO] [Agent 188] 2-column split OCR (1226x822)
+2026-02-28 17:05:29,483 [INFO] [Agent 189] 2-column split OCR (1226x822)
+2026-02-28 17:05:29,926 [INFO] [Agent 182] Done EN=1575c KO=914c Codes=1
+2026-02-28 17:05:29,935 [INFO] [Agent 190] 2-column split OCR (1226x822)
+2026-02-28 17:05:30,373 [INFO] [Agent 183] Done EN=1682c KO=1005c Codes=0
+2026-02-28 17:05:30,408 [INFO] [Agent 191] 2-column split OCR (1226x822)
+2026-02-28 17:05:30,649 [INFO] [Agent 184] Done EN=1843c KO=1008c Codes=0
+2026-02-28 17:05:30,699 [INFO] [Agent 192] 2-column split OCR (1226x822)
+2026-02-28 17:05:30,849 [INFO] [Agent 186] Done EN=1613c KO=945c Codes=0
+2026-02-28 17:05:30,902 [INFO] [Agent 193] 2-column split OCR (1226x822)
+2026-02-28 17:05:31,194 [INFO] [Agent 185] Done EN=1428c KO=822c Codes=1
+2026-02-28 17:05:31,232 [INFO] [Agent 194] Single-column OCR (1226x822)
+2026-02-28 17:05:32,056 [INFO] [Agent 187] Done EN=1377c KO=786c Codes=1
+2026-02-28 17:05:32,085 [INFO] [Agent 195] 2-column split OCR (1226x822)
+2026-02-28 17:05:32,346 [INFO] [Agent 188] Done EN=1906c KO=1186c Codes=0
+2026-02-28 17:05:32,374 [INFO] [Agent 189] Done EN=1302c KO=754c Codes=5
+2026-02-28 17:05:32,427 [INFO] [Agent 196] 2-column split OCR (1226x822)
+2026-02-28 17:05:32,438 [INFO] [Agent 197] 2-column split OCR (1226x822)
+2026-02-28 17:05:32,458 [INFO] [Agent 190] Done EN=1620c KO=923c Codes=2
+2026-02-28 17:05:32,491 [INFO] [Agent 198] 2-column split OCR (1226x822)
+2026-02-28 17:05:33,025 [INFO] [Agent 191] Done EN=1414c KO=755c Codes=1
+2026-02-28 17:05:33,035 [INFO] [Agent 194] Done EN=383c KO=240c Codes=1
+2026-02-28 17:05:33,064 [INFO] [Agent 199] 2-column split OCR (1226x822)
+2026-02-28 17:05:33,070 [INFO] [Agent 200] 2-column split OCR (1226x822)
+2026-02-28 17:05:33,675 [INFO] [Agent 192] Done EN=1417c KO=824c Codes=3
+2026-02-28 17:05:33,705 [INFO] [Agent 201] 2-column split OCR (1226x822)
+2026-02-28 17:05:33,860 [INFO] [Agent 193] Done EN=1900c KO=966c Codes=0
+2026-02-28 17:05:33,899 [INFO] [Agent 202] 2-column split OCR (1226x822)
+2026-02-28 17:05:34,928 [INFO] [Agent 195] Done EN=2289c KO=1395c Codes=4
+2026-02-28 17:05:34,979 [INFO] [Agent 203] 2-column split OCR (1226x822)
+2026-02-28 17:05:35,277 [INFO] [Agent 198] Done EN=2213c KO=1314c Codes=5
+2026-02-28 17:05:35,298 [INFO] [Agent 204] 2-column split OCR (1226x822)
+2026-02-28 17:05:35,455 [INFO] [Agent 196] Done EN=2524c KO=1495c Codes=8
+2026-02-28 17:05:35,922 [INFO] [Agent 200] Done EN=1834c KO=1087c Codes=8
+2026-02-28 17:05:36,106 [INFO] [Agent 197] Done EN=2385c KO=1571c Codes=4
+2026-02-28 17:05:36,619 [INFO] [Agent 199] Done EN=2626c KO=1476c Codes=3
+2026-02-28 17:05:37,046 [INFO] [Agent 202] Done EN=2195c KO=1324c Codes=5
+2026-02-28 17:05:37,214 [INFO] [Agent 201] Done EN=2750c KO=1591c Codes=3
+2026-02-28 17:05:38,205 [INFO] [Agent 203] Done EN=2179c KO=1241c Codes=6
+2026-02-28 17:05:38,381 [INFO] [Agent 204] Done EN=1934c KO=1131c Codes=8
+2026-02-28 17:15:14,352 [INFO] [Agent 001] 2-column split OCR (1226x822)
+2026-02-28 17:15:14,355 [INFO] [Agent 004] 2-column split OCR (1226x822)
+2026-02-28 17:15:14,356 [INFO] [Agent 003] 2-column split OCR (1226x822)
+2026-02-28 17:15:14,357 [INFO] [Agent 002] 2-column split OCR (1226x822)
+2026-02-28 17:15:14,357 [INFO] [Agent 006] 2-column split OCR (1226x822)
+2026-02-28 17:15:14,359 [INFO] [Agent 008] 2-column split OCR (1226x822)
+2026-02-28 17:15:14,359 [INFO] [Agent 005] 2-column split OCR (1226x822)
+2026-02-28 17:15:14,362 [INFO] [Agent 007] 2-column split OCR (1226x822)
+2026-02-28 17:15:15,460 [INFO] [Agent 002] Done EN=200c KO=93c Codes=0
+2026-02-28 17:15:15,465 [INFO] [Agent 009] 2-column split OCR (1226x822)
+2026-02-28 17:15:15,600 [INFO] [Agent 007] Done EN=775c KO=382c Codes=0
+2026-02-28 17:15:15,610 [INFO] [Agent 010] 2-column split OCR (1226x822)
+2026-02-28 17:15:15,639 [INFO] [Agent 006] Done EN=668c KO=376c Codes=1
+2026-02-28 17:15:15,646 [INFO] [Agent 011] 2-column split OCR (1226x822)
+2026-02-28 17:15:15,831 [INFO] [Agent 004] Done EN=84c KO=55c Codes=0
+2026-02-28 17:15:15,835 [INFO] [Agent 012] 2-column split OCR (1226x822)
+2026-02-28 17:15:15,843 [INFO] [Agent 003] Done EN=473c KO=267c Codes=1
+2026-02-28 17:15:15,850 [INFO] [Agent 013] 2-column split OCR (1226x822)
+2026-02-28 17:15:16,592 [INFO] [Agent 012] Done EN=20c KO=14c Codes=0
+2026-02-28 17:15:16,599 [INFO] [Agent 014] 2-column split OCR (1226x822)
+2026-02-28 17:15:16,878 [INFO] [Agent 005] Done EN=670c KO=372c Codes=2
+2026-02-28 17:15:16,885 [INFO] [Agent 015] 2-column split OCR (1226x822)
+2026-02-28 17:15:16,936 [INFO] [Agent 008] Done EN=739c KO=376c Codes=2
+2026-02-28 17:15:16,942 [INFO] [Agent 016] 2-column split OCR (1226x822)
+2026-02-28 17:15:17,090 [INFO] [Agent 009] Done EN=78c KO=49c Codes=0
+2026-02-28 17:15:17,097 [INFO] [Agent 017] 2-column split OCR (1226x822)
+2026-02-28 17:15:17,165 [INFO] [Agent 010] Done EN=1552c KO=839c Codes=1
+2026-02-28 17:15:17,174 [INFO] [Agent 018] 2-column split OCR (1226x822)
+2026-02-28 17:15:17,244 [INFO] [Agent 001] Done EN=45c KO=27c Codes=0
+2026-02-28 17:15:17,251 [INFO] [Agent 019] 2-column split OCR (1226x822)
+2026-02-28 17:15:17,404 [INFO] [Agent 011] Done EN=1724c KO=1056c Codes=3
+2026-02-28 17:15:17,411 [INFO] [Agent 020] 2-column split OCR (1226x822)
+2026-02-28 17:15:17,790 [INFO] [Agent 013] Done EN=814c KO=428c Codes=12
+2026-02-28 17:15:17,797 [INFO] [Agent 021] 2-column split OCR (1226x822)
+2026-02-28 17:15:18,247 [INFO] [Agent 016] Done EN=904c KO=633c Codes=4
+2026-02-28 17:15:18,254 [INFO] [Agent 022] 2-column split OCR (1226x822)
+2026-02-28 17:15:18,368 [INFO] [Agent 015] Done EN=989c KO=593c Codes=6
+2026-02-28 17:15:18,375 [INFO] [Agent 023] 2-column split OCR (1226x822)
+2026-02-28 17:15:18,667 [INFO] [Agent 018] Done EN=814c KO=519c Codes=4
+2026-02-28 17:15:18,674 [INFO] [Agent 024] 2-column split OCR (1226x822)
+2026-02-28 17:15:18,720 [INFO] [Agent 017] Done EN=1237c KO=715c Codes=3
+2026-02-28 17:15:18,730 [INFO] [Agent 025] 2-column split OCR (1226x822)
+2026-02-28 17:15:18,743 [INFO] [Agent 019] Done EN=1064c KO=736c Codes=3
+2026-02-28 17:15:18,750 [INFO] [Agent 026] 2-column split OCR (1226x822)
+2026-02-28 17:15:18,790 [INFO] [Agent 014] Done EN=1125c KO=592c Codes=5
+2026-02-28 17:15:18,798 [INFO] [Agent 027] 2-column split OCR (1226x822)
+2026-02-28 17:15:19,334 [INFO] [Agent 020] Done EN=1171c KO=783c Codes=5
+2026-02-28 17:15:19,343 [INFO] [Agent 028] 2-column split OCR (1226x822)
+2026-02-28 17:15:19,513 [INFO] [Agent 022] Done EN=803c KO=445c Codes=2
+2026-02-28 17:15:19,519 [INFO] [Agent 029] 2-column split OCR (1226x822)
+2026-02-28 17:15:19,739 [INFO] [Agent 023] Done EN=1070c KO=633c Codes=4
+2026-02-28 17:15:19,746 [INFO] [Agent 030] 2-column split OCR (1226x822)
+2026-02-28 17:15:19,777 [INFO] [Agent 021] Done EN=1265c KO=679c Codes=6
+2026-02-28 17:15:19,786 [INFO] [Agent 031] 2-column split OCR (1226x822)
+2026-02-28 17:15:20,348 [INFO] [Agent 025] Done EN=1295c KO=811c Codes=6
+2026-02-28 17:15:20,355 [INFO] [Agent 032] 2-column split OCR (1226x822)
+2026-02-28 17:15:20,389 [INFO] [Agent 027] Done EN=1781c KO=996c Codes=0
+2026-02-28 17:15:20,397 [INFO] [Agent 033] 2-column split OCR (1226x822)
+2026-02-28 17:15:21,020 [INFO] [Agent 026] Done EN=1738c KO=960c Codes=1
+2026-02-28 17:15:21,029 [INFO] [Agent 034] 2-column split OCR (1226x822)
+2026-02-28 17:15:21,285 [INFO] [Agent 024] Done EN=1147c KO=672c Codes=6
+2026-02-28 17:15:21,291 [INFO] [Agent 035] 2-column split OCR (1226x822)
+2026-02-28 17:15:21,512 [INFO] [Agent 029] Done EN=1610c KO=917c Codes=0
+2026-02-28 17:15:21,519 [INFO] [Agent 036] 2-column split OCR (1226x822)
+2026-02-28 17:15:21,652 [INFO] [Agent 030] Done EN=1053c KO=598c Codes=2
+2026-02-28 17:15:21,659 [INFO] [Agent 037] 2-column split OCR (1226x822)
+2026-02-28 17:15:21,972 [INFO] [Agent 031] Done EN=1739c KO=974c Codes=1
+2026-02-28 17:15:21,977 [INFO] [Agent 038] 2-column split OCR (1226x822)
+2026-02-28 17:15:22,159 [INFO] [Agent 032] Done EN=1913c KO=971c Codes=0
+2026-02-28 17:15:22,166 [INFO] [Agent 039] 2-column split OCR (1226x822)
+2026-02-28 17:15:22,206 [INFO] [Agent 033] Done EN=1712c KO=919c Codes=3
+2026-02-28 17:15:22,215 [INFO] [Agent 040] 2-column split OCR (1226x822)
+2026-02-28 17:15:22,322 [INFO] [Agent 028] Done EN=1592c KO=901c Codes=0
+2026-02-28 17:15:22,330 [INFO] [Agent 041] 2-column split OCR (1226x822)
+2026-02-28 17:15:22,696 [INFO] [Agent 034] Done EN=1583c KO=881c Codes=4
+2026-02-28 17:15:22,704 [INFO] [Agent 042] 2-column split OCR (1226x822)
+2026-02-28 17:15:23,296 [INFO] [Agent 035] Done EN=1463c KO=831c Codes=3
+2026-02-28 17:15:23,302 [INFO] [Agent 043] 2-column split OCR (1226x822)
+2026-02-28 17:15:23,314 [INFO] [Agent 037] Done EN=1768c KO=1029c Codes=1
+2026-02-28 17:15:23,322 [INFO] [Agent 044] 2-column split OCR (1226x822)
+2026-02-28 17:15:23,344 [INFO] [Agent 038] Done EN=1285c KO=787c Codes=1
+2026-02-28 17:15:23,351 [INFO] [Agent 045] 2-column split OCR (1226x822)
+2026-02-28 17:15:23,474 [INFO] [Agent 040] Done EN=1029c KO=552c Codes=0
+2026-02-28 17:15:23,483 [INFO] [Agent 046] 2-column split OCR (1226x822)
+2026-02-28 17:15:24,047 [INFO] [Agent 042] Done EN=1118c KO=608c Codes=2
+2026-02-28 17:15:24,054 [INFO] [Agent 047] 2-column split OCR (1226x822)
+2026-02-28 17:15:24,152 [INFO] [Agent 039] Done EN=285c KO=171c Codes=0
+2026-02-28 17:15:24,158 [INFO] [Agent 048] 2-column split OCR (1226x822)
+2026-02-28 17:15:24,323 [INFO] [Agent 036] Done EN=1437c KO=758c Codes=0
+2026-02-28 17:15:24,329 [INFO] [Agent 049] 2-column split OCR (1226x822)
+2026-02-28 17:15:24,525 [INFO] [Agent 044] Done EN=1083c KO=626c Codes=1
+2026-02-28 17:15:24,531 [INFO] [Agent 050] 2-column split OCR (1226x822)
+2026-02-28 17:15:24,617 [INFO] [Agent 041] Done EN=1438c KO=720c Codes=6
+2026-02-28 17:15:24,623 [INFO] [Agent 051] 2-column split OCR (1226x822)
+2026-02-28 17:15:24,628 [INFO] [Agent 045] Done EN=830c KO=566c Codes=6
+2026-02-28 17:15:24,634 [INFO] [Agent 052] 2-column split OCR (1226x822)
+2026-02-28 17:15:25,168 [INFO] [Agent 048] Done EN=335c KO=194c Codes=0
+2026-02-28 17:15:25,175 [INFO] [Agent 053] 2-column split OCR (1226x822)
+2026-02-28 17:15:25,400 [INFO] [Agent 043] Done EN=1343c KO=773c Codes=1
+2026-02-28 17:15:25,407 [INFO] [Agent 054] 2-column split OCR (1226x822)
+2026-02-28 17:15:25,412 [INFO] [Agent 046] Done EN=1572c KO=876c Codes=6
+2026-02-28 17:15:25,418 [INFO] [Agent 055] 2-column split OCR (1226x822)
+2026-02-28 17:15:25,829 [INFO] [Agent 050] Done EN=977c KO=646c Codes=3
+2026-02-28 17:15:25,836 [INFO] [Agent 056] 2-column split OCR (1226x822)
+2026-02-28 17:15:25,991 [INFO] [Agent 051] Done EN=70c KO=41c Codes=0
+2026-02-28 17:15:25,998 [INFO] [Agent 057] 2-column split OCR (1226x822)
+2026-02-28 17:15:26,006 [INFO] [Agent 052] Done EN=77c KO=40c Codes=0
+2026-02-28 17:15:26,014 [INFO] [Agent 058] 2-column split OCR (1226x822)
+2026-02-28 17:15:26,565 [INFO] [Agent 049] Done EN=1335c KO=814c Codes=2
+2026-02-28 17:15:26,572 [INFO] [Agent 059] 2-column split OCR (1226x822)
+2026-02-28 17:15:26,909 [INFO] [Agent 047] Done EN=1567c KO=815c Codes=5
+2026-02-28 17:15:26,910 [INFO] [Agent 055] Done EN=1314c KO=709c Codes=4
+2026-02-28 17:15:26,915 [INFO] [Agent 061] 2-column split OCR (1226x822)
+2026-02-28 17:15:26,916 [INFO] [Agent 060] 2-column split OCR (1226x822)
+2026-02-28 17:15:27,094 [INFO] [Agent 054] Done EN=2175c KO=1167c Codes=0
+2026-02-28 17:15:27,100 [INFO] [Agent 062] 2-column split OCR (1226x822)
+2026-02-28 17:15:27,519 [INFO] [Agent 053] Done EN=1875c KO=1130c Codes=1
+2026-02-28 17:15:27,526 [INFO] [Agent 063] 2-column split OCR (1226x822)
+2026-02-28 17:15:27,913 [INFO] [Agent 057] Done EN=430c KO=284c Codes=4
+2026-02-28 17:15:27,915 [INFO] [Agent 056] Done EN=1054c KO=566c Codes=8
+2026-02-28 17:15:27,923 [INFO] [Agent 064] 2-column split OCR (1226x822)
+2026-02-28 17:15:27,923 [INFO] [Agent 065] 2-column split OCR (1226x822)
+2026-02-28 17:15:28,233 [INFO] [Agent 058] Done EN=1622c KO=929c Codes=2
+2026-02-28 17:15:28,241 [INFO] [Agent 066] 2-column split OCR (1226x822)
+2026-02-28 17:15:28,409 [INFO] [Agent 060] Done EN=1515c KO=848c Codes=3
+2026-02-28 17:15:28,420 [INFO] [Agent 067] 2-column split OCR (1226x822)
+2026-02-28 17:15:28,639 [INFO] [Agent 062] Done EN=1746c KO=950c Codes=0
+2026-02-28 17:15:28,648 [INFO] [Agent 068] 2-column split OCR (1226x822)
+2026-02-28 17:15:28,664 [INFO] [Agent 059] Done EN=859c KO=574c Codes=7
+2026-02-28 17:15:28,673 [INFO] [Agent 069] 2-column split OCR (1226x822)
+2026-02-28 17:15:28,980 [INFO] [Agent 061] Done EN=356c KO=229c Codes=0
+2026-02-28 17:15:28,985 [INFO] [Agent 070] 2-column split OCR (1226x822)
+2026-02-28 17:15:29,578 [INFO] [Agent 064] Done EN=1404c KO=719c Codes=0
+2026-02-28 17:15:29,587 [INFO] [Agent 071] 2-column split OCR (1226x822)
+2026-02-28 17:15:29,704 [INFO] [Agent 066] Done EN=1209c KO=789c Codes=2
+2026-02-28 17:15:29,710 [INFO] [Agent 072] 2-column split OCR (1226x822)
+2026-02-28 17:15:29,752 [INFO] [Agent 065] Done EN=1905c KO=1003c Codes=0
+2026-02-28 17:15:29,763 [INFO] [Agent 073] 2-column split OCR (1226x822)
+2026-02-28 17:15:29,970 [INFO] [Agent 067] Done EN=1521c KO=824c Codes=1
+2026-02-28 17:15:29,977 [INFO] [Agent 074] 2-column split OCR (1226x822)
+2026-02-28 17:15:30,263 [INFO] [Agent 063] Done EN=1524c KO=835c Codes=3
+2026-02-28 17:15:30,270 [INFO] [Agent 075] 2-column split OCR (1226x822)
+2026-02-28 17:15:30,465 [INFO] [Agent 070] Done EN=147c KO=125c Codes=3
+2026-02-28 17:15:30,471 [INFO] [Agent 076] 2-column split OCR (1226x822)
+2026-02-28 17:15:30,817 [INFO] [Agent 069] Done EN=1670c KO=852c Codes=1
+2026-02-28 17:15:30,828 [INFO] [Agent 077] 2-column split OCR (1226x822)
+2026-02-28 17:15:31,101 [INFO] [Agent 071] Done EN=1569c KO=825c Codes=1
+2026-02-28 17:15:31,108 [INFO] [Agent 078] 2-column split OCR (1226x822)
+2026-02-28 17:15:31,192 [INFO] [Agent 074] Done EN=924c KO=555c Codes=4
+2026-02-28 17:15:31,201 [INFO] [Agent 079] 2-column split OCR (1226x822)
+2026-02-28 17:15:31,458 [INFO] [Agent 068] Done EN=1643c KO=843c Codes=1
+2026-02-28 17:15:31,463 [INFO] [Agent 080] 2-column split OCR (1226x822)
+2026-02-28 17:15:31,579 [INFO] [Agent 073] Done EN=1311c KO=776c Codes=0
+2026-02-28 17:15:31,586 [INFO] [Agent 081] 2-column split OCR (1226x822)
+2026-02-28 17:15:31,632 [INFO] [Agent 075] Done EN=1276c KO=808c Codes=3
+2026-02-28 17:15:31,640 [INFO] [Agent 082] 2-column split OCR (1226x822)
+2026-02-28 17:15:31,897 [INFO] [Agent 072] Done EN=1805c KO=942c Codes=0
+2026-02-28 17:15:31,905 [INFO] [Agent 083] 2-column split OCR (1226x822)
+2026-02-28 17:15:32,212 [INFO] [Agent 077] Done EN=1373c KO=731c Codes=3
+2026-02-28 17:15:32,221 [INFO] [Agent 084] 2-column split OCR (1226x822)
+2026-02-28 17:15:32,324 [INFO] [Agent 076] Done EN=561c KO=311c Codes=0
+2026-02-28 17:15:32,332 [INFO] [Agent 085] 2-column split OCR (1226x822)
+2026-02-28 17:15:32,664 [INFO] [Agent 079] Done EN=1402c KO=868c Codes=5
+2026-02-28 17:15:32,671 [INFO] [Agent 086] 2-column split OCR (1226x822)
+2026-02-28 17:15:33,113 [INFO] [Agent 078] Done EN=1809c KO=962c Codes=2
+2026-02-28 17:15:33,120 [INFO] [Agent 087] 2-column split OCR (1226x822)
+2026-02-28 17:15:33,501 [INFO] [Agent 082] Done EN=1067c KO=589c Codes=0
+2026-02-28 17:15:33,508 [INFO] [Agent 088] 2-column split OCR (1226x822)
+2026-02-28 17:15:33,594 [INFO] [Agent 080] Done EN=1793c KO=1121c Codes=3
+2026-02-28 17:15:33,600 [INFO] [Agent 089] 2-column split OCR (1226x822)
+2026-02-28 17:15:33,714 [INFO] [Agent 085] Done EN=935c KO=527c Codes=7
+2026-02-28 17:15:33,721 [INFO] [Agent 090] 2-column split OCR (1226x822)
+2026-02-28 17:15:33,835 [INFO] [Agent 081] Done EN=1178c KO=639c Codes=8
+2026-02-28 17:15:33,844 [INFO] [Agent 091] 2-column split OCR (1226x822)
+2026-02-28 17:15:34,096 [INFO] [Agent 086] Done EN=1316c KO=743c Codes=2
+2026-02-28 17:15:34,103 [INFO] [Agent 092] 2-column split OCR (1226x822)
+2026-02-28 17:15:34,361 [INFO] [Agent 083] Done EN=710c KO=459c Codes=5
+2026-02-28 17:15:34,367 [INFO] [Agent 093] 2-column split OCR (1226x822)
+2026-02-28 17:15:34,591 [INFO] [Agent 088] Done EN=750c KO=515c Codes=3
+2026-02-28 17:15:34,597 [INFO] [Agent 094] 2-column split OCR (1226x822)
+2026-02-28 17:15:34,708 [INFO] [Agent 084] Done EN=1211c KO=730c Codes=5
+2026-02-28 17:15:34,714 [INFO] [Agent 095] 2-column split OCR (1226x822)
+2026-02-28 17:15:34,980 [INFO] [Agent 090] Done EN=1101c KO=703c Codes=2
+2026-02-28 17:15:34,988 [INFO] [Agent 096] 2-column split OCR (1226x822)
+2026-02-28 17:15:35,350 [INFO] [Agent 092] Done EN=725c KO=432c Codes=7
+2026-02-28 17:15:35,357 [INFO] [Agent 097] 2-column split OCR (1226x822)
+2026-02-28 17:15:35,381 [INFO] [Agent 087] Done EN=1338c KO=894c Codes=3
+2026-02-28 17:15:35,388 [INFO] [Agent 098] 2-column split OCR (1226x822)
+2026-02-28 17:15:35,646 [INFO] [Agent 089] Done EN=918c KO=537c Codes=0
+2026-02-28 17:15:35,652 [INFO] [Agent 099] 2-column split OCR (1226x822)
+2026-02-28 17:15:35,936 [INFO] [Agent 091] Done EN=1119c KO=613c Codes=4
+2026-02-28 17:15:35,943 [INFO] [Agent 100] 2-column split OCR (1226x822)
+2026-02-28 17:15:36,452 [INFO] [Agent 093] Done EN=1274c KO=738c Codes=4
+2026-02-28 17:15:36,460 [INFO] [Agent 101] 2-column split OCR (1226x822)
+2026-02-28 17:15:36,570 [INFO] [Agent 098] Done EN=580c KO=398c Codes=8
+2026-02-28 17:15:36,577 [INFO] [Agent 102] 2-column split OCR (1226x822)
+2026-02-28 17:15:36,680 [INFO] [Agent 094] Done EN=865c KO=529c Codes=6
+2026-02-28 17:15:36,681 [INFO] [Agent 095] Done EN=1033c KO=619c Codes=5
+2026-02-28 17:15:36,690 [INFO] [Agent 104] 2-column split OCR (1226x822)
+2026-02-28 17:15:36,690 [INFO] [Agent 103] 2-column split OCR (1226x822)
+2026-02-28 17:15:36,827 [INFO] [Agent 097] Done EN=1470c KO=789c Codes=1
+2026-02-28 17:15:36,836 [INFO] [Agent 105] 2-column split OCR (1226x822)
+2026-02-28 17:15:37,407 [INFO] [Agent 096] Done EN=933c KO=525c Codes=6
+2026-02-28 17:15:37,415 [INFO] [Agent 106] 2-column split OCR (1226x822)
+2026-02-28 17:15:37,504 [INFO] [Agent 099] Done EN=1855c KO=1093c Codes=0
+2026-02-28 17:15:37,511 [INFO] [Agent 107] 2-column split OCR (1226x822)
+2026-02-28 17:15:38,523 [INFO] [Agent 100] Done EN=1517c KO=877c Codes=2
+2026-02-28 17:15:38,529 [INFO] [Agent 108] 2-column split OCR (1226x822)
+2026-02-28 17:15:38,588 [INFO] [Agent 101] Done EN=1081c KO=623c Codes=7
+2026-02-28 17:15:38,595 [INFO] [Agent 109] 2-column split OCR (1226x822)
+2026-02-28 17:15:38,915 [INFO] [Agent 107] Done EN=1281c KO=709c Codes=0
+2026-02-28 17:15:38,921 [INFO] [Agent 110] 2-column split OCR (1226x822)
+2026-02-28 17:15:39,494 [INFO] [Agent 104] Done EN=1798c KO=1088c Codes=0
+2026-02-28 17:15:39,501 [INFO] [Agent 111] 2-column split OCR (1226x822)
+2026-02-28 17:15:39,587 [INFO] [Agent 105] Done EN=1805c KO=987c Codes=0
+2026-02-28 17:15:39,593 [INFO] [Agent 112] 2-column split OCR (1226x822)
+2026-02-28 17:15:39,601 [INFO] [Agent 103] Done EN=2164c KO=1140c Codes=0
+2026-02-28 17:15:39,608 [INFO] [Agent 113] 2-column split OCR (1226x822)
+2026-02-28 17:15:39,675 [INFO] [Agent 102] Done EN=1710c KO=996c Codes=0
+2026-02-28 17:15:39,682 [INFO] [Agent 114] 2-column split OCR (1226x822)
+2026-02-28 17:15:39,956 [INFO] [Agent 109] Done EN=1251c KO=760c Codes=4
+2026-02-28 17:15:39,962 [INFO] [Agent 115] 2-column split OCR (1226x822)
+2026-02-28 17:15:40,298 [INFO] [Agent 106] Done EN=1503c KO=847c Codes=4
+2026-02-28 17:15:40,307 [INFO] [Agent 116] 2-column split OCR (1226x822)
+2026-02-28 17:15:40,432 [INFO] [Agent 108] Done EN=1064c KO=583c Codes=3
+2026-02-28 17:15:40,440 [INFO] [Agent 117] 2-column split OCR (1226x822)
+2026-02-28 17:15:40,534 [INFO] [Agent 110] Done EN=1430c KO=775c Codes=1
+2026-02-28 17:15:40,542 [INFO] [Agent 118] 2-column split OCR (1226x822)
+2026-02-28 17:15:41,072 [INFO] [Agent 111] Done EN=1744c KO=991c Codes=0
+2026-02-28 17:15:41,081 [INFO] [Agent 119] 2-column split OCR (1226x822)
+2026-02-28 17:15:41,222 [INFO] [Agent 114] Done EN=1688c KO=1032c Codes=0
+2026-02-28 17:15:41,228 [INFO] [Agent 120] 2-column split OCR (1226x822)
+2026-02-28 17:15:41,252 [INFO] [Agent 112] Done EN=1789c KO=1042c Codes=1
+2026-02-28 17:15:41,260 [INFO] [Agent 121] 2-column split OCR (1226x822)
+2026-02-28 17:15:41,366 [INFO] [Agent 113] Done EN=1249c KO=714c Codes=0
+2026-02-28 17:15:41,375 [INFO] [Agent 122] 2-column split OCR (1226x822)
+2026-02-28 17:15:41,518 [INFO] [Agent 116] Done EN=1016c KO=600c Codes=1
+2026-02-28 17:15:41,525 [INFO] [Agent 123] 2-column split OCR (1226x822)
+2026-02-28 17:15:41,780 [INFO] [Agent 117] Done EN=1377c KO=788c Codes=1
+2026-02-28 17:15:41,785 [INFO] [Agent 124] 2-column split OCR (1226x822)
+2026-02-28 17:15:42,245 [INFO] [Agent 118] Done EN=458c KO=263c Codes=2
+2026-02-28 17:15:42,250 [INFO] [Agent 125] 2-column split OCR (1226x822)
+2026-02-28 17:15:42,552 [WARNING] [Agent 125] No text extracted
+2026-02-28 17:15:42,560 [INFO] [Agent 126] 2-column split OCR (1226x822)
+2026-02-28 17:15:42,771 [INFO] [Agent 115] Done EN=1887c KO=1129c Codes=0
+2026-02-28 17:15:42,775 [INFO] [Agent 124] Done EN=605c KO=363c Codes=1
+2026-02-28 17:15:42,787 [INFO] [Agent 127] 2-column split OCR (1226x822)
+2026-02-28 17:15:42,787 [INFO] [Agent 128] 2-column split OCR (1226x822)
+2026-02-28 17:15:43,022 [INFO] [Agent 123] Done EN=1393c KO=786c Codes=0
+2026-02-28 17:15:43,029 [INFO] [Agent 129] 2-column split OCR (1226x822)
+2026-02-28 17:15:43,695 [INFO] [Agent 121] Done EN=1874c KO=1057c Codes=0
+2026-02-28 17:15:43,701 [INFO] [Agent 130] 2-column split OCR (1226x822)
+2026-02-28 17:15:43,818 [INFO] [Agent 122] Done EN=1785c KO=1012c Codes=1
+2026-02-28 17:15:43,822 [INFO] [Agent 120] Done EN=935c KO=569c Codes=2
+2026-02-28 17:15:43,825 [INFO] [Agent 126] Done EN=1114c KO=598c Codes=4
+2026-02-28 17:15:43,835 [INFO] [Agent 133] 2-column split OCR (1226x822)
+2026-02-28 17:15:43,837 [INFO] [Agent 131] 2-column split OCR (1226x822)
+2026-02-28 17:15:43,837 [INFO] [Agent 132] 2-column split OCR (1226x822)
+2026-02-28 17:15:44,158 [INFO] [Agent 119] Done EN=1737c KO=1043c Codes=2
+2026-02-28 17:15:44,165 [INFO] [Agent 134] 2-column split OCR (1226x822)
+2026-02-28 17:15:44,512 [INFO] [Agent 129] Done EN=1610c KO=1014c Codes=2
+2026-02-28 17:15:44,517 [INFO] [Agent 135] 2-column split OCR (1226x822)
+2026-02-28 17:15:45,047 [INFO] [Agent 130] Done EN=1195c KO=651c Codes=3
+2026-02-28 17:15:45,056 [INFO] [Agent 127] Done EN=1285c KO=666c Codes=6
+2026-02-28 17:15:45,057 [INFO] [Agent 136] 2-column split OCR (1226x822)
+2026-02-28 17:15:45,064 [INFO] [Agent 137] 2-column split OCR (1226x822)
+2026-02-28 17:15:45,471 [INFO] [Agent 128] Done EN=1772c KO=996c Codes=3
+2026-02-28 17:15:45,478 [INFO] [Agent 138] 2-column split OCR (1226x822)
+2026-02-28 17:15:45,724 [INFO] [Agent 135] Done EN=1086c KO=692c Codes=2
+2026-02-28 17:15:45,730 [INFO] [Agent 139] 2-column split OCR (1226x822)
+2026-02-28 17:15:45,765 [INFO] [Agent 132] Done EN=1931c KO=1049c Codes=0
+2026-02-28 17:15:45,773 [INFO] [Agent 133] Done EN=883c KO=601c Codes=4
+2026-02-28 17:15:45,775 [INFO] [Agent 140] 2-column split OCR (1226x822)
+2026-02-28 17:15:45,781 [INFO] [Agent 141] 2-column split OCR (1226x822)
+2026-02-28 17:15:45,924 [INFO] [Agent 134] Done EN=1610c KO=915c Codes=4
+2026-02-28 17:15:45,933 [INFO] [Agent 142] 2-column split OCR (1226x822)
+2026-02-28 17:15:46,507 [INFO] [Agent 137] Done EN=1520c KO=840c Codes=1
+2026-02-28 17:15:46,513 [INFO] [Agent 143] 2-column split OCR (1226x822)
+2026-02-28 17:15:46,639 [INFO] [Agent 131] Done EN=1837c KO=1034c Codes=1
+2026-02-28 17:15:46,645 [INFO] [Agent 144] 2-column split OCR (1226x822)
+2026-02-28 17:15:46,698 [INFO] [Agent 136] Done EN=1959c KO=1141c Codes=1
+2026-02-28 17:15:46,706 [INFO] [Agent 145] 2-column split OCR (1226x822)
+2026-02-28 17:15:47,135 [INFO] [Agent 141] Done EN=515c KO=402c Codes=8
+2026-02-28 17:15:47,142 [INFO] [Agent 146] 2-column split OCR (1226x822)
+2026-02-28 17:15:47,492 [INFO] [Agent 138] Done EN=1014c KO=521c Codes=9
+2026-02-28 17:15:47,498 [INFO] [Agent 147] 2-column split OCR (1226x822)
+2026-02-28 17:15:47,569 [INFO] [Agent 140] Done EN=1222c KO=676c Codes=3
+2026-02-28 17:15:47,577 [INFO] [Agent 148] 2-column split OCR (1226x822)
+2026-02-28 17:15:47,610 [INFO] [Agent 142] Done EN=1883c KO=1024c Codes=1
+2026-02-28 17:15:47,617 [INFO] [Agent 149] 2-column split OCR (1226x822)
+2026-02-28 17:15:47,753 [INFO] [Agent 139] Done EN=1325c KO=740c Codes=4
+2026-02-28 17:15:47,760 [INFO] [Agent 150] 2-column split OCR (1226x822)
+2026-02-28 17:15:48,719 [INFO] [Agent 143] Done EN=738c KO=410c Codes=1
+2026-02-28 17:15:48,725 [INFO] [Agent 151] 2-column split OCR (1226x822)
+2026-02-28 17:15:48,774 [INFO] [Agent 144] Done EN=1815c KO=1060c Codes=0
+2026-02-28 17:15:48,780 [INFO] [Agent 152] 2-column split OCR (1226x822)
+2026-02-28 17:15:49,005 [INFO] [Agent 145] Done EN=2186c KO=1205c Codes=0
+2026-02-28 17:15:49,011 [INFO] [Agent 153] 2-column split OCR (1226x822)
+2026-02-28 17:15:49,097 [INFO] [Agent 147] Done EN=1562c KO=946c Codes=2
+2026-02-28 17:15:49,106 [INFO] [Agent 154] 2-column split OCR (1226x822)
+2026-02-28 17:15:49,477 [INFO] [Agent 146] Done EN=1536c KO=920c Codes=0
+2026-02-28 17:15:49,486 [INFO] [Agent 155] 2-column split OCR (1226x822)
+2026-02-28 17:15:50,023 [INFO] [Agent 152] Done EN=932c KO=478c Codes=4
+2026-02-28 17:15:50,028 [INFO] [Agent 156] 2-column split OCR (1226x822)
+2026-02-28 17:15:50,217 [INFO] [Agent 150] Done EN=1580c KO=832c Codes=0
+2026-02-28 17:15:50,222 [INFO] [Agent 157] 2-column split OCR (1226x822)
+2026-02-28 17:15:50,237 [INFO] [Agent 148] Done EN=1827c KO=977c Codes=3
+2026-02-28 17:15:50,243 [INFO] [Agent 158] 2-column split OCR (1226x822)
+2026-02-28 17:15:50,500 [INFO] [Agent 149] Done EN=1609c KO=918c Codes=1
+2026-02-28 17:15:50,509 [INFO] [Agent 159] 2-column split OCR (1226x822)
+2026-02-28 17:15:50,698 [INFO] [Agent 151] Done EN=798c KO=540c Codes=7
+2026-02-28 17:15:50,705 [INFO] [Agent 160] 2-column split OCR (1226x822)
+2026-02-28 17:15:51,062 [INFO] [Agent 153] Done EN=1533c KO=872c Codes=1
+2026-02-28 17:15:51,068 [INFO] [Agent 161] 2-column split OCR (1226x822)
+2026-02-28 17:15:51,181 [INFO] [Agent 154] Done EN=1450c KO=849c Codes=4
+2026-02-28 17:15:51,190 [INFO] [Agent 162] 2-column split OCR (1226x822)
+2026-02-28 17:15:51,424 [INFO] [Agent 157] Done EN=1011c KO=558c Codes=1
+2026-02-28 17:15:51,430 [INFO] [Agent 163] 2-column split OCR (1226x822)
+2026-02-28 17:15:51,518 [INFO] [Agent 158] Done EN=270c KO=119c Codes=0
+2026-02-28 17:15:51,524 [INFO] [Agent 164] 2-column split OCR (1226x822)
+2026-02-28 17:15:52,257 [INFO] [Agent 160] Done EN=1677c KO=1050c Codes=1
+2026-02-28 17:15:52,263 [INFO] [Agent 165] 2-column split OCR (1226x822)
+2026-02-28 17:15:52,305 [INFO] [Agent 155] Done EN=1555c KO=834c Codes=3
+2026-02-28 17:15:52,312 [INFO] [Agent 166] 2-column split OCR (1226x822)
+2026-02-28 17:15:52,465 [INFO] [Agent 156] Done EN=941c KO=480c Codes=0
+2026-02-28 17:15:52,472 [INFO] [Agent 167] 2-column split OCR (1226x822)
+2026-02-28 17:15:52,784 [INFO] [Agent 159] Done EN=2081c KO=1251c Codes=0
+2026-02-28 17:15:52,790 [INFO] [Agent 168] 2-column split OCR (1226x822)
+2026-02-28 17:15:52,877 [INFO] [Agent 161] Done EN=1585c KO=888c Codes=1
+2026-02-28 17:15:52,885 [INFO] [Agent 169] 2-column split OCR (1226x822)
+2026-02-28 17:15:52,906 [INFO] [Agent 164] Done EN=1434c KO=779c Codes=2
+2026-02-28 17:15:52,915 [INFO] [Agent 170] 2-column split OCR (1226x822)
+2026-02-28 17:15:53,029 [INFO] [Agent 163] Done EN=1966c KO=1049c Codes=0
+2026-02-28 17:15:53,036 [INFO] [Agent 171] 2-column split OCR (1226x822)
+2026-02-28 17:15:53,087 [INFO] [Agent 162] Done EN=2025c KO=1096c Codes=2
+2026-02-28 17:15:53,094 [INFO] [Agent 172] 2-column split OCR (1226x822)
+2026-02-28 17:15:53,744 [INFO] [Agent 165] Done EN=1434c KO=775c Codes=2
+2026-02-28 17:15:53,753 [INFO] [Agent 173] 2-column split OCR (1226x822)
+2026-02-28 17:15:53,838 [INFO] [Agent 166] Done EN=1707c KO=926c Codes=0
+2026-02-28 17:15:53,845 [INFO] [Agent 174] 2-column split OCR (1226x822)
+2026-02-28 17:15:54,032 [INFO] [Agent 167] Done EN=1643c KO=920c Codes=0
+2026-02-28 17:15:54,043 [INFO] [Agent 175] 2-column split OCR (1226x822)
+2026-02-28 17:15:54,474 [INFO] [Agent 168] Done EN=1627c KO=931c Codes=0
+2026-02-28 17:15:54,480 [INFO] [Agent 176] 2-column split OCR (1226x822)
+2026-02-28 17:15:55,143 [INFO] [Agent 171] Done EN=946c KO=506c Codes=0
+2026-02-28 17:15:55,150 [INFO] [Agent 177] 2-column split OCR (1226x822)
+2026-02-28 17:15:55,157 [INFO] [Agent 170] Done EN=1295c KO=788c Codes=0
+2026-02-28 17:15:55,162 [INFO] [Agent 178] 2-column split OCR (1226x822)
+2026-02-28 17:15:55,334 [INFO] [Agent 169] Done EN=1598c KO=901c Codes=1
+2026-02-28 17:15:55,340 [INFO] [Agent 179] 2-column split OCR (1226x822)
+2026-02-28 17:15:55,447 [INFO] [Agent 173] Done EN=1998c KO=1072c Codes=0
+2026-02-28 17:15:55,452 [INFO] [Agent 180] 2-column split OCR (1226x822)
+2026-02-28 17:15:55,512 [INFO] [Agent 174] Done EN=1827c KO=1062c Codes=1
+2026-02-28 17:15:55,519 [INFO] [Agent 181] 2-column split OCR (1226x822)
+2026-02-28 17:15:55,955 [INFO] [Agent 172] Done EN=1775c KO=942c Codes=0
+2026-02-28 17:15:55,962 [INFO] [Agent 182] 2-column split OCR (1226x822)
+2026-02-28 17:15:56,129 [INFO] [Agent 176] Done EN=1541c KO=865c Codes=1
+2026-02-28 17:15:56,135 [INFO] [Agent 183] 2-column split OCR (1226x822)
+2026-02-28 17:15:56,812 [INFO] [Agent 180] Done EN=1219c KO=635c Codes=0
+2026-02-28 17:15:56,819 [INFO] [Agent 184] 2-column split OCR (1226x822)
+2026-02-28 17:15:56,825 [INFO] [Agent 175] Done EN=1605c KO=925c Codes=1
+2026-02-28 17:15:56,832 [INFO] [Agent 185] 2-column split OCR (1226x822)
+2026-02-28 17:15:56,897 [INFO] [Agent 177] Done EN=1981c KO=1145c Codes=0
+2026-02-28 17:15:56,903 [INFO] [Agent 186] 2-column split OCR (1226x822)
+2026-02-28 17:15:57,079 [INFO] [Agent 178] Done EN=1341c KO=660c Codes=1
+2026-02-28 17:15:57,085 [INFO] [Agent 187] 2-column split OCR (1226x822)
+2026-02-28 17:15:57,094 [INFO] [Agent 181] Done EN=51c KO=47c Codes=0
+2026-02-28 17:15:57,102 [INFO] [Agent 188] 2-column split OCR (1226x822)
+2026-02-28 17:15:57,695 [INFO] [Agent 183] Done EN=1682c KO=1005c Codes=0
+2026-02-28 17:15:57,701 [INFO] [Agent 189] 2-column split OCR (1226x822)
+2026-02-28 17:15:57,861 [INFO] [Agent 179] Done EN=1909c KO=972c Codes=1
+2026-02-28 17:15:57,867 [INFO] [Agent 190] 2-column split OCR (1226x822)
+2026-02-28 17:15:58,374 [INFO] [Agent 185] Done EN=1428c KO=822c Codes=1
+2026-02-28 17:15:58,381 [INFO] [Agent 191] 2-column split OCR (1226x822)
+2026-02-28 17:15:58,468 [INFO] [Agent 184] Done EN=1843c KO=1008c Codes=0
+2026-02-28 17:15:58,476 [INFO] [Agent 192] 2-column split OCR (1226x822)
+2026-02-28 17:15:58,498 [INFO] [Agent 186] Done EN=1613c KO=945c Codes=0
+2026-02-28 17:15:58,506 [INFO] [Agent 193] 2-column split OCR (1226x822)
+2026-02-28 17:15:58,816 [INFO] [Agent 182] Done EN=1575c KO=914c Codes=1
+2026-02-28 17:15:58,820 [INFO] [Agent 194] 2-column split OCR (1226x822)
+2026-02-28 17:15:59,412 [INFO] [Agent 190] Done EN=1620c KO=923c Codes=2
+2026-02-28 17:15:59,419 [INFO] [Agent 195] 2-column split OCR (1226x822)
+2026-02-28 17:15:59,595 [INFO] [Agent 188] Done EN=1906c KO=1150c Codes=0
+2026-02-28 17:15:59,602 [INFO] [Agent 196] 2-column split OCR (1226x822)
+2026-02-28 17:15:59,690 [INFO] [Agent 187] Done EN=1377c KO=786c Codes=1
+2026-02-28 17:15:59,701 [INFO] [Agent 197] 2-column split OCR (1226x822)
+2026-02-28 17:16:00,013 [INFO] [Agent 192] Done EN=1417c KO=824c Codes=3
+2026-02-28 17:16:00,021 [INFO] [Agent 198] 2-column split OCR (1226x822)
+2026-02-28 17:16:00,140 [INFO] [Agent 189] Done EN=1302c KO=754c Codes=5
+2026-02-28 17:16:00,147 [INFO] [Agent 199] 2-column split OCR (1226x822)
+2026-02-28 17:16:00,204 [INFO] [Agent 193] Done EN=1900c KO=966c Codes=0
+2026-02-28 17:16:00,213 [INFO] [Agent 200] 2-column split OCR (1226x822)
+2026-02-28 17:16:00,217 [INFO] [Agent 194] Done EN=339c KO=204c Codes=1
+2026-02-28 17:16:00,226 [INFO] [Agent 201] 2-column split OCR (1226x822)
+2026-02-28 17:16:00,896 [INFO] [Agent 191] Done EN=1414c KO=755c Codes=1
+2026-02-28 17:16:00,905 [INFO] [Agent 202] 2-column split OCR (1226x822)
+2026-02-28 17:16:01,773 [INFO] [Agent 197] Done EN=2385c KO=1571c Codes=4
+2026-02-28 17:16:01,780 [INFO] [Agent 203] 2-column split OCR (1226x822)
+2026-02-28 17:16:02,045 [INFO] [Agent 198] Done EN=2213c KO=1314c Codes=5
+2026-02-28 17:16:02,051 [INFO] [Agent 204] 2-column split OCR (1226x822)
+2026-02-28 17:16:02,098 [INFO] [Agent 200] Done EN=1834c KO=1087c Codes=8
+2026-02-28 17:16:02,308 [INFO] [Agent 195] Done EN=2289c KO=1381c Codes=4
+2026-02-28 17:16:02,632 [INFO] [Agent 196] Done EN=2524c KO=1494c Codes=8
+2026-02-28 17:16:02,977 [INFO] [Agent 202] Done EN=2195c KO=1324c Codes=5
+2026-02-28 17:16:03,080 [INFO] [Agent 201] Done EN=2750c KO=1591c Codes=3
+2026-02-28 17:16:03,634 [INFO] [Agent 203] Done EN=2179c KO=1241c Codes=6
+2026-02-28 17:16:03,690 [INFO] [Agent 199] Done EN=2626c KO=1457c Codes=3
+2026-02-28 17:16:04,347 [INFO] [Agent 204] Done EN=1934c KO=1131c Codes=8
+2026-02-28 17:23:44,210 [INFO] [Agent 001] 2-column split OCR (1226x822)
+2026-02-28 17:23:44,210 [INFO] [Agent 003] 2-column split OCR (1226x822)
+2026-02-28 17:23:44,212 [INFO] [Agent 005] 2-column split OCR (1226x822)
+2026-02-28 17:23:44,212 [INFO] [Agent 004] 2-column split OCR (1226x822)
+2026-02-28 17:23:44,213 [INFO] [Agent 002] 2-column split OCR (1226x822)
+2026-02-28 17:23:44,213 [INFO] [Agent 006] 2-column split OCR (1226x822)
+2026-02-28 17:23:44,213 [INFO] [Agent 007] 2-column split OCR (1226x822)
+2026-02-28 17:23:44,214 [INFO] [Agent 008] 2-column split OCR (1226x822)
+2026-02-28 17:23:45,406 [INFO] [Agent 001] Done EN=45c KO=27c Codes=0
+2026-02-28 17:23:45,410 [INFO] [Agent 009] 2-column split OCR (1226x822)
+2026-02-28 17:23:46,120 [INFO] [Agent 004] Done EN=84c KO=55c Codes=0
+2026-02-28 17:23:46,126 [INFO] [Agent 010] 2-column split OCR (1226x822)
+2026-02-28 17:23:46,204 [INFO] [Agent 009] Done EN=78c KO=49c Codes=0
+2026-02-28 17:23:46,211 [INFO] [Agent 011] 2-column split OCR (1226x822)
+2026-02-28 17:23:46,316 [INFO] [Agent 002] Done EN=200c KO=93c Codes=0
+2026-02-28 17:23:46,320 [INFO] [Agent 012] 2-column split OCR (1226x822)
+2026-02-28 17:23:46,380 [INFO] [Agent 003] Done EN=488c KO=282c Codes=0
+2026-02-28 17:23:46,386 [INFO] [Agent 013] 2-column split OCR (1226x822)
+2026-02-28 17:23:46,489 [INFO] [Agent 007] Done EN=775c KO=382c Codes=0
+2026-02-28 17:23:46,492 [INFO] [Agent 006] Done EN=683c KO=382c Codes=0
+2026-02-28 17:23:46,501 [INFO] [Agent 014] 2-column split OCR (1226x822)
+2026-02-28 17:23:46,501 [INFO] [Agent 015] 2-column split OCR (1226x822)
+2026-02-28 17:23:46,556 [INFO] [Agent 005] Done EN=779c KO=457c Codes=0
+2026-02-28 17:23:46,565 [INFO] [Agent 016] 2-column split OCR (1226x822)
+2026-02-28 17:23:46,569 [INFO] [Agent 008] Done EN=810c KO=433c Codes=0
+2026-02-28 17:23:46,578 [INFO] [Agent 017] 2-column split OCR (1226x822)
+2026-02-28 17:23:47,051 [INFO] [Agent 012] Done EN=20c KO=14c Codes=0
+2026-02-28 17:23:47,059 [INFO] [Agent 018] 2-column split OCR (1226x822)
+2026-02-28 17:23:48,337 [INFO] [Agent 013] Done EN=1572c KO=811c Codes=0
+2026-02-28 17:23:48,343 [INFO] [Agent 019] 2-column split OCR (1226x822)
+2026-02-28 17:23:48,611 [INFO] [Agent 010] Done EN=1574c KO=861c Codes=0
+2026-02-28 17:23:48,616 [INFO] [Agent 011] Done EN=1886c KO=1174c Codes=0
+2026-02-28 17:23:48,624 [INFO] [Agent 021] 2-column split OCR (1226x822)
+2026-02-28 17:23:48,624 [INFO] [Agent 020] 2-column split OCR (1226x822)
+2026-02-28 17:23:48,715 [INFO] [Agent 016] Done EN=993c KO=705c Codes=1
+2026-02-28 17:23:48,722 [INFO] [Agent 022] 2-column split OCR (1226x822)
+2026-02-28 17:23:49,087 [INFO] [Agent 018] Done EN=1217c KO=779c Codes=0
+2026-02-28 17:23:49,094 [INFO] [Agent 023] 2-column split OCR (1226x822)
+2026-02-28 17:23:49,112 [INFO] [Agent 017] Done EN=1370c KO=790c Codes=3
+2026-02-28 17:23:49,121 [INFO] [Agent 024] 2-column split OCR (1226x822)
+2026-02-28 17:23:49,357 [INFO] [Agent 014] Done EN=1285c KO=647c Codes=1
+2026-02-28 17:23:49,364 [INFO] [Agent 025] 2-column split OCR (1226x822)
+2026-02-28 17:23:49,437 [INFO] [Agent 015] Done EN=993c KO=570c Codes=4
+2026-02-28 17:23:49,444 [INFO] [Agent 026] 2-column split OCR (1226x822)
+2026-02-28 17:23:50,329 [INFO] [Agent 019] Done EN=1212c KO=846c Codes=1
+2026-02-28 17:23:50,335 [INFO] [Agent 027] 2-column split OCR (1226x822)
+2026-02-28 17:23:50,819 [INFO] [Agent 022] Done EN=767c KO=409c Codes=1
+2026-02-28 17:23:50,825 [INFO] [Agent 028] 2-column split OCR (1226x822)
+2026-02-28 17:23:50,975 [INFO] [Agent 021] Done EN=1477c KO=832c Codes=1
+2026-02-28 17:23:50,977 [INFO] [Agent 020] Done EN=1263c KO=809c Codes=2
+2026-02-28 17:23:50,985 [INFO] [Agent 029] 2-column split OCR (1226x822)
+2026-02-28 17:23:50,986 [INFO] [Agent 030] 2-column split OCR (1226x822)
+2026-02-28 17:23:51,263 [INFO] [Agent 023] Done EN=1275c KO=756c Codes=0
+2026-02-28 17:23:51,270 [INFO] [Agent 031] 2-column split OCR (1226x822)
+2026-02-28 17:23:51,888 [INFO] [Agent 024] Done EN=1498c KO=926c Codes=0
+2026-02-28 17:23:51,896 [INFO] [Agent 032] 2-column split OCR (1226x822)
+2026-02-28 17:23:51,992 [INFO] [Agent 026] Done EN=1780c KO=985c Codes=0
+2026-02-28 17:23:52,001 [INFO] [Agent 033] 2-column split OCR (1226x822)
+2026-02-28 17:23:52,037 [INFO] [Agent 025] Done EN=1455c KO=880c Codes=1
+2026-02-28 17:23:52,045 [INFO] [Agent 034] 2-column split OCR (1226x822)
+2026-02-28 17:23:52,340 [INFO] [Agent 027] Done EN=1781c KO=996c Codes=0
+2026-02-28 17:23:52,346 [INFO] [Agent 035] 2-column split OCR (1226x822)
+2026-02-28 17:23:52,395 [INFO] [Agent 028] Done EN=1592c KO=901c Codes=0
+2026-02-28 17:23:52,403 [INFO] [Agent 036] 2-column split OCR (1226x822)
+2026-02-28 17:23:52,676 [INFO] [Agent 029] Done EN=1610c KO=917c Codes=0
+2026-02-28 17:23:52,684 [INFO] [Agent 037] 2-column split OCR (1226x822)
+2026-02-28 17:23:53,410 [INFO] [Agent 030] Done EN=1152c KO=671c Codes=0
+2026-02-28 17:23:53,416 [INFO] [Agent 038] 2-column split OCR (1226x822)
+2026-02-28 17:23:53,627 [INFO] [Agent 031] Done EN=1792c KO=1009c Codes=0
+2026-02-28 17:23:53,632 [INFO] [Agent 039] 2-column split OCR (1226x822)
+2026-02-28 17:23:53,856 [INFO] [Agent 036] Done EN=1437c KO=758c Codes=0
+2026-02-28 17:23:53,862 [INFO] [Agent 040] 2-column split OCR (1226x822)
+2026-02-28 17:23:54,131 [INFO] [Agent 032] Done EN=1913c KO=971c Codes=0
+2026-02-28 17:23:54,137 [INFO] [Agent 041] 2-column split OCR (1226x822)
+2026-02-28 17:23:54,410 [INFO] [Agent 035] Done EN=1630c KO=927c Codes=0
+2026-02-28 17:23:54,417 [INFO] [Agent 042] 2-column split OCR (1226x822)
+2026-02-28 17:23:54,949 [INFO] [Agent 033] Done EN=1889c KO=1041c Codes=0
+2026-02-28 17:23:54,955 [INFO] [Agent 043] 2-column split OCR (1226x822)
+2026-02-28 17:23:55,052 [INFO] [Agent 034] Done EN=1878c KO=1083c Codes=0
+2026-02-28 17:23:55,058 [INFO] [Agent 044] 2-column split OCR (1226x822)
+2026-02-28 17:23:55,073 [INFO] [Agent 040] Done EN=1029c KO=552c Codes=0
+2026-02-28 17:23:55,080 [INFO] [Agent 045] 2-column split OCR (1226x822)
+2026-02-28 17:23:55,112 [INFO] [Agent 037] Done EN=1824c KO=1066c Codes=0
+2026-02-28 17:23:55,119 [INFO] [Agent 046] 2-column split OCR (1226x822)
+2026-02-28 17:23:55,225 [INFO] [Agent 038] Done EN=1342c KO=823c Codes=0
+2026-02-28 17:23:55,232 [INFO] [Agent 047] 2-column split OCR (1226x822)
+2026-02-28 17:23:55,289 [INFO] [Agent 039] Done EN=285c KO=171c Codes=0
+2026-02-28 17:23:55,296 [INFO] [Agent 048] 2-column split OCR (1226x822)
+2026-02-28 17:23:56,241 [INFO] [Agent 048] Done EN=335c KO=194c Codes=0
+2026-02-28 17:23:56,249 [INFO] [Agent 049] 2-column split OCR (1226x822)
+2026-02-28 17:23:56,885 [INFO] [Agent 042] Done EN=1221c KO=689c Codes=0
+2026-02-28 17:23:56,893 [INFO] [Agent 050] 2-column split OCR (1226x822)
+2026-02-28 17:23:56,925 [INFO] [Agent 044] Done EN=1132c KO=654c Codes=0
+2026-02-28 17:23:56,930 [INFO] [Agent 051] 2-column split OCR (1226x822)
+2026-02-28 17:23:56,977 [INFO] [Agent 041] Done EN=1840c KO=920c Codes=0
+2026-02-28 17:23:56,982 [INFO] [Agent 052] 2-column split OCR (1226x822)
+2026-02-28 17:23:57,135 [INFO] [Agent 043] Done EN=1399c KO=800c Codes=0
+2026-02-28 17:23:57,142 [INFO] [Agent 053] 2-column split OCR (1226x822)
+2026-02-28 17:23:57,411 [INFO] [Agent 045] Done EN=847c KO=558c Codes=3
+2026-02-28 17:23:57,419 [INFO] [Agent 054] 2-column split OCR (1226x822)
+2026-02-28 17:23:57,689 [INFO] [Agent 051] Done EN=70c KO=41c Codes=0
+2026-02-28 17:23:57,696 [INFO] [Agent 055] 2-column split OCR (1226x822)
+2026-02-28 17:23:57,704 [INFO] [Agent 052] Done EN=77c KO=40c Codes=0
+2026-02-28 17:23:57,713 [INFO] [Agent 056] 2-column split OCR (1226x822)
+2026-02-28 17:23:57,744 [INFO] [Agent 046] Done EN=1865c KO=1066c Codes=0
+2026-02-28 17:23:57,752 [INFO] [Agent 057] 2-column split OCR (1226x822)
+2026-02-28 17:23:57,776 [INFO] [Agent 049] Done EN=1231c KO=718c Codes=2
+2026-02-28 17:23:57,785 [INFO] [Agent 058] 2-column split OCR (1226x822)
+2026-02-28 17:23:58,012 [INFO] [Agent 047] Done EN=1791c KO=947c Codes=1
+2026-02-28 17:23:58,019 [INFO] [Agent 059] 2-column split OCR (1226x822)
+2026-02-28 17:23:59,049 [INFO] [Agent 050] Done EN=850c KO=517c Codes=2
+2026-02-28 17:23:59,055 [INFO] [Agent 060] 2-column split OCR (1226x822)
+2026-02-28 17:23:59,492 [INFO] [Agent 053] Done EN=1935c KO=1163c Codes=0
+2026-02-28 17:23:59,498 [INFO] [Agent 061] 2-column split OCR (1226x822)
+2026-02-28 17:23:59,851 [INFO] [Agent 057] Done EN=516c KO=346c Codes=2
+2026-02-28 17:23:59,858 [INFO] [Agent 062] 2-column split OCR (1226x822)
+2026-02-28 17:24:00,085 [INFO] [Agent 058] Done EN=1637c KO=927c Codes=1
+2026-02-28 17:24:00,092 [INFO] [Agent 056] Done EN=1685c KO=1017c Codes=0
+2026-02-28 17:24:00,092 [INFO] [Agent 063] 2-column split OCR (1226x822)
+2026-02-28 17:24:00,101 [INFO] [Agent 064] 2-column split OCR (1226x822)
+2026-02-28 17:24:00,201 [INFO] [Agent 055] Done EN=1376c KO=743c Codes=2
+2026-02-28 17:24:00,208 [INFO] [Agent 065] 2-column split OCR (1226x822)
+2026-02-28 17:24:00,396 [INFO] [Agent 059] Done EN=933c KO=631c Codes=3
+2026-02-28 17:24:00,403 [INFO] [Agent 066] 2-column split OCR (1226x822)
+2026-02-28 17:24:00,534 [INFO] [Agent 054] Done EN=2175c KO=1167c Codes=0
+2026-02-28 17:24:00,543 [INFO] [Agent 067] 2-column split OCR (1226x822)
+2026-02-28 17:24:01,113 [INFO] [Agent 060] Done EN=1672c KO=915c Codes=0
+2026-02-28 17:24:01,126 [INFO] [Agent 068] 2-column split OCR (1226x822)
+2026-02-28 17:24:01,251 [INFO] [Agent 061] Done EN=356c KO=229c Codes=0
+2026-02-28 17:24:01,257 [INFO] [Agent 069] 2-column split OCR (1226x822)
+2026-02-28 17:24:01,350 [INFO] [Agent 062] Done EN=1746c KO=950c Codes=0
+2026-02-28 17:24:01,355 [INFO] [Agent 070] 2-column split OCR (1226x822)
+2026-02-28 17:24:01,891 [INFO] [Agent 063] Done EN=1688c KO=956c Codes=0
+2026-02-28 17:24:01,899 [INFO] [Agent 071] 2-column split OCR (1226x822)
+2026-02-28 17:24:02,281 [INFO] [Agent 064] Done EN=1404c KO=719c Codes=0
+2026-02-28 17:24:02,290 [INFO] [Agent 072] 2-column split OCR (1226x822)
+2026-02-28 17:24:02,638 [INFO] [Agent 068] Done EN=1643c KO=843c Codes=1
+2026-02-28 17:24:02,646 [INFO] [Agent 073] 2-column split OCR (1226x822)
+2026-02-28 17:24:02,798 [INFO] [Agent 070] Done EN=126c KO=86c Codes=2
+2026-02-28 17:24:02,805 [INFO] [Agent 074] 2-column split OCR (1226x822)
+2026-02-28 17:24:02,816 [INFO] [Agent 067] Done EN=1559c KO=862c Codes=0
+2026-02-28 17:24:02,823 [INFO] [Agent 075] 2-column split OCR (1226x822)
+2026-02-28 17:24:02,833 [INFO] [Agent 065] Done EN=1905c KO=990c Codes=0
+2026-02-28 17:24:02,839 [INFO] [Agent 076] 2-column split OCR (1226x822)
+2026-02-28 17:24:02,847 [INFO] [Agent 066] Done EN=1269c KO=836c Codes=0
+2026-02-28 17:24:02,855 [INFO] [Agent 077] 2-column split OCR (1226x822)
+2026-02-28 17:24:03,251 [INFO] [Agent 069] Done EN=1690c KO=859c Codes=0
+2026-02-28 17:24:03,259 [INFO] [Agent 078] 2-column split OCR (1226x822)
+2026-02-28 17:24:03,834 [INFO] [Agent 072] Done EN=1805c KO=942c Codes=0
+2026-02-28 17:24:03,841 [INFO] [Agent 079] 2-column split OCR (1226x822)
+2026-02-28 17:24:04,181 [INFO] [Agent 073] Done EN=1311c KO=776c Codes=0
+2026-02-28 17:24:04,188 [INFO] [Agent 080] 2-column split OCR (1226x822)
+2026-02-28 17:24:04,621 [INFO] [Agent 071] Done EN=1621c KO=860c Codes=0
+2026-02-28 17:24:04,628 [INFO] [Agent 081] 2-column split OCR (1226x822)
+2026-02-28 17:24:04,835 [INFO] [Agent 076] Done EN=561c KO=311c Codes=0
+2026-02-28 17:24:04,843 [INFO] [Agent 082] 2-column split OCR (1226x822)
+2026-02-28 17:24:04,960 [INFO] [Agent 075] Done EN=1401c KO=884c Codes=0
+2026-02-28 17:24:04,967 [INFO] [Agent 083] 2-column split OCR (1226x822)
+2026-02-28 17:24:05,176 [INFO] [Agent 074] Done EN=1106c KO=684c Codes=0
+2026-02-28 17:24:05,183 [INFO] [Agent 084] 2-column split OCR (1226x822)
+2026-02-28 17:24:05,270 [INFO] [Agent 077] Done EN=1508c KO=794c Codes=1
+2026-02-28 17:24:05,276 [INFO] [Agent 085] 2-column split OCR (1226x822)
+2026-02-28 17:24:05,500 [INFO] [Agent 078] Done EN=1923c KO=1014c Codes=0
+2026-02-28 17:24:05,506 [INFO] [Agent 086] 2-column split OCR (1226x822)
+2026-02-28 17:24:06,105 [INFO] [Agent 082] Done EN=1067c KO=589c Codes=0
+2026-02-28 17:24:06,113 [INFO] [Agent 087] 2-column split OCR (1226x822)
+2026-02-28 17:24:06,199 [INFO] [Agent 080] Done EN=1971c KO=1257c Codes=0
+2026-02-28 17:24:06,208 [INFO] [Agent 088] 2-column split OCR (1226x822)
+2026-02-28 17:24:06,539 [INFO] [Agent 079] Done EN=1650c KO=1080c Codes=0
+2026-02-28 17:24:06,546 [INFO] [Agent 089] 2-column split OCR (1226x822)
+2026-02-28 17:24:06,587 [INFO] [Agent 081] Done EN=1430c KO=811c Codes=2
+2026-02-28 17:24:06,595 [INFO] [Agent 090] 2-column split OCR (1226x822)
+2026-02-28 17:24:06,971 [INFO] [Agent 083] Done EN=937c KO=585c Codes=3
+2026-02-28 17:24:06,978 [INFO] [Agent 091] 2-column split OCR (1226x822)
+2026-02-28 17:24:07,017 [INFO] [Agent 084] Done EN=1357c KO=792c Codes=2
+2026-02-28 17:24:07,024 [INFO] [Agent 092] 2-column split OCR (1226x822)
+2026-02-28 17:24:07,856 [INFO] [Agent 085] Done EN=1121c KO=601c Codes=2
+2026-02-28 17:24:07,862 [INFO] [Agent 093] 2-column split OCR (1226x822)
+2026-02-28 17:24:07,869 [INFO] [Agent 090] Done EN=1020c KO=622c Codes=2
+2026-02-28 17:24:07,875 [INFO] [Agent 094] 2-column split OCR (1226x822)
+2026-02-28 17:24:07,897 [INFO] [Agent 089] Done EN=918c KO=537c Codes=0
+2026-02-28 17:24:07,910 [INFO] [Agent 095] 2-column split OCR (1226x822)
+2026-02-28 17:24:08,069 [INFO] [Agent 086] Done EN=1594c KO=896c Codes=0
+2026-02-28 17:24:08,076 [INFO] [Agent 096] 2-column split OCR (1226x822)
+2026-02-28 17:24:08,131 [INFO] [Agent 088] Done EN=837c KO=572c Codes=0
+2026-02-28 17:24:08,139 [INFO] [Agent 097] 2-column split OCR (1226x822)
+2026-02-28 17:24:08,349 [INFO] [Agent 091] Done EN=1025c KO=519c Codes=2
+2026-02-28 17:24:08,356 [INFO] [Agent 098] 2-column split OCR (1226x822)
+2026-02-28 17:24:08,383 [INFO] [Agent 087] Done EN=1358c KO=905c Codes=2
+2026-02-28 17:24:08,393 [INFO] [Agent 099] 2-column split OCR (1226x822)
+2026-02-28 17:24:08,549 [INFO] [Agent 092] Done EN=644c KO=359c Codes=4
+2026-02-28 17:24:08,556 [INFO] [Agent 100] 2-column split OCR (1226x822)
+2026-02-28 17:24:10,000 [INFO] [Agent 099] Done EN=1855c KO=1093c Codes=0
+2026-02-28 17:24:10,006 [INFO] [Agent 095] Done EN=995c KO=562c Codes=3
+2026-02-28 17:24:10,008 [INFO] [Agent 101] 2-column split OCR (1226x822)
+2026-02-28 17:24:10,014 [INFO] [Agent 102] 2-column split OCR (1226x822)
+2026-02-28 17:24:10,015 [INFO] [Agent 096] Done EN=1120c KO=669c Codes=2
+2026-02-28 17:24:10,023 [INFO] [Agent 103] 2-column split OCR (1226x822)
+2026-02-28 17:24:10,156 [INFO] [Agent 093] Done EN=1306c KO=770c Codes=3
+2026-02-28 17:24:10,164 [INFO] [Agent 104] 2-column split OCR (1226x822)
+2026-02-28 17:24:10,350 [INFO] [Agent 094] Done EN=904c KO=533c Codes=4
+2026-02-28 17:24:10,357 [INFO] [Agent 105] 2-column split OCR (1226x822)
+2026-02-28 17:24:10,688 [INFO] [Agent 097] Done EN=1514c KO=821c Codes=0
+2026-02-28 17:24:10,696 [INFO] [Agent 106] 2-column split OCR (1226x822)
+2026-02-28 17:24:11,015 [INFO] [Agent 100] Done EN=1620c KO=943c Codes=0
+2026-02-28 17:24:11,023 [INFO] [Agent 107] 2-column split OCR (1226x822)
+2026-02-28 17:24:11,058 [INFO] [Agent 098] Done EN=519c KO=294c Codes=3
+2026-02-28 17:24:11,068 [INFO] [Agent 108] 2-column split OCR (1226x822)
+2026-02-28 17:24:11,697 [INFO] [Agent 102] Done EN=1710c KO=996c Codes=0
+2026-02-28 17:24:11,706 [INFO] [Agent 109] 2-column split OCR (1226x822)
+2026-02-28 17:24:11,799 [INFO] [Agent 104] Done EN=1798c KO=1088c Codes=0
+2026-02-28 17:24:11,806 [INFO] [Agent 110] 2-column split OCR (1226x822)
+2026-02-28 17:24:11,870 [INFO] [Agent 103] Done EN=2164c KO=1140c Codes=0
+2026-02-28 17:24:11,878 [INFO] [Agent 111] 2-column split OCR (1226x822)
+2026-02-28 17:24:12,028 [INFO] [Agent 105] Done EN=1805c KO=987c Codes=0
+2026-02-28 17:24:12,041 [INFO] [Agent 112] 2-column split OCR (1226x822)
+2026-02-28 17:24:12,382 [INFO] [Agent 107] Done EN=1281c KO=709c Codes=0
+2026-02-28 17:24:12,390 [INFO] [Agent 113] 2-column split OCR (1226x822)
+2026-02-28 17:24:12,590 [INFO] [Agent 101] Done EN=1324c KO=804c Codes=3
+2026-02-28 17:24:12,599 [INFO] [Agent 114] 2-column split OCR (1226x822)
+2026-02-28 17:24:12,682 [INFO] [Agent 106] Done EN=1712c KO=982c Codes=0
+2026-02-28 17:24:12,691 [INFO] [Agent 115] 2-column split OCR (1226x822)
+2026-02-28 17:24:13,723 [INFO] [Agent 113] Done EN=1249c KO=714c Codes=0
+2026-02-28 17:24:13,732 [INFO] [Agent 116] 2-column split OCR (1226x822)
+2026-02-28 17:24:13,892 [INFO] [Agent 108] Done EN=1286c KO=664c Codes=0
+2026-02-28 17:24:13,899 [INFO] [Agent 117] 2-column split OCR (1226x822)
+2026-02-28 17:24:14,268 [INFO] [Agent 115] Done EN=1887c KO=1128c Codes=0
+2026-02-28 17:24:14,275 [INFO] [Agent 118] 2-column split OCR (1226x822)
+2026-02-28 17:24:14,432 [INFO] [Agent 110] Done EN=1484c KO=807c Codes=0
+2026-02-28 17:24:14,438 [INFO] [Agent 119] 2-column split OCR (1226x822)
+2026-02-28 17:24:14,822 [INFO] [Agent 111] Done EN=1744c KO=991c Codes=0
+2026-02-28 17:24:14,828 [INFO] [Agent 120] 2-column split OCR (1226x822)
+2026-02-28 17:24:14,870 [INFO] [Agent 109] Done EN=1365c KO=855c Codes=1
+2026-02-28 17:24:14,877 [INFO] [Agent 121] 2-column split OCR (1226x822)
+2026-02-28 17:24:14,938 [INFO] [Agent 112] Done EN=1838c KO=1068c Codes=0
+2026-02-28 17:24:14,947 [INFO] [Agent 122] 2-column split OCR (1226x822)
+2026-02-28 17:24:15,285 [INFO] [Agent 114] Done EN=1688c KO=1032c Codes=0
+2026-02-28 17:24:15,290 [INFO] [Agent 123] 2-column split OCR (1226x822)
+2026-02-28 17:24:15,621 [INFO] [Agent 116] Done EN=1057c KO=646c Codes=0
+2026-02-28 17:24:15,626 [INFO] [Agent 124] 2-column split OCR (1226x822)
+2026-02-28 17:24:16,007 [INFO] [Agent 120] Done EN=1017c KO=661c Codes=0
+2026-02-28 17:24:16,011 [INFO] [Agent 125] 2-column split OCR (1226x822)
+2026-02-28 17:24:16,154 [INFO] [Agent 118] Done EN=531c KO=322c Codes=0
+2026-02-28 17:24:16,162 [INFO] [Agent 126] 2-column split OCR (1226x822)
+2026-02-28 17:24:16,296 [WARNING] [Agent 125] No text extracted
+2026-02-28 17:24:16,303 [INFO] [Agent 127] 2-column split OCR (1226x822)
+2026-02-28 17:24:16,465 [INFO] [Agent 122] Done EN=1814c KO=1030c Codes=0
+2026-02-28 17:24:16,472 [INFO] [Agent 128] 2-column split OCR (1226x822)
+2026-02-28 17:24:16,514 [INFO] [Agent 121] Done EN=1874c KO=1057c Codes=0
+2026-02-28 17:24:16,521 [INFO] [Agent 129] 2-column split OCR (1226x822)
+2026-02-28 17:24:17,675 [INFO] [Agent 123] Done EN=1393c KO=786c Codes=0
+2026-02-28 17:24:17,681 [INFO] [Agent 130] 2-column split OCR (1226x822)
+2026-02-28 17:24:17,852 [INFO] [Agent 117] Done EN=1418c KO=834c Codes=0
+2026-02-28 17:24:17,860 [INFO] [Agent 131] 2-column split OCR (1226x822)
+2026-02-28 17:24:18,293 [INFO] [Agent 119] Done EN=1835c KO=1095c Codes=0
+2026-02-28 17:24:18,299 [INFO] [Agent 132] 2-column split OCR (1226x822)
+2026-02-28 17:24:18,771 [INFO] [Agent 126] Done EN=1256c KO=655c Codes=0
+2026-02-28 17:24:18,777 [INFO] [Agent 133] 2-column split OCR (1226x822)
+2026-02-28 17:24:18,832 [INFO] [Agent 124] Done EN=639c KO=397c Codes=0
+2026-02-28 17:24:18,838 [INFO] [Agent 134] 2-column split OCR (1226x822)
+2026-02-28 17:24:19,329 [INFO] [Agent 128] Done EN=1918c KO=1070c Codes=0
+2026-02-28 17:24:19,335 [INFO] [Agent 135] 2-column split OCR (1226x822)
+2026-02-28 17:24:19,342 [INFO] [Agent 129] Done EN=1691c KO=1095c Codes=0
+2026-02-28 17:24:19,350 [INFO] [Agent 136] 2-column split OCR (1226x822)
+2026-02-28 17:24:19,885 [INFO] [Agent 132] Done EN=1931c KO=1049c Codes=0
+2026-02-28 17:24:19,890 [INFO] [Agent 127] Done EN=1599c KO=915c Codes=0
+2026-02-28 17:24:19,896 [INFO] [Agent 137] 2-column split OCR (1226x822)
+2026-02-28 17:24:19,897 [INFO] [Agent 138] 2-column split OCR (1226x822)
+2026-02-28 17:24:20,150 [INFO] [Agent 131] Done EN=1882c KO=1063c Codes=0
+2026-02-28 17:24:20,156 [INFO] [Agent 139] 2-column split OCR (1226x822)
+2026-02-28 17:24:20,320 [INFO] [Agent 130] Done EN=1386c KO=777c Codes=0
+2026-02-28 17:24:20,327 [INFO] [Agent 140] 2-column split OCR (1226x822)
+2026-02-28 17:24:21,063 [INFO] [Agent 133] Done EN=995c KO=687c Codes=3
+2026-02-28 17:24:21,069 [INFO] [Agent 141] 2-column split OCR (1226x822)
+2026-02-28 17:24:21,123 [INFO] [Agent 134] Done EN=1823c KO=1019c Codes=0
+2026-02-28 17:24:21,131 [INFO] [Agent 142] 2-column split OCR (1226x822)
+2026-02-28 17:24:21,300 [INFO] [Agent 136] Done EN=2010c KO=1153c Codes=0
+2026-02-28 17:24:21,306 [INFO] [Agent 143] 2-column split OCR (1226x822)
+2026-02-28 17:24:21,737 [INFO] [Agent 135] Done EN=1190c KO=754c Codes=0
+2026-02-28 17:24:21,742 [INFO] [Agent 144] 2-column split OCR (1226x822)
+2026-02-28 17:24:21,874 [INFO] [Agent 138] Done EN=1558c KO=846c Codes=0
+2026-02-28 17:24:21,881 [INFO] [Agent 145] 2-column split OCR (1226x822)
+2026-02-28 17:24:22,521 [INFO] [Agent 140] Done EN=1276c KO=698c Codes=2
+2026-02-28 17:24:22,530 [INFO] [Agent 146] 2-column split OCR (1226x822)
+2026-02-28 17:24:22,659 [INFO] [Agent 137] Done EN=1580c KO=866c Codes=0
+2026-02-28 17:24:22,667 [INFO] [Agent 147] 2-column split OCR (1226x822)
+2026-02-28 17:24:22,818 [INFO] [Agent 139] Done EN=1381c KO=751c Codes=1
+2026-02-28 17:24:22,826 [INFO] [Agent 148] 2-column split OCR (1226x822)
+2026-02-28 17:24:23,069 [INFO] [Agent 143] Done EN=851c KO=458c Codes=0
+2026-02-28 17:24:23,076 [INFO] [Agent 149] 2-column split OCR (1226x822)
+2026-02-28 17:24:23,322 [INFO] [Agent 144] Done EN=1815c KO=1060c Codes=0
+2026-02-28 17:24:23,328 [INFO] [Agent 150] 2-column split OCR (1226x822)
+2026-02-28 17:24:23,691 [INFO] [Agent 145] Done EN=2186c KO=1205c Codes=0
+2026-02-28 17:24:23,694 [INFO] [Agent 142] Done EN=1935c KO=1054c Codes=0
+2026-02-28 17:24:23,698 [INFO] [Agent 141] Done EN=655c KO=504c Codes=4
+2026-02-28 17:24:23,704 [INFO] [Agent 152] 2-column split OCR (1226x822)
+2026-02-28 17:24:23,705 [INFO] [Agent 151] 2-column split OCR (1226x822)
+2026-02-28 17:24:23,707 [INFO] [Agent 153] 2-column split OCR (1226x822)
+2026-02-28 17:24:23,956 [INFO] [Agent 146] Done EN=1536c KO=920c Codes=0
+2026-02-28 17:24:23,964 [INFO] [Agent 154] 2-column split OCR (1226x822)
+2026-02-28 17:24:24,363 [INFO] [Agent 147] Done EN=1646c KO=1012c Codes=0
+2026-02-28 17:24:24,371 [INFO] [Agent 155] 2-column split OCR (1226x822)
+2026-02-28 17:24:24,885 [INFO] [Agent 150] Done EN=1580c KO=832c Codes=0
+2026-02-28 17:24:24,891 [INFO] [Agent 156] 2-column split OCR (1226x822)
+2026-02-28 17:24:25,337 [INFO] [Agent 149] Done EN=1661c KO=961c Codes=0
+2026-02-28 17:24:25,342 [INFO] [Agent 157] 2-column split OCR (1226x822)
+2026-02-28 17:24:25,367 [INFO] [Agent 148] Done EN=1996c KO=1076c Codes=0
+2026-02-28 17:24:25,373 [INFO] [Agent 158] 2-column split OCR (1226x822)
+2026-02-28 17:24:25,539 [INFO] [Agent 151] Done EN=851c KO=584c Codes=3
+2026-02-28 17:24:25,549 [INFO] [Agent 159] 2-column split OCR (1226x822)
+2026-02-28 17:24:25,853 [INFO] [Agent 153] Done EN=1588c KO=895c Codes=0
+2026-02-28 17:24:25,860 [INFO] [Agent 160] 2-column split OCR (1226x822)
+2026-02-28 17:24:26,067 [INFO] [Agent 156] Done EN=941c KO=480c Codes=0
+2026-02-28 17:24:26,073 [INFO] [Agent 161] 2-column split OCR (1226x822)
+2026-02-28 17:24:26,207 [INFO] [Agent 152] Done EN=1146c KO=624c Codes=0
+2026-02-28 17:24:26,217 [INFO] [Agent 154] Done EN=1527c KO=877c Codes=1
+2026-02-28 17:24:26,218 [INFO] [Agent 162] 2-column split OCR (1226x822)
+2026-02-28 17:24:26,227 [INFO] [Agent 163] 2-column split OCR (1226x822)
+2026-02-28 17:24:26,228 [INFO] [Agent 158] Done EN=270c KO=119c Codes=0
+2026-02-28 17:24:26,236 [INFO] [Agent 164] 2-column split OCR (1226x822)
+2026-02-28 17:24:26,550 [INFO] [Agent 155] Done EN=1714c KO=947c Codes=0
+2026-02-28 17:24:26,559 [INFO] [Agent 165] 2-column split OCR (1226x822)
+2026-02-28 17:24:27,337 [INFO] [Agent 159] Done EN=2081c KO=1251c Codes=0
+2026-02-28 17:24:27,346 [INFO] [Agent 166] 2-column split OCR (1226x822)
+2026-02-28 17:24:27,457 [INFO] [Agent 157] Done EN=1159c KO=638c Codes=0
+2026-02-28 17:24:27,466 [INFO] [Agent 167] 2-column split OCR (1226x822)
+2026-02-28 17:24:27,815 [INFO] [Agent 161] Done EN=1630c KO=930c Codes=0
+2026-02-28 17:24:27,822 [INFO] [Agent 168] 2-column split OCR (1226x822)
+2026-02-28 17:24:28,337 [INFO] [Agent 164] Done EN=1510c KO=827c Codes=0
+2026-02-28 17:24:28,343 [INFO] [Agent 169] 2-column split OCR (1226x822)
+2026-02-28 17:24:28,804 [INFO] [Agent 160] Done EN=1712c KO=1085c Codes=0
+2026-02-28 17:24:28,810 [INFO] [Agent 170] 2-column split OCR (1226x822)
+2026-02-28 17:24:28,879 [INFO] [Agent 166] Done EN=1707c KO=926c Codes=0
+2026-02-28 17:24:28,885 [INFO] [Agent 171] 2-column split OCR (1226x822)
+2026-02-28 17:24:29,150 [INFO] [Agent 165] Done EN=1510c KO=823c Codes=0
+2026-02-28 17:24:29,157 [INFO] [Agent 172] 2-column split OCR (1226x822)
+2026-02-28 17:24:29,222 [INFO] [Agent 163] Done EN=1966c KO=1049c Codes=0
+2026-02-28 17:24:29,230 [INFO] [Agent 173] 2-column split OCR (1226x822)
+2026-02-28 17:24:29,234 [INFO] [Agent 162] Done EN=2122c KO=1147c Codes=0
+2026-02-28 17:24:29,242 [INFO] [Agent 174] 2-column split OCR (1226x822)
+2026-02-28 17:24:29,540 [INFO] [Agent 168] Done EN=1627c KO=931c Codes=0
+2026-02-28 17:24:29,547 [INFO] [Agent 175] 2-column split OCR (1226x822)
+2026-02-28 17:24:29,689 [INFO] [Agent 167] Done EN=1643c KO=920c Codes=0
+2026-02-28 17:24:29,695 [INFO] [Agent 176] 2-column split OCR (1226x822)
+2026-02-28 17:24:30,125 [INFO] [Agent 171] Done EN=946c KO=506c Codes=0
+2026-02-28 17:24:30,134 [INFO] [Agent 177] 2-column split OCR (1226x822)
+2026-02-28 17:24:30,227 [INFO] [Agent 170] Done EN=1295c KO=788c Codes=0
+2026-02-28 17:24:30,234 [INFO] [Agent 178] 2-column split OCR (1226x822)
+2026-02-28 17:24:30,513 [INFO] [Agent 169] Done EN=1649c KO=933c Codes=0
+2026-02-28 17:24:30,523 [INFO] [Agent 179] 2-column split OCR (1226x822)
+2026-02-28 17:24:30,861 [INFO] [Agent 172] Done EN=1775c KO=942c Codes=0
+2026-02-28 17:24:30,867 [INFO] [Agent 180] 2-column split OCR (1226x822)
+2026-02-28 17:24:31,078 [INFO] [Agent 174] Done EN=1878c KO=1093c Codes=0
+2026-02-28 17:24:31,084 [INFO] [Agent 181] 2-column split OCR (1226x822)
+2026-02-28 17:24:31,233 [INFO] [Agent 175] Done EN=1605c KO=925c Codes=1
+2026-02-28 17:24:31,239 [INFO] [Agent 182] 2-column split OCR (1226x822)
+2026-02-28 17:24:32,016 [INFO] [Agent 177] Done EN=1981c KO=1145c Codes=0
+2026-02-28 17:24:32,022 [INFO] [Agent 183] 2-column split OCR (1226x822)
+2026-02-28 17:24:32,069 [INFO] [Agent 173] Done EN=1998c KO=1072c Codes=0
+2026-02-28 17:24:32,073 [INFO] [Agent 181] Done EN=51c KO=47c Codes=0
+2026-02-28 17:24:32,079 [INFO] [Agent 184] 2-column split OCR (1226x822)
+2026-02-28 17:24:32,080 [INFO] [Agent 185] 2-column split OCR (1226x822)
+2026-02-28 17:24:32,207 [INFO] [Agent 180] Done EN=1219c KO=635c Codes=0
+2026-02-28 17:24:32,214 [INFO] [Agent 186] 2-column split OCR (1226x822)
+2026-02-28 17:24:32,254 [INFO] [Agent 178] Done EN=1400c KO=684c Codes=0
+2026-02-28 17:24:32,260 [INFO] [Agent 187] 2-column split OCR (1226x822)
+2026-02-28 17:24:32,531 [INFO] [Agent 176] Done EN=1595c KO=903c Codes=0
+2026-02-28 17:24:32,537 [INFO] [Agent 188] 2-column split OCR (1226x822)
+2026-02-28 17:24:33,221 [INFO] [Agent 182] Done EN=1631c KO=939c Codes=0
+2026-02-28 17:24:33,229 [INFO] [Agent 189] 2-column split OCR (1226x822)
+2026-02-28 17:24:33,365 [INFO] [Agent 179] Done EN=1963c KO=987c Codes=0
+2026-02-28 17:24:33,375 [INFO] [Agent 190] 2-column split OCR (1226x822)
+2026-02-28 17:24:33,815 [INFO] [Agent 184] Done EN=1843c KO=1008c Codes=0
+2026-02-28 17:24:33,822 [INFO] [Agent 191] 2-column split OCR (1226x822)
+2026-02-28 17:24:33,854 [INFO] [Agent 185] Done EN=1464c KO=836c Codes=0
+2026-02-28 17:24:33,865 [INFO] [Agent 192] 2-column split OCR (1226x822)
+2026-02-28 17:24:34,072 [INFO] [Agent 186] Done EN=1613c KO=945c Codes=0
+2026-02-28 17:24:34,079 [INFO] [Agent 193] 2-column split OCR (1226x822)
+2026-02-28 17:24:34,116 [INFO] [Agent 187] Done EN=1429c KO=817c Codes=0
+2026-02-28 17:24:34,122 [INFO] [Agent 194] 2-column split OCR (1226x822)
+2026-02-28 17:24:34,137 [INFO] [Agent 183] Done EN=1682c KO=1005c Codes=0
+2026-02-28 17:24:34,148 [INFO] [Agent 195] 2-column split OCR (1226x822)
+2026-02-28 17:24:34,351 [INFO] [Agent 188] Done EN=1906c KO=1150c Codes=0
+2026-02-28 17:24:34,360 [INFO] [Agent 196] 2-column split OCR (1226x822)
+2026-02-28 17:24:35,769 [INFO] [Agent 190] Done EN=1699c KO=966c Codes=0
+2026-02-28 17:24:35,778 [INFO] [Agent 197] 2-column split OCR (1226x822)
+2026-02-28 17:24:35,871 [INFO] [Agent 191] Done EN=1469c KO=802c Codes=0
+2026-02-28 17:24:35,879 [INFO] [Agent 198] 2-column split OCR (1226x822)
+2026-02-28 17:24:35,908 [INFO] [Agent 194] Done EN=389c KO=238c Codes=0
+2026-02-28 17:24:35,917 [INFO] [Agent 199] 2-column split OCR (1226x822)
+2026-02-28 17:24:36,209 [INFO] [Agent 189] Done EN=1540c KO=925c Codes=0
+2026-02-28 17:24:36,217 [INFO] [Agent 200] 2-column split OCR (1226x822)
+2026-02-28 17:24:36,786 [INFO] [Agent 192] Done EN=1541c KO=925c Codes=0
+2026-02-28 17:24:36,794 [INFO] [Agent 201] 2-column split OCR (1226x822)
+2026-02-28 17:24:36,862 [INFO] [Agent 195] Done EN=2455c KO=1490c Codes=0
+2026-02-28 17:24:36,875 [INFO] [Agent 202] 2-column split OCR (1226x822)
+2026-02-28 17:24:36,909 [INFO] [Agent 193] Done EN=1900c KO=966c Codes=0
+2026-02-28 17:24:36,922 [INFO] [Agent 203] 2-column split OCR (1226x822)
+2026-02-28 17:24:37,885 [INFO] [Agent 196] Done EN=2995c KO=1769c Codes=0
+2026-02-28 17:24:37,893 [INFO] [Agent 204] 2-column split OCR (1226x822)
+2026-02-28 17:24:38,910 [INFO] [Agent 198] Done EN=2600c KO=1637c Codes=0
+2026-02-28 17:24:38,939 [INFO] [Agent 197] Done EN=2555c KO=1737c Codes=0
+2026-02-28 17:24:39,113 [INFO] [Agent 199] Done EN=2714c KO=1520c Codes=0
+2026-02-28 17:24:39,341 [INFO] [Agent 200] Done EN=2323c KO=1477c Codes=0
+2026-02-28 17:24:40,015 [INFO] [Agent 201] Done EN=2920c KO=1683c Codes=0
+2026-02-28 17:24:40,021 [INFO] [Agent 202] Done EN=2562c KO=1547c Codes=1
+2026-02-28 17:24:40,200 [INFO] [Agent 203] Done EN=2431c KO=1429c Codes=1
+2026-02-28 17:24:40,651 [INFO] [Agent 204] Done EN=2269c KO=1414c Codes=0

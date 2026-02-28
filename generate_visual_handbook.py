@@ -5,6 +5,7 @@ generate_visual_handbook.py (v2 - Fixed Placeholder)
 """
 import os
 import re
+import base64
 from pathlib import Path
 from bs4 import BeautifulSoup
 from textwrap import dedent
@@ -35,6 +36,16 @@ def clean_korean_text(text):
     text = re.sub(r"\s+", " ", text).strip()
     return text
 
+def get_base64_image(image_path):
+    """이미지 파일을 Base64 문자열로 변환."""
+    if not image_path.exists():
+        return ""
+    ext = image_path.suffix.lower().replace('.', '')
+    if ext == 'jpg': ext = 'jpeg'
+    with open(image_path, "rb") as img_file:
+        encoded_string = base64.b64encode(img_file.read()).decode('utf-8')
+        return f"data:image/{ext};base64,{encoded_string}"
+
 def main():
     if not INPUT_HTML.exists():
         print(f"Error: {INPUT_HTML} not found.")
@@ -48,7 +59,8 @@ def main():
     handbook_html_parts = []
 
     for i, page in enumerate(pages, 1):
-        img_path = f"pages/page_{i:03d}.jpg"
+        img_file = IMAGE_DIR / f"page_{i:03d}.jpg"
+        img_base64 = get_base64_image(img_file)
         
         ko_texts = []
         bilinguals = page.find_all("div", class_="bilingual")
@@ -73,7 +85,7 @@ def main():
             <div class="page-meta">Page {i} / {len(pages)}</div>
             <div class="content-wrapper">
                 <div class="image-section">
-                    <img src="{img_path}" alt="Original Frame {i}">
+                    <img src="{img_base64}" alt="Original Frame {i}">
                 </div>
                 <div class="text-section">
                     <div class="translation-header">🇰🇷 한국어 번역 가이드</div>

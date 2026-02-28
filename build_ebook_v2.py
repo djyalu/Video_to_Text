@@ -99,6 +99,105 @@ def clean_text_aggressive(text):
     
     return '\n'.join(cleaned_lines)
 
+def fix_ocr_typos(text):
+    """OCR 영문 오타 교정 (문맥 기반)."""
+    # Common Tesseract OCR errors in ServiceNow handbook
+    typo_map = {
+        "Devslopers": "Developers",
+        "devslopers": "developers",
+        "ServiceN ow": "ServiceNow",
+        "ServiceN\now": "ServiceNow",
+        "Servicenow": "ServiceNow",
+        "servicenow": "ServiceNow",
+        "GlideR ecord": "GlideRecord",
+        "Glide Record": "GlideRecord",
+        "GlideRecorcl": "GlideRecord",
+        "JavaSeript": "JavaScript",
+        "Javascript": "JavaScript",
+        "javascript": "JavaScript",
+        "seript": "script",
+        "Seript": "Script",
+        "funetion": "function",
+        "Funetion": "Function",
+        "inelude": "include",
+        "Inelude": "Include",
+        "varlable": "variable",
+        "variahle": "variable",
+        "coneept": "concept",
+        "helow": "below",
+        "ahove": "above",
+        "diflerent": "different",
+        "dilficult": "difficult",
+        "specifie": "specific",
+        "praetice": "practice",
+        "praetiees": "practices",
+        "performanee": "performance",
+        "instanee": "instance",
+        "referenee": "reference",
+        "experiencecl": "experienced",
+        "eommand": "command",
+        "eode": "code",
+        "reeord": "record",
+        "aecess": "access",
+        "aceess": "access",
+        "beeause": "because",
+        "proeess": "process",
+        "sueeess": "success",
+        "neeessary": "necessary",
+        "'incident'')": "('incident')",
+        "Cincident": "('incident')",
+        "nextO": "next()",
+        "queryO": "query()",
+        "insertO": "insert()",
+        "getValueC": "getValue(",
+        "rorever": "forever",
+        "shayta": "Shayla",
+        " tl1e ": " the ",
+        " tl1at ": " that ",
+        " witl1 ": " with ",
+        " wl1ich ": " which ",
+        " eacl1 ": " each ",
+        "lt's": "It's",
+        "lt is": "It is",
+        "seript": "script",
+    }
+    result = text
+    for wrong, right in typo_map.items():
+        result = result.replace(wrong, right)
+    # Regex-based case-insensitive fixes
+    result = re.sub(r'\bservicenow\b', 'ServiceNow', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bgliderecord\b', 'GlideRecord', result, flags=re.IGNORECASE)
+    result = re.sub(r'\bjavascript\b', 'JavaScript', result, flags=re.IGNORECASE)
+    return result
+
+def format_paragraphs(text):
+    """단락 구분 및 포맷팅 개선.
+    - 연속된 1줄 텍스트는 하나의 문단으로 결합
+    - 빈 줄은 문단 구분자로 유지
+    - 문단 사이에 적절한 간격 제공
+    """
+    if not text.strip():
+        return ""
+    
+    lines = text.split('\n')
+    paragraphs = []
+    current_para = []
+    
+    for line in lines:
+        stripped = line.strip()
+        if not stripped:
+            # 빈 줄 = 문단 구분
+            if current_para:
+                paragraphs.append(' '.join(current_para))
+                current_para = []
+        else:
+            current_para.append(stripped)
+    
+    if current_para:
+        paragraphs.append(' '.join(current_para))
+    
+    return '\n\n'.join(paragraphs)
+
 # 고품질 수동 교정 데이터 (1-60p 주요 오역 및 노이즈 제거)
 MANUAL_CORRECTIONS = {
     1: {
@@ -375,12 +474,14 @@ def main():
         if i in MANUAL_CORRECTIONS:
             en_raw = MANUAL_CORRECTIONS[i].get("en", "")
             ko_raw = MANUAL_CORRECTIONS[i].get("ko", "")
-            # 자동 교정 데이터(AGENT_100)도 OCR 노이즈 정제 적용
-            en_clean = clean_text_aggressive(en_raw) if en_raw else ""
-            ko_clean = clean_text_aggressive(ko_raw) if ko_raw else ""
+            en_clean = fix_ocr_typos(clean_text_aggressive(en_raw)) if en_raw else ""
+            ko_clean = fix_ocr_typos(clean_text_aggressive(ko_raw)) if ko_raw else ""
+            # 문단 포맷팅 적용
+            en_formatted = format_paragraphs(en_clean)
+            ko_formatted = format_paragraphs(ko_clean)
             text_blocks.append({
-                "en": en_clean,
-                "ko": ko_clean
+                "en": en_formatted,
+                "ko": ko_formatted
             })
         else:
             # 수동 교정이 없을 때만 원본 텍스트 추출
@@ -389,13 +490,14 @@ def main():
                 en_p = bi.find("div", class_="lang-en").p
                 ko_p = bi.find("div", class_="lang-ko").p
                 
-                en_text = clean_text_aggressive(en_p.get_text()) if en_p else ""
-                ko_text = clean_text_aggressive(ko_p.get_text()) if ko_p else ""
-                
-                if en_text or ko_text:
+                en_text = fix_ocr_typos(clean_text_aggressive(en_p.get_text())) if en_p else ""
+                ko_text = fix_ocr_typos(clean_text_aggressive(ko_p.get_text())) if ko_p else ""
+                en_fmt = format_paragraphs(en_text)
+                ko_fmt = format_paragraphs(ko_text)
+                if en_fmt or ko_fmt:
                     text_blocks.append({
-                        "en": en_text,
-                        "ko": ko_text
+                        "en": en_fmt,
+                        "ko": ko_fmt
                     })
 
         code_blocks = []
@@ -410,30 +512,40 @@ def main():
                     code_text = raw_code.get_text().strip()
                     code_blocks.append(code_text)
 
+        # 코드 블록 HTML 생성 (각 코드 블록을 독립적으로)
         code_html = []
-        if code_blocks:
-            c_safe = "\n\n".join(code_blocks).replace("<", "&lt;").replace(">", "&gt;")
+        for ci, cb in enumerate(code_blocks):
+            c_safe = cb.replace("<", "&lt;").replace(">", "&gt;")
             code_html.append(f'''
             <div class="code-box">
-                <div class="code-label">📋 Source Code</div>
+                <div class="code-label">📋 Source Code {f"({ci+1})" if len(code_blocks)>1 else ""}</div>
                 <pre><code>{c_safe}</code></pre>
             </div>''')
 
-        # 페이지 구성
+        # 텍스트 블록 HTML - 각 문단을 별도 <p> 태그로 분리
         blocks_html = []
         for block in text_blocks:
-            blocks_html.append(f'''
+            en_paras = block['en'].split('\n\n') if block['en'] else []
+            ko_paras = block['ko'].split('\n\n') if block['ko'] else []
+            
+            en_html = ''.join(f'<p class="en">{p.strip()}</p>' for p in en_paras if p.strip())
+            ko_html = ''.join(f'<p class="ko">{p.strip()}</p>' for p in ko_paras if p.strip())
+            
+            if en_html or ko_html:
+                blocks_html.append(f'''
             <div class="text-block">
-                <p class="en">{block['en']}</p>
-                <p class="ko">{block['ko']}</p>
+                <div class="en-section">{en_html}</div>
+                <div class="ko-section">{ko_html}</div>
             </div>''')
         
         # 장(Chapter) 헤더 추가
         if i in CHAPTERS:
             html_sections.append(f'''
             <div class="chapter-header" id="ch-{i}">
+                <div class="ch-decoration"></div>
                 <span class="ch-label">CHAPTER</span>
                 <h2 class="ch-title">{CHAPTERS[i]}</h2>
+                <div class="ch-decoration"></div>
             </div>''')
 
         html_sections.append(f'''
@@ -462,100 +574,142 @@ def main():
         <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Noto+Sans+KR:wght@300;400;500;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
         <style>
             :root {{
-                --bg: #f8fafc; --text-en: #475569; --text-ko: #020617;
-                --accent: #3b82f6; --border: #e2e8f0; --code-bg: #1e293b;
-                --card-bg: #ffffff; --text-muted: #64748b;
+                --bg: #faf9f6; --text-en: #4a4a4a; --text-ko: #1a1a1a;
+                --accent: #2563eb; --accent-light: #dbeafe;
+                --border: #e5e5e5; --code-bg: #1e293b;
+                --card-bg: #ffffff; --text-muted: #6b7280;
+                --chapter-bg: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
             }}
             body.dark-mode {{
-                --bg: #0f172a; --text-en: #94a3b8; --text-ko: #f1f5f9;
+                --bg: #0f172a; --text-en: #a0aec0; --text-ko: #e2e8f0;
+                --accent: #60a5fa; --accent-light: #1e3a5f;
                 --border: #334155; --card-bg: #1e293b; --text-muted: #94a3b8;
             }}
+            * {{ box-sizing: border-box; }}
             body {{
-                font-family: 'Noto Sans KR', sans-serif;
+                font-family: 'Noto Sans KR', 'Segoe UI', sans-serif;
                 background-color: var(--bg); color: var(--text-ko);
                 margin: 0; padding: 0; line-height: 1.8;
                 transition: background 0.3s, color 0.3s;
+                -webkit-font-smoothing: antialiased;
             }}
+            /* Top Navigation */
             .top-bar {{
                 position: fixed; top: 0; width: 100%; z-index: 1000;
-                background: rgba(255,255,255,0.8); backdrop-filter: blur(8px);
-                border-bottom: 1px solid var(--border); padding: 0.8rem 1rem;
+                background: rgba(255,255,255,0.92); backdrop-filter: blur(12px);
+                border-bottom: 1px solid var(--border); padding: 0.6rem 1.5rem;
                 display: flex; justify-content: space-between; align-items: center;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.04);
             }}
-            .dark-mode .top-bar {{ background: rgba(15,23,42,0.8); }}
-            
-            .container {{ max-width: 800px; margin: 5rem auto; padding: 0 1.5rem; }}
-            
-            .chapter-header {{
-                margin: 6rem 0 3rem; text-align: center; border-bottom: 2px solid var(--accent);
-                padding-bottom: 1rem;
-            }}
-            .ch-label {{ font-size: 0.7rem; font-weight: 800; color: var(--accent); letter-spacing: 0.3em; }}
-            .ch-title {{ font-size: 1.8rem; margin: 0.5rem 0; color: var(--text); }}
+            .dark-mode .top-bar {{ background: rgba(15,23,42,0.92); }}
+            .top-bar .title {{ font-weight: 700; font-size: 0.9rem; letter-spacing: 0.02em; }}
 
+            .container {{ max-width: 780px; margin: 4.5rem auto 3rem; padding: 0 1.2rem; }}
+
+            /* Chapter Headers */
+            .chapter-header {{
+                margin: 5rem 0 2.5rem; text-align: center; padding: 2.5rem 1.5rem;
+                background: var(--chapter-bg); border-radius: 12px; color: #fff;
+                box-shadow: 0 8px 24px rgba(37,99,235,0.15);
+            }}
+            .ch-decoration {{ width: 40px; height: 2px; background: rgba(255,255,255,0.4); margin: 0.5rem auto; }}
+            .ch-label {{ font-size: 0.65rem; font-weight: 800; letter-spacing: 0.4em; opacity: 0.7; }}
+            .ch-title {{ font-size: 1.6rem; margin: 0.4rem 0 0; font-weight: 700; }}
+
+            /* Page Container */
             .page-container {{
                 background: var(--card-bg); border: 1px solid var(--border);
-                border-radius: 12px; margin-bottom: 5rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+                border-radius: 10px; margin-bottom: 3rem;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.04);
                 overflow: hidden;
             }}
             .page-header {{
-                background: var(--bg); padding: 0.8rem 1.5rem;
+                padding: 0.6rem 1.5rem;
                 display: flex; justify-content: space-between; align-items: center;
                 border-bottom: 1px solid var(--border);
+                background: rgba(0,0,0,0.01);
             }}
-            .page-num {{ font-weight: 800; font-size: 0.8rem; color: var(--accent); letter-spacing: 0.1em; }}
+            .page-num {{ font-weight: 800; font-size: 0.7rem; color: var(--accent); letter-spacing: 0.15em; }}
             .toggle-img {{
-                background: none; border: 1px solid var(--accent); color: var(--accent);
-                padding: 0.2rem 0.6rem; border-radius: 4px; cursor: pointer; font-size: 0.75rem;
+                background: none; border: 1px solid var(--border); color: var(--text-muted);
+                padding: 0.25rem 0.7rem; border-radius: 6px; cursor: pointer; font-size: 0.7rem;
+                transition: all 0.2s;
             }}
-            .image-viewer {{ background: #000; padding: 1rem; text-align: center; }}
-            .image-viewer img {{ max-width: 100%; border-radius: 4px; filter: contrast(1.1); }}
-            
-            .content-body {{ padding: 2.5rem; }}
-            .text-block {{ margin-bottom: 2rem; border-bottom: 1px solid rgba(0,0,0,0.03); padding-bottom: 1rem; }}
+            .toggle-img:hover {{ border-color: var(--accent); color: var(--accent); }}
+            .image-viewer {{ background: #111; padding: 0.8rem; text-align: center; }}
+            .image-viewer img {{ max-width: 100%; border-radius: 4px; }}
+
+            /* Content Body */
+            .content-body {{ padding: 2rem 2.5rem; }}
+            @media (max-width: 640px) {{ .content-body {{ padding: 1.2rem 1rem; }} }}
+
+            /* Text Block */
+            .text-block {{
+                margin-bottom: 2rem; padding-bottom: 1.5rem;
+                border-bottom: 1px solid rgba(0,0,0,0.04);
+            }}
+            .text-block:last-child {{ border-bottom: none; }}
+
+            /* English Section */
+            .en-section {{
+                margin-bottom: 1.2rem; padding: 0.8rem 1.2rem;
+                border-left: 3px solid var(--accent);
+                background: rgba(37,99,235,0.02); border-radius: 0 8px 8px 0;
+            }}
             .en {{
-                font-family: 'Crimson Pro', serif; font-size: 1.2rem; 
-                color: var(--text-en); margin-bottom: 0.6rem; line-height: 1.6;
-                white-space: pre-wrap; font-style: italic; opacity: 0.85;
-                padding: 0.5rem 0.8rem; border-left: 3px solid var(--accent);
-                background: rgba(59, 130, 246, 0.03); border-radius: 0 6px 6px 0;
+                font-family: 'Crimson Pro', Georgia, serif;
+                font-size: 1.05rem; color: var(--text-en);
+                line-height: 1.75; font-style: italic;
+                margin: 0 0 0.8rem 0;
             }}
+            .en:last-child {{ margin-bottom: 0; }}
+
+            /* Korean Section */
+            .ko-section {{ padding: 0.3rem 0; }}
             .ko {{
-                font-size: 1.08rem; color: var(--text-ko); font-weight: 400;
+                font-family: 'Noto Sans KR', sans-serif;
+                font-size: 1rem; color: var(--text-ko); font-weight: 400;
                 word-break: keep-all; text-align: justify;
-                white-space: pre-wrap; line-height: 1.9;
-                padding: 0.3rem 0;
+                line-height: 1.85; margin: 0 0 0.7rem 0;
+                text-indent: 0.5em;
             }}
-            /* bilingual 모드에서 영문/한글 시각적 구분 강화 */
-            [data-view="bilingual"] .en {{ opacity: 0.8; }}
-            [data-view="bilingual"] .ko {{ font-weight: 400; }}
-            [data-view="en-only"] .en {{ opacity: 1; font-style: normal; border-left: none; background: none; }}
-            [data-view="ko-only"] .ko {{ font-size: 1.15rem; }}
+            .ko:last-child {{ margin-bottom: 0; }}
+
+            /* View Mode Styles */
+            [data-view="bilingual"] .en-section {{ opacity: 0.9; }}
+            [data-view="en-only"] .ko-section {{ display: none; }}
+            [data-view="en-only"] .en-section {{ border-left: none; background: none; padding: 0; }}
+            [data-view="en-only"] .en {{ font-style: normal; font-size: 1.1rem; color: var(--text-ko); }}
+            [data-view="ko-only"] .en-section {{ display: none; }}
+            [data-view="ko-only"] .ko {{ font-size: 1.08rem; }}
+
+            /* Code Blocks */
             .code-box {{
-                background: var(--code-bg); padding: 0.8rem 1.2rem 1.2rem; border-radius: 8px;
-                overflow-x: auto; margin: 1.5rem 0; border: 1px solid var(--border);
+                background: var(--code-bg); border-radius: 10px;
+                overflow-x: auto; margin: 1.5rem 0;
+                border: 1px solid rgba(255,255,255,0.06);
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
             }}
             .code-label {{
-                font-size: 0.7rem; color: #94a3b8; margin-bottom: 0.5rem;
-                font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
+                font-size: 0.65rem; color: #94a3b8; padding: 0.6rem 1.2rem 0;
+                font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;
             }}
-            .code-box pre {{ margin: 0; }}
+            .code-box pre {{ margin: 0; padding: 0.6rem 1.2rem 1rem; }}
             .code-box code {{
-                font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; color: #38bdf8;
-                white-space: pre; display: block; line-height: 1.6;
+                font-family: 'JetBrains Mono', 'Consolas', monospace;
+                font-size: 0.82rem; color: #e2e8f0;
+                white-space: pre; display: block; line-height: 1.7;
             }}
-            
-            /* Controls */
-            .controls button {{
-                background: var(--accent); color: #fff; border: none;
-                padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-size: 0.8rem;
-            }}
-            .view-mode-btns {{ display: flex; gap: 0.5rem; }}
-            .view-mode-btns button {{ background: var(--border); color: var(--text); }}
-            .view-mode-btns button.active {{ background: var(--accent); color: #fff; }}
 
-            [data-view="en-only"] .ko {{ display: none; }}
-            [data-view="ko-only"] .en {{ display: none; }}
+            /* Controls */
+            .view-mode-btns {{ display: flex; gap: 0.4rem; }}
+            .view-mode-btns button {{
+                background: var(--border); color: var(--text-muted); border: none;
+                padding: 0.35rem 0.8rem; border-radius: 6px; cursor: pointer;
+                font-size: 0.72rem; font-weight: 600; transition: all 0.2s;
+            }}
+            .view-mode-btns button.active {{ background: var(--accent); color: #fff; }}
+            .view-mode-btns button:hover {{ opacity: 0.85; }}
         </style>
         <script>
             function toggleDarkMode() {{

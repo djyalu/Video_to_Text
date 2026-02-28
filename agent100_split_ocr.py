@@ -96,54 +96,81 @@ def clean_ocr_text(text):
     return '\n'.join(cleaned)
 
 
-def detect_code_block(text):
-    """Detect if a text block is source code."""
-    code_indicators = [
-        "var ", "function ", "if (", "while (", "for (", "return ",
-        "GlideRecord", ".query(", ".next(", "gs.", "current.",
-        ".setValue(", ".getValue(", ".addQuery(", ".addEncodedQuery(",
-        "new ", "this.", "console.log", "typeof ", "try {", "catch (",
-        "= function", "=>", "===", "!==", "||", "&&"
+def is_code_line(line):
+    """Determine if a single line is source code (strict detection).
+    Requires syntactic patterns, not just keyword presence in prose.
+    """
+    stripped = line.strip()
+    if not stripped:
+        return False
+    # Definite code patterns (syntactic)
+    code_patterns = [
+        r'^var\s+\w+\s*=',            # var x = ...
+        r'^let\s+\w+\s*=',            # let x = ...
+        r'^const\s+\w+\s*=',          # const x = ...
+        r'^function\s+\w+\s*\(',      # function name(...
+        r'^if\s*\(.+\)\s*\{',         # if (...) {
+        r'^\}\s*else\s*(if)?\s*',      # } else ...
+        r'^while\s*\(.+\)\s*\{',      # while (...) {
+        r'^for\s*\(.+\)\s*\{',        # for (...) {
+        r'^return\s+',                # return ...
+        r'^throw\s+new\s+',           # throw new ...
+        r'\w+\.\w+\(.*\);?\s*$',     # obj.method(...);
+        r'^\s*[\{\}]\s*$',            # { or } alone
+        r'^\s*\);?\s*$',              # ) or ); alone
+        r'//.*$',                     # // comment at start
+        r'^/\*',                      # /* comment
+        r'^\*/',                      # */ comment end
+        r'\w+\s*=\s*new\s+\w+',      # x = new Class
+        r'\w+\.addQuery\(',           # .addQuery(
+        r'\w+\.addEncodedQuery\(',    # .addEncodedQuery(
+        r'\w+\.setValue\(',           # .setValue(
+        r'\w+\.getValue\(',           # .getValue(
+        r'\w+\.query\(\)',            # .query()
+        r'\w+\.next\(\)',             # .next()
+        r'\w+\.hasNext\(\)',          # .hasNext()
+        r'gs\.\w+\(',                 # gs.log(, gs.info(
+        r'current\.\w+',              # current.field
     ]
-    lines = text.strip().split('\n')
-    code_score = 0
-    for line in lines:
-        for kw in code_indicators:
-            if kw in line:
-                code_score += 1
-                break
-        if line.strip().startswith('//') or line.strip().startswith('/*'):
-            code_score += 1
-        if re.match(r'^\s*[\{\};\)]\s*$', line.strip()):
-            code_score += 1
-    # If more than 30% of lines look like code
-    ratio = code_score / max(len(lines), 1)
-    return ratio > 0.3
+    for p in code_patterns:
+        if re.search(p, stripped):
+            return True
+    return False
 
 
 def split_prose_and_code(text):
-    """Split text into prose and code blocks."""
+    """Split text into prose and code blocks.
+    Uses strict code detection - requires 2+ consecutive code lines
+    to form a code block. Single code-like lines in prose stay as prose.
+    """
     lines = text.split('\n')
+    # First pass: label each line
+    labels = []
+    for line in lines:
+        labels.append('code' if is_code_line(line) else 'prose')
+    
+    # Second pass: isolated code lines (surrounded by prose) -> prose
+    # Require at least 2 consecutive code lines to form a block
+    for i in range(len(labels)):
+        if labels[i] == 'code':
+            prev_code = (i > 0 and labels[i-1] == 'code')
+            next_code = (i < len(labels)-1 and labels[i+1] == 'code')
+            if not prev_code and not next_code:
+                labels[i] = 'prose'  # isolated code line -> treat as prose
+    
+    # Third pass: group consecutive same-type lines
     blocks = []
-    current_type = None
+    current_type = labels[0] if labels else 'prose'
     current_lines = []
     
-    for line in lines:
-        is_code_line = any(kw in line for kw in [
-            "var ", "function", ".query(", ".next(", "gs.", "current.",
-            ".setValue(", ".getValue(", "GlideRecord", "//", "/*",
-        ]) or re.match(r'^\s*[\{\};\)]\s*$', line.strip())
-        
-        line_type = "code" if is_code_line else "prose"
-        
-        if line_type != current_type and current_lines:
+    for i, line in enumerate(lines):
+        if labels[i] != current_type and current_lines:
             blocks.append({
                 "type": current_type,
                 "text": '\n'.join(current_lines)
             })
             current_lines = []
-        
-        current_type = line_type
+            current_type = labels[i]
         current_lines.append(line)
     
     if current_lines:

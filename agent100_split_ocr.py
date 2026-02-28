@@ -77,6 +77,7 @@ def clean_ocr_text(text):
     """Clean OCR noise from text while preserving paragraph structure."""
     lines = text.split('\n')
     cleaned = []
+    prev_blank = False
     for line in lines:
         cl = line.rstrip()
         # Apply noise patterns
@@ -87,12 +88,18 @@ def clean_ocr_text(text):
                 break
         if skip:
             continue
-        # Skip very short garbage lines (single chars)
         stripped = cl.strip()
+        # Skip single-char garbage
         if len(stripped) <= 1 and not stripped.isalnum():
             continue
-        if stripped:
+        if not stripped:
+            # Preserve blank lines as paragraph breaks (max 1 consecutive)
+            if not prev_blank and cleaned:
+                cleaned.append('')
+                prev_blank = True
+        else:
             cleaned.append(stripped)
+            prev_blank = False
     return '\n'.join(cleaned)
 
 
@@ -220,10 +227,10 @@ def translate_text(en_text):
 def worker_agent(page_idx):
     """Single page worker agent.
     1. Load image
-    2. If 2-column: split left/right
-    3. OCR each region top-to-bottom
+    2. Split left/right
+    3. Tesseract OCR each half (preserving paragraph breaks)
     4. Combine: left text first, then right text
-    5. Translate to Korean
+    5. Translate paragraph by paragraph
     """
     img_path = PAGES_DIR / f"page_{page_idx:03d}.jpg"
     if not img_path.exists():
@@ -233,48 +240,35 @@ def worker_agent(page_idx):
         img = Image.open(img_path).convert("RGB")
         w, h = img.size
         
-        # Determine if single or 2-column
-        ratio = w / h
-        is_single = page_idx in SINGLE_COLUMN_PAGES or ratio < 1.1
+        # All images are landscape Kindle screenshots - always split
+        crop_bottom = int(h * 0.94)
+        crop_top = int(h * 0.005)
+        margin = int(w * 0.015)
+        mid = w // 2
         
-        if is_single:
-            logging.info(f"[Agent {page_idx:03d}] Single-column OCR ({w}x{h})")
-            # Crop bottom kindle bar
-            cropped = img.crop((0, 0, w, int(h * 0.95)))
-            raw_text = pytesseract.image_to_string(cropped, lang='eng')
-            full_text = clean_ocr_text(raw_text)
-        else:
-            logging.info(f"[Agent {page_idx:03d}] 2-column split OCR ({w}x{h})")
-            
-            # Crop kindle bottom bar
-            crop_bottom = int(h * 0.94)
-            crop_top = int(h * 0.005)
-            margin = int(w * 0.015)
-            mid = w // 2
-            
-            # Left half
-            left_img = img.crop((margin, crop_top, mid - margin, crop_bottom))
-            left_text = pytesseract.image_to_string(left_img, lang='eng')
-            left_clean = clean_ocr_text(left_text)
-            
-            # Right half
-            right_img = img.crop((mid + margin, crop_top, w - margin, crop_bottom))
-            right_text = pytesseract.image_to_string(right_img, lang='eng')
-            right_clean = clean_ocr_text(right_text)
-            
-            # Combine: left first, then right
-            parts = []
-            if left_clean:
-                parts.append(left_clean)
-            if right_clean:
-                parts.append(right_clean)
-            full_text = '\n\n'.join(parts)
+        # Left half OCR
+        left_img = img.crop((margin, crop_top, mid - margin, crop_bottom))
+        left_raw = pytesseract.image_to_string(left_img, lang='eng')
+        left_text = clean_ocr_text(left_raw)
+        
+        # Right half OCR
+        right_img = img.crop((mid + margin, crop_top, w - margin, crop_bottom))
+        right_raw = pytesseract.image_to_string(right_img, lang='eng')
+        right_text = clean_ocr_text(right_raw)
+        
+        # Combine: left first (with paragraph break between halves)
+        parts = []
+        if left_text.strip():
+            parts.append(left_text)
+        if right_text.strip():
+            parts.append(right_text)
+        full_text = '\n\n'.join(parts)
         
         if not full_text.strip():
             logging.warning(f"[Agent {page_idx:03d}] No text extracted")
             return {"page_num": page_idx, "en": "", "ko": "", "codes": []}
         
-        # Split into prose and code
+        # Split into prose and code blocks
         blocks = split_prose_and_code(full_text)
         
         en_prose_parts = []
@@ -285,16 +279,31 @@ def worker_agent(page_idx):
             else:
                 code_parts.append(b["text"])
         
-        en_full = '\n'.join(en_prose_parts)
+        # Join prose with paragraph breaks preserved
+        en_full = '\n\n'.join(en_prose_parts)
         
-        # Translate
-        ko_full = translate_text(en_full)
+        # Split into paragraphs and translate each one
+        en_paragraphs = [p.strip() for p in en_full.split('\n\n') if p.strip()]
+        ko_paragraphs = []
+        for para in en_paragraphs:
+            # Join lines within a paragraph into a single sentence
+            joined = ' '.join(line.strip() for line in para.split('\n') if line.strip())
+            ko_para = translate_text(joined)
+            if ko_para:
+                ko_paragraphs.append(ko_para)
+        ko_full = '\n\n'.join(ko_paragraphs)
         
-        logging.info(f"[Agent {page_idx:03d}] Done EN={len(en_full)}c KO={len(ko_full)}c Codes={len(code_parts)}")
+        # Also join EN lines within paragraphs for clean display
+        en_formatted = '\n\n'.join(
+            ' '.join(line.strip() for line in p.split('\n') if line.strip())
+            for p in en_paragraphs
+        )
+        
+        logging.info(f"[Agent {page_idx:03d}] Done EN={len(en_formatted)}c KO={len(ko_full)}c Paras={len(en_paragraphs)} Codes={len(code_parts)}")
         
         return {
             "page_num": page_idx,
-            "en": en_full,
+            "en": en_formatted,
             "ko": ko_full,
             "codes": code_parts
         }

@@ -85,17 +85,24 @@ def clean_text_aggressive(text):
         r"\s*1\s*$",
     ]
     
-    # 줄별로 처리하되 문단 구조 보존
+    # 줄별로 처리하되 문단 구조(빈 줄) 보존
     lines = text.split('\n')
     cleaned_lines = []
+    prev_blank = False
     for line in lines:
         cleaned = line
         for p in line_patterns:
             cleaned = re.sub(p, "", cleaned, flags=re.IGNORECASE | re.MULTILINE)
         # 줄 내 연속 공백 정리 (줄바꿈은 유지)
         cleaned = re.sub(r"  +", " ", cleaned).strip()
-        if cleaned:  # 비어있지 않은 줄만 유지
+        if cleaned:
             cleaned_lines.append(cleaned)
+            prev_blank = False
+        else:
+            # 빈 줄은 문단 구분자 = 보존 (연속 빈 줄은 1개로)
+            if not prev_blank and cleaned_lines:
+                cleaned_lines.append('')
+                prev_blank = True
     
     return '\n'.join(cleaned_lines)
 
@@ -571,7 +578,8 @@ def main():
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ServiceNow Handbook Premium E-Book</title>
-        <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Noto+Sans+KR:wght@300;400;500;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
         <style>
             :root {{
                 --bg: #faf9f6; --text-en: #4a4a4a; --text-ko: #1a1a1a;
@@ -587,11 +595,12 @@ def main():
             }}
             * {{ box-sizing: border-box; }}
             body {{
-                font-family: 'Noto Sans KR', 'Segoe UI', sans-serif;
+                font-family: 'Pretendard', -apple-system, 'Segoe UI', sans-serif;
                 background-color: var(--bg); color: var(--text-ko);
                 margin: 0; padding: 0; line-height: 1.8;
                 transition: background 0.3s, color 0.3s;
                 -webkit-font-smoothing: antialiased;
+                letter-spacing: -0.01em;
             }}
             /* Top Navigation */
             .top-bar {{
@@ -667,11 +676,11 @@ def main():
             /* Korean Section */
             .ko-section {{ padding: 0.3rem 0; }}
             .ko {{
-                font-family: 'Noto Sans KR', sans-serif;
+                font-family: 'Pretendard', -apple-system, sans-serif;
                 font-size: 1rem; color: var(--text-ko); font-weight: 400;
                 word-break: keep-all; text-align: justify;
-                line-height: 1.85; margin: 0 0 0.7rem 0;
-                text-indent: 0.5em;
+                line-height: 1.9; margin: 0 0 0.9rem 0;
+                letter-spacing: -0.01em;
             }}
             .ko:last-child {{ margin-bottom: 0; }}
 

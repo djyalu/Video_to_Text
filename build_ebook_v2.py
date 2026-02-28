@@ -178,13 +178,21 @@ def fix_ocr_typos(text):
     return result
 
 def format_paragraphs(text):
-    """단락 구분 및 포맷팅 개선.
-    - 연속된 1줄 텍스트는 하나의 문단으로 결합
-    - 빈 줄은 문단 구분자로 유지
-    - 문단 사이에 적절한 간격 제공
+    """단락 구분 및 포맷팅 개선 (smart join).
+    - 빈 줄은 문단 구분자
+    - 문단 내 줄: 짧은 줄 많으면(목차/리스트) 줄바꿈 유지, 긴 줄이면(본문) 공백 합침
     """
     if not text.strip():
         return ""
+    
+    def smart_join(lines):
+        """줄 길이 기반 자동 감지: 리스트 vs 본문"""
+        if not lines:
+            return ""
+        avg_len = sum(len(l) for l in lines) / len(lines)
+        if avg_len < 45 and len(lines) > 3:
+            return '\n'.join(lines)  # 목차/리스트 → 줄바꿈 유지
+        return ' '.join(lines)  # 본문 → 공백 합침
     
     lines = text.split('\n')
     paragraphs = []
@@ -193,15 +201,14 @@ def format_paragraphs(text):
     for line in lines:
         stripped = line.strip()
         if not stripped:
-            # 빈 줄 = 문단 구분
             if current_para:
-                paragraphs.append(' '.join(current_para))
+                paragraphs.append(smart_join(current_para))
                 current_para = []
         else:
             current_para.append(stripped)
     
     if current_para:
-        paragraphs.append(' '.join(current_para))
+        paragraphs.append(smart_join(current_para))
     
     return '\n\n'.join(paragraphs)
 
@@ -534,9 +541,15 @@ def main():
         for block in text_blocks:
             en_paras = block['en'].split('\n\n') if block['en'] else []
             ko_paras = block['ko'].split('\n\n') if block['ko'] else []
-            
-            en_html = ''.join(f'<p class="en">{p.strip()}</p>' for p in en_paras if p.strip())
-            ko_html = ''.join(f'<p class="ko">{p.strip()}</p>' for p in ko_paras if p.strip())
+            # 문단 내 \n → <br> 변환 (목차/리스트 줄바꿈 보존)
+            en_html = ''.join(
+                f'<p class="en">{p.strip().replace(chr(10), "<br>")}</p>'
+                for p in en_paras if p.strip()
+            )
+            ko_html = ''.join(
+                f'<p class="ko">{p.strip().replace(chr(10), "<br>")}</p>'
+                for p in ko_paras if p.strip()
+            )
             
             if en_html or ko_html:
                 blocks_html.append(f'''

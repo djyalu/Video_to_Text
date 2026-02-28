@@ -282,20 +282,37 @@ def worker_agent(page_idx):
         # Join prose with paragraph breaks preserved
         en_full = '\n\n'.join(en_prose_parts)
         
-        # Split into paragraphs and translate each one
+        # Smart line joining: detect list/TOC vs prose
+        def smart_join_lines(paragraph_text):
+            """Join lines within a paragraph intelligently.
+            - Short average line length = list/TOC → preserve line breaks
+            - Long average line length = prose → join with spaces
+            """
+            lines = [l.strip() for l in paragraph_text.split('\n') if l.strip()]
+            if not lines:
+                return ""
+            avg_len = sum(len(l) for l in lines) / len(lines)
+            # If avg line < 45 chars AND more than 3 lines → list-style
+            if avg_len < 45 and len(lines) > 3:
+                return '\n'.join(lines)  # Keep line breaks
+            else:
+                return ' '.join(lines)  # Join as prose
+        
+        # Split into paragraphs
         en_paragraphs = [p.strip() for p in en_full.split('\n\n') if p.strip()]
         ko_paragraphs = []
+        
+        # Translate paragraph by paragraph
         for para in en_paragraphs:
-            # Join lines within a paragraph into a single sentence
-            joined = ' '.join(line.strip() for line in para.split('\n') if line.strip())
+            joined = smart_join_lines(para)
             ko_para = translate_text(joined)
             if ko_para:
                 ko_paragraphs.append(ko_para)
         ko_full = '\n\n'.join(ko_paragraphs)
         
-        # Also join EN lines within paragraphs for clean display
+        # Format EN lines within paragraphs
         en_formatted = '\n\n'.join(
-            ' '.join(line.strip() for line in p.split('\n') if line.strip())
+            smart_join_lines(p)
             for p in en_paragraphs
         )
         

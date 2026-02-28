@@ -507,14 +507,14 @@ def main():
                 background: rgba(59, 130, 246, 0.03); border-radius: 0 6px 6px 0;
             }}
             .ko {{
-                font-size: 1.08rem; color: var(--text-ko); font-weight: 500;
+                font-size: 1.08rem; color: var(--text-ko); font-weight: 400;
                 word-break: keep-all; text-align: justify;
                 white-space: pre-wrap; line-height: 1.9;
                 padding: 0.3rem 0;
             }}
             /* bilingual 모드에서 영문/한글 시각적 구분 강화 */
             [data-view="bilingual"] .en {{ opacity: 0.8; }}
-            [data-view="bilingual"] .ko {{ font-weight: 600; }}
+            [data-view="bilingual"] .ko {{ font-weight: 400; }}
             [data-view="en-only"] .en {{ opacity: 1; font-style: normal; border-left: none; background: none; }}
             [data-view="ko-only"] .ko {{ font-size: 1.15rem; }}
             .code-box {{

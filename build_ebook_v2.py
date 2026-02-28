@@ -212,6 +212,45 @@ def format_paragraphs(text):
     
     return '\n\n'.join(paragraphs)
 
+def auto_indent_code(code_text):
+    """중괄호 기반 자동 들여쓰기 복원.
+    OCR이 캡처하지 못한 코드 들여쓰기를 {/} 구조로 자동 복원.
+    이미 들여쓰기가 있는 코드는 그대로 유지.
+    """
+    lines = code_text.split('\n')
+    
+    # Check if code already has indentation
+    has_indent = any(line.startswith('  ') or line.startswith('\t') for line in lines if line.strip())
+    if has_indent:
+        return code_text  # Already indented, don't touch
+    
+    result = []
+    indent_level = 0
+    indent_str = '    '  # 4 spaces
+    
+    for line in lines:
+        stripped = line.strip()
+        if not stripped:
+            result.append('')
+            continue
+        
+        # Decrease indent for lines starting with } or )
+        if stripped.startswith('}') or stripped.startswith(')'):
+            indent_level = max(0, indent_level - 1)
+        
+        # Apply indentation
+        result.append(indent_str * indent_level + stripped)
+        
+        # Increase indent for lines ending with { (but not {})
+        open_braces = stripped.count('{') - stripped.count('}')
+        if open_braces > 0:
+            indent_level += open_braces
+        elif open_braces < 0:
+            # If closing more than opening on same line (rare)
+            indent_level = max(0, indent_level + open_braces)
+    
+    return '\n'.join(result)
+
 # 고품질 수동 교정 데이터 (1-60p 주요 오역 및 노이즈 제거)
 MANUAL_CORRECTIONS = {
     1: {
@@ -526,10 +565,11 @@ def main():
                     code_text = raw_code.get_text().strip()
                     code_blocks.append(code_text)
 
-        # 코드 블록 HTML 생성 (각 코드 블록을 독립적으로)
+        # 코드 블록 HTML 생성 (각 코드 블록을 독립적으로 + 자동 들여쓰기)
         code_html = []
         for ci, cb in enumerate(code_blocks):
-            c_safe = cb.replace("<", "&lt;").replace(">", "&gt;")
+            indented = auto_indent_code(cb)
+            c_safe = indented.replace("<", "&lt;").replace(">", "&gt;")
             code_html.append(f'''
             <div class="code-box">
                 <div class="code-label">📋 Source Code {f"({ci+1})" if len(code_blocks)>1 else ""}</div>

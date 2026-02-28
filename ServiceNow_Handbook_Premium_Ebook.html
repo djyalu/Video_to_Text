@@ -146,11 +146,51 @@
             }
             .view-mode-btns button.active { background: var(--accent); color: #fff; }
             .view-mode-btns button:hover { opacity: 0.85; }
+
+            /* ===== DARK MODE ===== */
+            @media (prefers-color-scheme: dark) {
+                :root { --bg: #0f172a; --text-en: #cbd5e1; --text-ko: #e2e8f0;
+                    --accent: #3b82f6; --accent-light: #1e3a5f;
+                    --border: #334155; --card-bg: #1e293b; }
+            }
+            .dark-mode { --bg: #0f172a; --text-en: #cbd5e1; --text-ko: #e2e8f0;
+                --accent: #3b82f6; --accent-light: #1e3a5f;
+                --border: #334155; --card-bg: #1e293b; }
+            .dark-mode .en-section { background: rgba(59,130,246,0.06); }
+            .dark-mode .page-container { border-color: #334155; }
+            .dark-mode .text-block { border-bottom-color: rgba(255,255,255,0.04); }
+            .dark-mode .ch-header { background: linear-gradient(135deg, #1e3a5f, #0f172a); }
+            /* Progress Bar */
+            .progress-bar { position: fixed; top: 0; left: 0; height: 3px; z-index: 1001;
+                background: linear-gradient(90deg, var(--accent), #8b5cf6); width: 0%; }
+            /* Search */
+            .search-wrap { position: relative; margin: 0 0.5rem; }
+            .search-wrap input { background: var(--card-bg); border: 1px solid var(--border);
+                color: var(--text-ko); padding: 0.3rem 0.6rem; border-radius: 8px;
+                font-size: 0.75rem; width: 160px; outline: none; transition: width 0.3s; }
+            .search-wrap input:focus { border-color: var(--accent); width: 240px; }
+            .page-container.search-hidden { display: none; }
+            .page-counter { font-size: 0.68rem; color: var(--text-muted); }
+            /* TOC Sidebar */
+            .toc-btn { position: fixed; bottom: 2rem; right: 2rem; z-index: 1000;
+                background: var(--accent); color: #fff; border: none; width: 48px; height: 48px;
+                border-radius: 50%; font-size: 1.1rem; cursor: pointer;
+                box-shadow: 0 4px 15px rgba(37,99,235,0.4); transition: transform 0.2s; }
+            .toc-btn:hover { transform: scale(1.1); }
+            .toc-panel { position: fixed; right: -320px; top: 0; bottom: 0; width: 300px;
+                background: var(--card-bg); border-left: 1px solid var(--border);
+                z-index: 999; overflow-y: auto; padding: 3.5rem 1rem 2rem;
+                transition: right 0.3s; box-shadow: -4px 0 20px rgba(0,0,0,0.1); }
+            .toc-panel.open { right: 0; }
+            .toc-panel h3 { font-size: 0.9rem; margin-bottom: 1rem; color: var(--accent); }
+            .toc-panel a { display: block; padding: 0.3rem 0.4rem; font-size: 0.75rem;
+                color: var(--text-muted); text-decoration: none; border-radius: 4px; transition: all 0.15s; }
+            .toc-panel a:hover { color: var(--accent); background: rgba(37,99,235,0.08); }
+            .toc-close { position: absolute; top: 0.8rem; right: 0.8rem;
+                background: none; border: none; font-size: 1.2rem; cursor: pointer; color: var(--text-muted); }
         </style>
         <script>
-            function toggleDarkMode() {
-                document.body.classList.toggle('dark-mode');
-            }
+            function toggleDarkMode() { document.body.classList.toggle('dark-mode'); }
             function setViewMode(mode) {
                 document.body.setAttribute('data-view', mode);
                 document.querySelectorAll('.view-mode-btns button').forEach(b => b.classList.remove('active'));
@@ -160,17 +200,39 @@
                 const el = document.getElementById('img-' + id);
                 el.style.display = (el.style.display === 'none') ? 'block' : 'none';
             }
+            function searchPages(q) {
+                const pages = document.querySelectorAll('.page-container');
+                const query = q.toLowerCase().trim();
+                let shown = 0;
+                pages.forEach(p => {
+                    if (!query) { p.classList.remove('search-hidden'); shown++; return; }
+                    const match = p.textContent.toLowerCase().includes(query);
+                    p.classList.toggle('search-hidden', !match);
+                    if (match) shown++;
+                });
+                document.getElementById('pcnt').textContent = query ? shown+'/'+pages.length : pages.length+' pages';
+            }
+            function toggleTOC() { document.getElementById('toc-panel').classList.toggle('open'); }
+            window.addEventListener('scroll', () => {
+                const h = document.documentElement;
+                document.getElementById('prog').style.width = (h.scrollTop/(h.scrollHeight-h.clientHeight))*100+'%';
+            });
         </script>
     </head>
     <body data-view="bilingual">
+        <div class="progress-bar" id="prog"></div>
         <div class="top-bar">
             <div class="title">📖 Handbook Premium</div>
+            <div class="search-wrap">
+                <input type="text" placeholder="🔍 Search..." oninput="searchPages(this.value)">
+            </div>
+            <span class="page-counter" id="pcnt">216 pages</span>
             <div class="view-mode-btns">
                 <button onclick="setViewMode('en-only')">EN</button>
                 <button onclick="setViewMode('ko-only')">KO</button>
                 <button class="active" onclick="setViewMode('bilingual')">모두</button>
             </div>
-            <button onclick="toggleDarkMode()">🌒 테마</button>
+            <button onclick="toggleDarkMode()">🌒</button>
         </div>
         <div class="container">
 
@@ -4536,6 +4598,12 @@ var yourName = 'Bob';</code></pre>
 
             </div>
         </article>
+        </div>
+        <button class="toc-btn" onclick="toggleTOC()" title="목차">📑</button>
+        <div class="toc-panel" id="toc-panel">
+            <button class="toc-close" onclick="toggleTOC()">✕</button>
+            <h3>📖 목차</h3>
+            <a href="#page-1" onclick="toggleTOC()">Page 1</a><a href="#page-2" onclick="toggleTOC()">Page 2</a><a href="#page-3" onclick="toggleTOC()">Page 3</a><a href="#page-4" onclick="toggleTOC()">Page 4</a><a href="#page-5" onclick="toggleTOC()">Page 5</a><a href="#page-6" onclick="toggleTOC()">Page 6</a><a href="#page-7" onclick="toggleTOC()">Page 7</a><a href="#page-8" onclick="toggleTOC()">Page 8</a><a href="#page-9" onclick="toggleTOC()">Page 9</a><a href="#page-10" onclick="toggleTOC()">Page 10</a><a href="#page-11" onclick="toggleTOC()">Page 11</a><a href="#page-12" onclick="toggleTOC()">Page 12</a><a href="#page-13" onclick="toggleTOC()">Page 13</a><a href="#page-14" onclick="toggleTOC()">Page 14</a><a href="#page-15" onclick="toggleTOC()">Page 15</a><a href="#page-16" onclick="toggleTOC()">Page 16</a><a href="#page-17" onclick="toggleTOC()">Page 17</a><a href="#page-18" onclick="toggleTOC()">Page 18</a><a href="#page-19" onclick="toggleTOC()">Page 19</a><a href="#page-20" onclick="toggleTOC()">Page 20</a><a href="#page-21" onclick="toggleTOC()">Page 21</a><a href="#page-22" onclick="toggleTOC()">Page 22</a><a href="#page-23" onclick="toggleTOC()">Page 23</a><a href="#page-24" onclick="toggleTOC()">Page 24</a><a href="#page-25" onclick="toggleTOC()">Page 25</a><a href="#page-26" onclick="toggleTOC()">Page 26</a><a href="#page-27" onclick="toggleTOC()">Page 27</a><a href="#page-28" onclick="toggleTOC()">Page 28</a><a href="#page-29" onclick="toggleTOC()">Page 29</a><a href="#page-30" onclick="toggleTOC()">Page 30</a><a href="#page-31" onclick="toggleTOC()">Page 31</a><a href="#page-32" onclick="toggleTOC()">Page 32</a><a href="#page-33" onclick="toggleTOC()">Page 33</a><a href="#page-34" onclick="toggleTOC()">Page 34</a><a href="#page-35" onclick="toggleTOC()">Page 35</a><a href="#page-36" onclick="toggleTOC()">Page 36</a><a href="#page-37" onclick="toggleTOC()">Page 37</a><a href="#page-38" onclick="toggleTOC()">Page 38</a><a href="#page-39" onclick="toggleTOC()">Page 39</a><a href="#page-40" onclick="toggleTOC()">Page 40</a><a href="#page-41" onclick="toggleTOC()">Page 41</a><a href="#page-42" onclick="toggleTOC()">Page 42</a><a href="#page-43" onclick="toggleTOC()">Page 43</a><a href="#page-44" onclick="toggleTOC()">Page 44</a><a href="#page-45" onclick="toggleTOC()">Page 45</a><a href="#page-46" onclick="toggleTOC()">Page 46</a><a href="#page-47" onclick="toggleTOC()">Page 47</a><a href="#page-48" onclick="toggleTOC()">Page 48</a><a href="#page-49" onclick="toggleTOC()">Page 49</a><a href="#page-50" onclick="toggleTOC()">Page 50</a><a href="#page-51" onclick="toggleTOC()">Page 51</a><a href="#page-52" onclick="toggleTOC()">Page 52</a><a href="#page-53" onclick="toggleTOC()">Page 53</a><a href="#page-54" onclick="toggleTOC()">Page 54</a><a href="#page-55" onclick="toggleTOC()">Page 55</a><a href="#page-56" onclick="toggleTOC()">Page 56</a><a href="#page-57" onclick="toggleTOC()">Page 57</a><a href="#page-58" onclick="toggleTOC()">Page 58</a><a href="#page-59" onclick="toggleTOC()">Page 59</a><a href="#page-60" onclick="toggleTOC()">Page 60</a><a href="#page-61" onclick="toggleTOC()">Page 61</a><a href="#page-62" onclick="toggleTOC()">Page 62</a><a href="#page-63" onclick="toggleTOC()">Page 63</a><a href="#page-64" onclick="toggleTOC()">Page 64</a><a href="#page-65" onclick="toggleTOC()">Page 65</a><a href="#page-66" onclick="toggleTOC()">Page 66</a><a href="#page-67" onclick="toggleTOC()">Page 67</a><a href="#page-68" onclick="toggleTOC()">Page 68</a><a href="#page-69" onclick="toggleTOC()">Page 69</a><a href="#page-70" onclick="toggleTOC()">Page 70</a><a href="#page-71" onclick="toggleTOC()">Page 71</a><a href="#page-72" onclick="toggleTOC()">Page 72</a><a href="#page-73" onclick="toggleTOC()">Page 73</a><a href="#page-74" onclick="toggleTOC()">Page 74</a><a href="#page-75" onclick="toggleTOC()">Page 75</a><a href="#page-76" onclick="toggleTOC()">Page 76</a><a href="#page-77" onclick="toggleTOC()">Page 77</a><a href="#page-78" onclick="toggleTOC()">Page 78</a><a href="#page-79" onclick="toggleTOC()">Page 79</a><a href="#page-80" onclick="toggleTOC()">Page 80</a><a href="#page-81" onclick="toggleTOC()">Page 81</a><a href="#page-82" onclick="toggleTOC()">Page 82</a><a href="#page-83" onclick="toggleTOC()">Page 83</a><a href="#page-84" onclick="toggleTOC()">Page 84</a><a href="#page-85" onclick="toggleTOC()">Page 85</a><a href="#page-86" onclick="toggleTOC()">Page 86</a><a href="#page-87" onclick="toggleTOC()">Page 87</a><a href="#page-88" onclick="toggleTOC()">Page 88</a><a href="#page-89" onclick="toggleTOC()">Page 89</a><a href="#page-90" onclick="toggleTOC()">Page 90</a><a href="#page-91" onclick="toggleTOC()">Page 91</a><a href="#page-92" onclick="toggleTOC()">Page 92</a><a href="#page-93" onclick="toggleTOC()">Page 93</a><a href="#page-94" onclick="toggleTOC()">Page 94</a><a href="#page-95" onclick="toggleTOC()">Page 95</a><a href="#page-96" onclick="toggleTOC()">Page 96</a><a href="#page-97" onclick="toggleTOC()">Page 97</a><a href="#page-98" onclick="toggleTOC()">Page 98</a><a href="#page-99" onclick="toggleTOC()">Page 99</a><a href="#page-100" onclick="toggleTOC()">Page 100</a><a href="#page-101" onclick="toggleTOC()">Page 101</a><a href="#page-102" onclick="toggleTOC()">Page 102</a><a href="#page-103" onclick="toggleTOC()">Page 103</a><a href="#page-104" onclick="toggleTOC()">Page 104</a><a href="#page-105" onclick="toggleTOC()">Page 105</a><a href="#page-106" onclick="toggleTOC()">Page 106</a><a href="#page-107" onclick="toggleTOC()">Page 107</a><a href="#page-108" onclick="toggleTOC()">Page 108</a><a href="#page-109" onclick="toggleTOC()">Page 109</a><a href="#page-110" onclick="toggleTOC()">Page 110</a><a href="#page-111" onclick="toggleTOC()">Page 111</a><a href="#page-112" onclick="toggleTOC()">Page 112</a><a href="#page-113" onclick="toggleTOC()">Page 113</a><a href="#page-114" onclick="toggleTOC()">Page 114</a><a href="#page-115" onclick="toggleTOC()">Page 115</a><a href="#page-116" onclick="toggleTOC()">Page 116</a><a href="#page-117" onclick="toggleTOC()">Page 117</a><a href="#page-118" onclick="toggleTOC()">Page 118</a><a href="#page-119" onclick="toggleTOC()">Page 119</a><a href="#page-120" onclick="toggleTOC()">Page 120</a><a href="#page-121" onclick="toggleTOC()">Page 121</a><a href="#page-122" onclick="toggleTOC()">Page 122</a><a href="#page-123" onclick="toggleTOC()">Page 123</a><a href="#page-124" onclick="toggleTOC()">Page 124</a><a href="#page-125" onclick="toggleTOC()">Page 125</a><a href="#page-126" onclick="toggleTOC()">Page 126</a><a href="#page-127" onclick="toggleTOC()">Page 127</a><a href="#page-128" onclick="toggleTOC()">Page 128</a><a href="#page-129" onclick="toggleTOC()">Page 129</a><a href="#page-130" onclick="toggleTOC()">Page 130</a><a href="#page-131" onclick="toggleTOC()">Page 131</a><a href="#page-132" onclick="toggleTOC()">Page 132</a><a href="#page-133" onclick="toggleTOC()">Page 133</a><a href="#page-134" onclick="toggleTOC()">Page 134</a><a href="#page-135" onclick="toggleTOC()">Page 135</a><a href="#page-136" onclick="toggleTOC()">Page 136</a><a href="#page-137" onclick="toggleTOC()">Page 137</a><a href="#page-138" onclick="toggleTOC()">Page 138</a><a href="#page-139" onclick="toggleTOC()">Page 139</a><a href="#page-140" onclick="toggleTOC()">Page 140</a><a href="#page-141" onclick="toggleTOC()">Page 141</a><a href="#page-142" onclick="toggleTOC()">Page 142</a><a href="#page-143" onclick="toggleTOC()">Page 143</a><a href="#page-144" onclick="toggleTOC()">Page 144</a><a href="#page-145" onclick="toggleTOC()">Page 145</a><a href="#page-146" onclick="toggleTOC()">Page 146</a><a href="#page-147" onclick="toggleTOC()">Page 147</a><a href="#page-148" onclick="toggleTOC()">Page 148</a><a href="#page-149" onclick="toggleTOC()">Page 149</a><a href="#page-150" onclick="toggleTOC()">Page 150</a><a href="#page-151" onclick="toggleTOC()">Page 151</a><a href="#page-152" onclick="toggleTOC()">Page 152</a><a href="#page-153" onclick="toggleTOC()">Page 153</a><a href="#page-154" onclick="toggleTOC()">Page 154</a><a href="#page-155" onclick="toggleTOC()">Page 155</a><a href="#page-156" onclick="toggleTOC()">Page 156</a><a href="#page-157" onclick="toggleTOC()">Page 157</a><a href="#page-158" onclick="toggleTOC()">Page 158</a><a href="#page-159" onclick="toggleTOC()">Page 159</a><a href="#page-160" onclick="toggleTOC()">Page 160</a><a href="#page-161" onclick="toggleTOC()">Page 161</a><a href="#page-162" onclick="toggleTOC()">Page 162</a><a href="#page-163" onclick="toggleTOC()">Page 163</a><a href="#page-164" onclick="toggleTOC()">Page 164</a><a href="#page-165" onclick="toggleTOC()">Page 165</a><a href="#page-166" onclick="toggleTOC()">Page 166</a><a href="#page-167" onclick="toggleTOC()">Page 167</a><a href="#page-168" onclick="toggleTOC()">Page 168</a><a href="#page-169" onclick="toggleTOC()">Page 169</a><a href="#page-170" onclick="toggleTOC()">Page 170</a><a href="#page-171" onclick="toggleTOC()">Page 171</a><a href="#page-172" onclick="toggleTOC()">Page 172</a><a href="#page-173" onclick="toggleTOC()">Page 173</a><a href="#page-174" onclick="toggleTOC()">Page 174</a><a href="#page-175" onclick="toggleTOC()">Page 175</a><a href="#page-176" onclick="toggleTOC()">Page 176</a><a href="#page-177" onclick="toggleTOC()">Page 177</a><a href="#page-178" onclick="toggleTOC()">Page 178</a><a href="#page-179" onclick="toggleTOC()">Page 179</a><a href="#page-180" onclick="toggleTOC()">Page 180</a><a href="#page-181" onclick="toggleTOC()">Page 181</a><a href="#page-182" onclick="toggleTOC()">Page 182</a><a href="#page-183" onclick="toggleTOC()">Page 183</a><a href="#page-184" onclick="toggleTOC()">Page 184</a><a href="#page-185" onclick="toggleTOC()">Page 185</a><a href="#page-186" onclick="toggleTOC()">Page 186</a><a href="#page-187" onclick="toggleTOC()">Page 187</a><a href="#page-188" onclick="toggleTOC()">Page 188</a><a href="#page-189" onclick="toggleTOC()">Page 189</a><a href="#page-190" onclick="toggleTOC()">Page 190</a><a href="#page-191" onclick="toggleTOC()">Page 191</a><a href="#page-192" onclick="toggleTOC()">Page 192</a><a href="#page-193" onclick="toggleTOC()">Page 193</a><a href="#page-194" onclick="toggleTOC()">Page 194</a><a href="#page-195" onclick="toggleTOC()">Page 195</a><a href="#page-196" onclick="toggleTOC()">Page 196</a><a href="#page-197" onclick="toggleTOC()">Page 197</a><a href="#page-198" onclick="toggleTOC()">Page 198</a><a href="#page-199" onclick="toggleTOC()">Page 199</a><a href="#page-200" onclick="toggleTOC()">Page 200</a><a href="#page-201" onclick="toggleTOC()">Page 201</a><a href="#page-202" onclick="toggleTOC()">Page 202</a><a href="#page-203" onclick="toggleTOC()">Page 203</a><a href="#page-204" onclick="toggleTOC()">Page 204</a><a href="#page-205" onclick="toggleTOC()">Page 205</a><a href="#page-206" onclick="toggleTOC()">Page 206</a><a href="#page-207" onclick="toggleTOC()">Page 207</a><a href="#page-208" onclick="toggleTOC()">Page 208</a><a href="#page-209" onclick="toggleTOC()">Page 209</a><a href="#page-210" onclick="toggleTOC()">Page 210</a><a href="#page-211" onclick="toggleTOC()">Page 211</a><a href="#page-212" onclick="toggleTOC()">Page 212</a><a href="#page-213" onclick="toggleTOC()">Page 213</a><a href="#page-214" onclick="toggleTOC()">Page 214</a><a href="#page-215" onclick="toggleTOC()">Page 215</a><a href="#page-216" onclick="toggleTOC()">Page 216</a>
         </div>
     </body>
     </html>

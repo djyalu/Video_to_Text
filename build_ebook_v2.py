@@ -772,11 +772,51 @@ def main():
             }}
             .view-mode-btns button.active {{ background: var(--accent); color: #fff; }}
             .view-mode-btns button:hover {{ opacity: 0.85; }}
+
+            /* ===== DARK MODE ===== */
+            @media (prefers-color-scheme: dark) {{
+                :root {{ --bg: #0f172a; --text-en: #cbd5e1; --text-ko: #e2e8f0;
+                    --accent: #3b82f6; --accent-light: #1e3a5f;
+                    --border: #334155; --card-bg: #1e293b; }}
+            }}
+            .dark-mode {{ --bg: #0f172a; --text-en: #cbd5e1; --text-ko: #e2e8f0;
+                --accent: #3b82f6; --accent-light: #1e3a5f;
+                --border: #334155; --card-bg: #1e293b; }}
+            .dark-mode .en-section {{ background: rgba(59,130,246,0.06); }}
+            .dark-mode .page-container {{ border-color: #334155; }}
+            .dark-mode .text-block {{ border-bottom-color: rgba(255,255,255,0.04); }}
+            .dark-mode .ch-header {{ background: linear-gradient(135deg, #1e3a5f, #0f172a); }}
+            /* Progress Bar */
+            .progress-bar {{ position: fixed; top: 0; left: 0; height: 3px; z-index: 1001;
+                background: linear-gradient(90deg, var(--accent), #8b5cf6); width: 0%; }}
+            /* Search */
+            .search-wrap {{ position: relative; margin: 0 0.5rem; }}
+            .search-wrap input {{ background: var(--card-bg); border: 1px solid var(--border);
+                color: var(--text-ko); padding: 0.3rem 0.6rem; border-radius: 8px;
+                font-size: 0.75rem; width: 160px; outline: none; transition: width 0.3s; }}
+            .search-wrap input:focus {{ border-color: var(--accent); width: 240px; }}
+            .page-container.search-hidden {{ display: none; }}
+            .page-counter {{ font-size: 0.68rem; color: var(--text-muted); }}
+            /* TOC Sidebar */
+            .toc-btn {{ position: fixed; bottom: 2rem; right: 2rem; z-index: 1000;
+                background: var(--accent); color: #fff; border: none; width: 48px; height: 48px;
+                border-radius: 50%; font-size: 1.1rem; cursor: pointer;
+                box-shadow: 0 4px 15px rgba(37,99,235,0.4); transition: transform 0.2s; }}
+            .toc-btn:hover {{ transform: scale(1.1); }}
+            .toc-panel {{ position: fixed; right: -320px; top: 0; bottom: 0; width: 300px;
+                background: var(--card-bg); border-left: 1px solid var(--border);
+                z-index: 999; overflow-y: auto; padding: 3.5rem 1rem 2rem;
+                transition: right 0.3s; box-shadow: -4px 0 20px rgba(0,0,0,0.1); }}
+            .toc-panel.open {{ right: 0; }}
+            .toc-panel h3 {{ font-size: 0.9rem; margin-bottom: 1rem; color: var(--accent); }}
+            .toc-panel a {{ display: block; padding: 0.3rem 0.4rem; font-size: 0.75rem;
+                color: var(--text-muted); text-decoration: none; border-radius: 4px; transition: all 0.15s; }}
+            .toc-panel a:hover {{ color: var(--accent); background: rgba(37,99,235,0.08); }}
+            .toc-close {{ position: absolute; top: 0.8rem; right: 0.8rem;
+                background: none; border: none; font-size: 1.2rem; cursor: pointer; color: var(--text-muted); }}
         </style>
         <script>
-            function toggleDarkMode() {{
-                document.body.classList.toggle('dark-mode');
-            }}
+            function toggleDarkMode() {{ document.body.classList.toggle('dark-mode'); }}
             function setViewMode(mode) {{
                 document.body.setAttribute('data-view', mode);
                 document.querySelectorAll('.view-mode-btns button').forEach(b => b.classList.remove('active'));
@@ -786,20 +826,48 @@ def main():
                 const el = document.getElementById('img-' + id);
                 el.style.display = (el.style.display === 'none') ? 'block' : 'none';
             }}
+            function searchPages(q) {{
+                const pages = document.querySelectorAll('.page-container');
+                const query = q.toLowerCase().trim();
+                let shown = 0;
+                pages.forEach(p => {{
+                    if (!query) {{ p.classList.remove('search-hidden'); shown++; return; }}
+                    const match = p.textContent.toLowerCase().includes(query);
+                    p.classList.toggle('search-hidden', !match);
+                    if (match) shown++;
+                }});
+                document.getElementById('pcnt').textContent = query ? shown+'/'+pages.length : pages.length+' pages';
+            }}
+            function toggleTOC() {{ document.getElementById('toc-panel').classList.toggle('open'); }}
+            window.addEventListener('scroll', () => {{
+                const h = document.documentElement;
+                document.getElementById('prog').style.width = (h.scrollTop/(h.scrollHeight-h.clientHeight))*100+'%';
+            }});
         </script>
     </head>
     <body data-view="bilingual">
+        <div class="progress-bar" id="prog"></div>
         <div class="top-bar">
             <div class="title">📖 Handbook Premium</div>
+            <div class="search-wrap">
+                <input type="text" placeholder="🔍 Search..." oninput="searchPages(this.value)">
+            </div>
+            <span class="page-counter" id="pcnt">{len(html_sections)} pages</span>
             <div class="view-mode-btns">
                 <button onclick="setViewMode('en-only')">EN</button>
                 <button onclick="setViewMode('ko-only')">KO</button>
                 <button class="active" onclick="setViewMode('bilingual')">모두</button>
             </div>
-            <button onclick="toggleDarkMode()">🌒 테마</button>
+            <button onclick="toggleDarkMode()">🌒</button>
         </div>
         <div class="container">
             {"".join(html_sections)}
+        </div>
+        <button class="toc-btn" onclick="toggleTOC()" title="목차">📑</button>
+        <div class="toc-panel" id="toc-panel">
+            <button class="toc-close" onclick="toggleTOC()">✕</button>
+            <h3>📖 목차</h3>
+            {''.join(f'<a href="#page-{i}" onclick="toggleTOC()">Page {i}</a>' for i in range(1, len(html_sections)+1))}
         </div>
     </body>
     </html>

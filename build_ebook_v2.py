@@ -19,8 +19,22 @@ BLOCK_CONFIG = {
 def get_base64_image(image_file):
     if not image_file.exists():
         return ""
-    with open(image_file, "rb") as f:
-        return f"data:image/jpeg;base64,{base64.b64encode(f.read()).decode('utf-8')}"
+    try:
+        from PIL import Image, ImageEnhance
+        import io
+        img = Image.open(image_file).convert("RGB")
+        # Contrast boost for text readability
+        img = ImageEnhance.Contrast(img).enhance(1.3)
+        # Slight sharpness boost
+        img = ImageEnhance.Sharpness(img).enhance(1.2)
+        # Re-encode as optimized JPEG (quality 72 balances size vs clarity)
+        buf = io.BytesIO()
+        img.save(buf, format="JPEG", quality=72, optimize=True)
+        return f"data:image/jpeg;base64,{base64.b64encode(buf.getvalue()).decode('utf-8')}"
+    except Exception:
+        # Fallback: raw file
+        with open(image_file, "rb") as f:
+            return f"data:image/jpeg;base64,{base64.b64encode(f.read()).decode('utf-8')}"
 
 def clean_text_aggressive(text):
     """E-Book 가독성을 위해 노이즈를 강력하게 제거."""

@@ -41,8 +41,9 @@ OUTPUT_JSON = Path("f:/projects/Video_to_Text/AGENT_100_CORRECTIONS.json")
 TOTAL_PAGES = 204
 MAX_WORKERS = 8  # Tesseract is lightweight, can run more threads
 
-# Single-column pages (cover, blank, chapter dividers)
-SINGLE_COLUMN_PAGES = {1, 2, 3, 4, 5, 9, 12, 39, 48, 51, 52, 61, 70, 76, 118, 125, 158, 181, 194}
+# All pages are Kindle landscape screenshots (1226x822) with 2 pages side-by-side.
+# No single-column exceptions needed - even pages with one-sided content benefit from splitting.
+SINGLE_COLUMN_PAGES = set()  # Empty - all pages get 2-column split
 
 # OCR noise patterns
 NOISE_PATTERNS = [

@@ -1,4 +1,33 @@
-﻿__pycache__/
+﻿# Python
+__pycache__/
 *.pyc
 .venv/
-output/
+.pytest_cache/
+
+# Large files
+*.log
+output.log
+pages/
+pages_compressed/
+source/
+output_direct/
+output_direct_2/
+output_test/
+output_final/
+
+# Generated large HTML (keep Premium only)
+Visual_ServiceNow_Handbook.html
+ServiceNow_Handbook_Bilingual.html
+book_layout.html
+
+# Data artifacts
+*.txt
+!requirements.txt
+p49.json
+audit_report.json
+audit_report_full.json
+agent_20_audit_report.json
+
+# IDE
+.vscode/
+.idea/

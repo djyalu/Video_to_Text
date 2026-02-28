@@ -1,127 +1,153 @@
-﻿# Video to Text Document Builder
+﻿# 📖 ServiceNow Handbook — Bilingual E-Book Generator
 
-ebook 화면을 한 장씩 넘기며 캡처한 동영상에서 텍스트를 추출해 `Markdown`, `HTML`, `PDF`로 문서화하는 CLI 앱입니다.
+> ServiceNow Development Handbook (4th Edition) 원서를 OCR + 자동 번역으로 **영한 병렬 프리미엄 E-Book**으로 변환하는 멀티 에이전트 파이프라인
 
-## 주요 기능
+![Health Score](https://img.shields.io/badge/Health%20Score-100%2F100-brightgreen)
+![Grade](https://img.shields.io/badge/Grade-A%2B-gold)
+![Pages](https://img.shields.io/badge/Pages-204-blue)
+![Code Blocks](https://img.shields.io/badge/Code%20Blocks-119-purple)
 
-- 페이지 전환 상태 감지(Stable -> Transition -> Stable)
-- 넘김 속도 변화(빠름/느림)에 대응하는 페이지 인식
-- 페이지별 대표 프레임 자동 선택(선명도 기반)
-- OCR 추출(`auto`, `paddle`, `tesseract`)
-- 페이지별 OCR JSON 저장
-- `book.md`, `book.html`, `book.pdf`, `report.json` 생성
+---
 
-## 프로젝트 구조
+## ✨ 주요 기능
 
-```text
-video_to_text/
-  __main__.py
-  cli.py
-  pipeline.py
-  video_processing.py
-  ocr_engine.py
-  exporters.py
-  models.py
-requirements.txt
+| 기능 | 설명 |
+|------|------|
+| **2-Column OCR** | 한 이미지에 2페이지가 포함된 원본을 왼쪽/오른쪽 분리 스캔 |
+| **Smart Code Detection** | 80+ 패턴으로 코드 블록 자동 감지, 중괄호 기반 자동 들여쓰기 |
+| **Smart Line Joining** | 목차/리스트 vs 본문을 자동 감지하여 줄바꿈 보존 또는 합침 |
+| **Pre-Translation OCR Fix** | 번역 전 20+ OCR 오타 자동 교정 |
+| **Dark Mode** | CSS media query + 수동 토글 |
+| **실시간 검색** | 키워드로 204페이지 실시간 필터링 |
+| **목차 사이드바** | 플로팅 버튼 → 슬라이드 패널 네비게이션 |
+| **읽기 진행바** | 스크롤 연동 그라데이션 진행 표시 |
+| **EN/KO/Both 모드** | 영문, 한글, 양쪽 모두 표시 토글 |
+
+---
+
+## 🏗️ 아키텍처
+
+```
+source/ServiceNow_Handbook.pdf
+        ↓ extract_frames.py
+pages/page_001.jpg ... page_204.jpg
+        ↓ agent100_split_ocr.py (100 Worker Agents)
+AGENT_100_CORRECTIONS.json (EN + KO + Codes)
+        ↓ build_ebook_v2.py
+ServiceNow_Handbook_Premium_Ebook.html (11.6 MB)
 ```
 
-## 설치
+### 멀티 에이전트 구성
 
-### 1) Python 의존성
+| 에이전트 | 수량 | 역할 |
+|----------|------|------|
+| PM (Project Manager) | 1 | 전체 파이프라인 오케스트레이션 |
+| OCR Worker | 100 | 페이지별 2-Column OCR + 번역 |
+| QA Monitor | 1 | 진행률 모니터링 + 품질 체크 |
+| Code Detector | (내장) | 80+ 패턴 코드 블록 감지 |
+| Translator | (내장) | Google Translate API 호출 |
+| Layout Builder | 1 | Premium HTML E-Book 생성 |
+| Reader Audit | 100 | 최종 품질 감사 |
+| Translation QA | 50 | 번역 품질 검수 |
 
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
+---
+
+## 🚀 빠른 시작
+
+### 1. 환경 설정
+
+```bash
 pip install -r requirements.txt
 ```
 
-### 2) OCR 엔진 준비
+### 2. 페이지 이미지 준비
 
-기본 권장:
-- `paddleocr` (한국어 품질이 일반적으로 더 좋음)
-
-대안:
-- `pytesseract + tesseract`
-
-#### PaddleOCR 사용 시
-
-```powershell
-pip install paddleocr paddlepaddle
+```bash
+# PDF에서 페이지 이미지 추출
+python extract_frames.py
 ```
 
-#### Tesseract 사용 시
+### 3. OCR + 번역 (100 Agent Pipeline)
 
-- Tesseract 설치 후 실행 파일이 PATH에 있어야 합니다.
-- 한국어 OCR을 위해 `kor.traineddata`를 설치해야 합니다.
-
-## 실행 예시
-
-```powershell
-python -m video_to_text --input "source/capture video.mp4" --output output --ocr-engine auto --ocr-lang kor+eng
+```bash
+python agent100_split_ocr.py
 ```
 
-정상 실행 시 `output` 폴더에 다음 파일이 생성됩니다.
+### 4. Premium E-Book 빌드
 
-```text
-output/
-  pages/page_0001.jpg
-  ocr/page_0001.json
-  book.md
-  book.html
-  book.pdf
-  report.json
+```bash
+python build_ebook_v2.py
 ```
 
-## 자주 쓰는 옵션
+### 5. 품질 감사
 
-- `--sample-fps`: 초당 분석 프레임 수 (기본 6.0)
-- `--transition-threshold`: 페이지 넘김 시작 감지 임계값 (기본 18.0)
-- `--stable-threshold`: 새 페이지 정착 감지 임계값 (기본 4.0)
-- `--min-transition-samples`: 연속 transition 샘플 수 (기본 2)
-- `--min-stable-samples`: 연속 stable 샘플 수 (기본 3)
-- `--min-focus`: 흐린 프레임 제외 기준 (기본 15.0)
-- `--max-pages`: 최대 처리 페이지 제한
-- `--no-pdf`, `--no-html`, `--no-markdown`: 특정 출력 비활성화
-- `--min-page-gap-sec`: 동일 페이지 중복 저장 방지 최소 시간 간격 (기본 0.5)
-
-## 권장 파라미터 프리셋
-
-| 환경 | `--sample-fps` | `--transition-threshold` | `--min-transition-samples` | 비고 |
-| :--- | :---: | :---: | :---: | :--- |
-| **빠른 넘김** (1초에 1-2장) | 10.0 | 12.0 | 1 | 페이지 전환이 매우 빠를 때 |
-| **일반적인 넘김** (기본) | 6.0 | 18.0 | 2 | 대부분의 ebook 뷰어 |
-| **느리거나 애니메이션** | 4.0 | 25.0 | 3 | 넘김 효과가 길고 화려할 때 |
-| **고해상도/정밀** | 8.0 | 15.0 | 2 | 글자가 작고 레이아웃이 복잡할 때 |
-
-예시:
-
-```powershell
-python -m video_to_text \
-  --input "source/capture video.mp4" \
-  --output output \
-  --sample-fps 8 \
-  --transition-threshold 16 \
-  --stable-threshold 3.5 \
-  --ocr-engine paddle
+```bash
+python agent100_audit_v4.py      # 종합 감사
+python agent50_translation_qa.py  # 번역 QA
 ```
 
-## 품질 튜닝 가이드
+---
 
-- 페이지가 누락되면:
-  - `--transition-threshold`를 낮추세요.
-  - `--sample-fps`를 높이세요.
-- 중복 페이지가 많으면:
-  - `--transition-threshold`를 높이세요.
-  - `--min-transition-samples`를 3 이상으로 올리세요.
-- 새 페이지가 늦게 잡히면:
-  - `--min-stable-samples`를 낮추세요.
-- OCR 품질이 낮으면:
-  - `paddleocr` 사용 + 원본 영상 해상도 향상 권장.
+## 📊 품질 감사 결과
 
-## 문제 해결
+| 영역 | 점수 | 상세 |
+|------|------|------|
+| **Content** | 40/40 | 203/204 페이지, 489 EN + 475 KO 문단 |
+| **Code** | 15/15 | 119 블록, 자동 들여쓰기, 0 오타 |
+| **CSS** | 20/20 | 10/10 기능 (Dark mode, Responsive 등) |
+| **UX** | 25/25 | 10/10 기능 (검색, TOC, 진행바 등) |
+| **Total** | **100/100** | **Grade A+** |
 
-- `No OCR engine available`:
-  - `paddleocr`를 설치하거나
-  - `tesseract`와 `pytesseract`를 함께 설치하세요.
-- `No page frames were extracted`:
-  - `--transition-threshold`를 낮추고 `--sample-fps`를 올려 재실행하세요.
+---
+
+## 📁 프로젝트 구조
+
+```
+Video_to_Text/
+├── agent100_split_ocr.py      # 🔧 핵심: 100 Agent OCR Pipeline
+├── build_ebook_v2.py          # 📖 Premium E-Book Builder
+├── agent100_audit_v4.py       # 🔍 종합 감사 (Health Score)
+├── agent50_translation_qa.py  # 🇰🇷 번역 품질 검수
+├── agent100_reader_audit.py   # 📖 독자 감사
+├── agent100_full_audit_v3.py  # 🔍 4팀 감사 (Layout/Text/Code/UX)
+├── extract_frames.py          # 🖼️ PDF → 이미지 추출
+├── requirements.txt           # 📦 Python 의존성
+├── pages/                     # 🖼️ 원본 이미지 (204장)
+├── pages_compressed/          # 🖼️ 압축 이미지
+├── source/                    # 📄 원본 PDF
+└── ServiceNow_Handbook_Premium_Ebook.html  # ✅ 최종 결과물
+```
+
+---
+
+## 🔖 체크포인트 이력
+
+| Tag | 설명 |
+|-----|------|
+| `CP-PERFECT` | ✅ Health Score 100/100, Grade A+ |
+| `CP-UX-UPGRADE` | Dark mode, 검색, TOC, 진행바 |
+| `CP-TRANSLATION-QA` | 번역 전 OCR 교정, 50-agent QA |
+| `CP-INDENT` | 코드 자동 들여쓰기 |
+| `CP-CODE-BLOCKS` | 117 코드 블록 감지 (80+ 패턴) |
+| `CP-SMART-JOIN` | 목차/리스트 줄바꿈 보존 |
+| `CP-READABILITY` | 문단 분리, Pretendard 폰트 |
+| `CP-PREMIUM` | 프리미엄 레이아웃 |
+| `CP-FINAL` | 전체 2-col OCR |
+
+---
+
+## 🛠️ 기술 스택
+
+- **OCR**: Tesseract OCR (영문)
+- **번역**: Google Translate (deep-translator)
+- **이미지**: Pillow (PIL)
+- **프론트엔드**: Vanilla HTML/CSS/JS
+- **폰트**: Crimson Pro (EN), Pretendard (KO), JetBrains Mono (Code)
+- **Python**: 3.10+
+
+---
+
+## 📝 라이선스
+
+이 프로젝트는 개인 학습 목적으로 만들어졌습니다.
+원서 저작권은 Tim Woodruff에게 있습니다.
